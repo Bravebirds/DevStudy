@@ -287,6 +287,8 @@ attr cornerSizeBottomLeft
 attr cornerSizeBottomRight
 attr cornerSizeTopLeft
 attr cornerSizeTopRight
+attr countDownColor
+attr countdowninterva
 attr counterEnabled
 attr counterMaxLength
 attr counterOverflowTextAppearance
@@ -621,6 +623,7 @@ attr measureWithLargestChild
 attr menu
 attr metaButtonBarButtonStyle
 attr metaButtonBarStyle
+attr millisinfuture
 attr minHeight
 attr minTouchTargetSize
 attr minWidth
@@ -648,6 +651,7 @@ attr navigationViewStyle
 attr need_draw_line
 attr need_draw_outer_line
 attr nestedScrollFlags
+attr normalColor
 attr nullable
 attr number
 attr numericModifiers
@@ -2088,6 +2092,7 @@ id hideable
 id home
 id homeAsUp
 id home_page
+id home_refresh
 id home_tab
 id home_tabs
 id home_viewpage
@@ -3551,6 +3556,7 @@ styleable MotionHelper onHide onShow
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
+styleable MyCountDownTimer countDownColor countdowninterva millisinfuture normalColor
 styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive
 styleable NavArgument android_name android_defaultValue argType nullable
 styleable NavDeepLink android_autoVerify uri

@@ -1,8 +1,11 @@
 package com.mryu.devstudy.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -24,7 +27,6 @@ import com.mryu.devstudy.R;
 import com.mryu.devstudy.utils.GlideEngine;
 import com.mryu.devstudy.utils.MobileUtil;
 import com.mryu.devstudy.utils.PhotoChioceDialog;
-
 
 public class RegistActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener, TextWatcher, CompoundButton.OnCheckedChangeListener, PhotoChioceDialog.ClickCallback {
     private static final String TAG = "RegistActivity";
@@ -59,6 +61,7 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mMent;
     private LinearLayout mUploadphoto;
     private LinearLayout mHeadPortrait;
+    private boolean timeFlag = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,7 +119,8 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
             default:
                 break;
             case R.id.backpage:
-                startActivity(new Intent(this, LoginActivity.class));
+                Intent backIntent = new Intent(this,LoginActivity.class);
+                startActivity(backIntent);
                 finish();
                 break;
             case R.id.iphone:
@@ -131,7 +135,34 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
                     mPassword.setText("");
                     Toast.makeText(this, "请输入正确的手机号再获取验证码", Toast.LENGTH_SHORT).show();
                 } else {
+                    mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_unselect);
                     Toast.makeText(this, "走到发送验证码逻辑，但该功能还未实现", Toast.LENGTH_SHORT).show();
+                    mGetVerifi.setEnabled(false);//在发送数据的时候设置为不能点击
+                    mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_unselect);//背景色设为灰色
+                    /**
+                     * 获取验证码倒计时
+                     */
+                    timeFlag = true;
+                    Thread thread = new Thread() {
+                        @Override
+                        public void run() {
+                            for (int i = 59; i >= 0 && timeFlag; i--) {
+                                try {
+                                    sleep(1000);
+                                    Message msg = Message.obtain();
+                                    msg.what = i;
+                                    if (mHandler==null){
+                                        break;
+                                    }else{
+                                        mHandler.sendMessage(msg);
+                                    }
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    };
+                    thread.start();
                 }
                 break;
             case R.id.password:
@@ -159,6 +190,25 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
                 break;
         }
     }
+
+    private Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what > 0) {
+                mGetVerifi.setText("(" + msg.what + ")秒后重试");
+            } else {
+                mGetVerifi.setText("获取验证码");
+                mGetVerifi.setEnabled(true);//恢复可点击
+                final String phoneNumber = mIphone.getText().toString();
+                if (MobileUtil.checkPhone(phoneNumber) == false) {
+                    mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_unselect);
+                }else{
+                    mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_selected);
+                }
+            }
+        }
+    };
 
     private void mUploadphotos() {
         PhotoChioceDialog dialog = new PhotoChioceDialog(this);
@@ -199,6 +249,31 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
         final String verifiNumber = mVerifi.getText().toString();
         final String passwordText = mPassword.getText().toString();
         Log.d(TAG, phoneNumber + verifiNumber + passwordText);
+
+        // 正则效验符合+获取验证码可点击状态时高亮
+        if (MobileUtil.checkPhone(phoneNumber) == true && mGetVerifi.isEnabled() == true) {
+            mGetVerifi.setBackgroundResource(R.drawable.shape_send_btn_selected);
+        }
+
+        int maxVerifi = 6;
+        int maxPwdLength = 20;
+
+        // 验证码长度限制
+        if (verifiNumber.length()>maxVerifi){
+            String newStr = verifiNumber.substring(0,maxVerifi);
+            mVerifi.setText(newStr);
+            mVerifi.setSelection(mVerifi.getText().length());
+            Toast.makeText(this,"不支持输入长度>"+maxVerifi+"位的验证码",Toast.LENGTH_SHORT).show();
+        }
+
+        // 密码长度限制
+        if (passwordText.length()>maxPwdLength){
+            String newStr = passwordText.substring(0,maxPwdLength);
+            mPassword.setText(newStr);
+            mPassword.setSelection(mPassword.getText().length());
+            Toast.makeText(this,"仅支持"+maxPwdLength+"位密码输入",Toast.LENGTH_SHORT).show();
+        }
+
         if (phoneNumber.equals("") == true || verifiNumber.equals("") == true || passwordText.equals("") == true) {
             Log.d(TAG, "mIphone and mVerifi and mPassword iS No");
             mAccountRegist.setBackgroundResource(R.drawable.shape_nextstep_unselect);
@@ -231,6 +306,17 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+    /**
+     * removeCallbacksAndMessages移除消息队列中所有消息(/所有的Runnable/)
+     * Activity destroy的时候注意把所有引用置为空，防止发生内存泄漏
+     * */
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mHandler.removeCallbacksAndMessages(null);
+        mHandler = null;
+        timeFlag = false;
+    }
 
     @Override
     protected void onPause() {

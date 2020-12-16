@@ -170,7 +170,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(LoginActivity.this, "账号密码不允许为空！！！", Toast.LENGTH_SHORT).show();
             } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
                 Log.v(TAG, "登录成功,正在初始化进入首页！！！");
-                Intent intent = new Intent(LoginActivity.this, TestHomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 intent.putExtra("account", account_context);
                 intent.putExtra("password", password_context);
                 startActivity(intent);
@@ -201,14 +201,32 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void afterTextChanged(Editable s) {
-        Log.d(TAG, "UserName：" + mAccount.getText().toString() + ",PassWord：" + mPassword.getText().toString());
+
         /**
          * 判断UserName及Pwd字段是否均已输入对应改变登录入口可点击状态
          */
         String accountText = mAccount.getText().toString();
         String passwordText = mPassword.getText().toString();
+        Log.d(TAG, "UserName："+accountText.isEmpty()+",PassWord："+passwordText.isEmpty());
+        int maxUserNameLength = 16;
+        int maxPwdLength = 20;
+        // 用户名长度限制
+        if (accountText.length()>maxUserNameLength){
+            String newStr = accountText.substring(0,maxUserNameLength);
+            mAccount.setText(newStr);
+            mAccount.setSelection(mAccount.getText().length());
+            Toast.makeText(this,"仅支持"+maxUserNameLength+"位用户名输入",Toast.LENGTH_SHORT).show();
+        }
+
+        // 密码长度限制
+        if (passwordText.length()>maxPwdLength){
+            String newStr = passwordText.substring(0,maxPwdLength);
+            mPassword.setText(newStr);
+            mPassword.setSelection(mPassword.getText().length());
+            Toast.makeText(this,"仅支持"+maxPwdLength+"位密码输入",Toast.LENGTH_SHORT).show();
+        }
+
         if (accountText.equals("") == true || passwordText.equals("") == true) {
-            Log.d(TAG, "账号或密码未输入登录入口暂时不可点击！！！");
             mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_unselect);
         }
         if (mCheckAgreement.isChecked() == true) {
@@ -281,7 +299,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
-                System.exit(0);
+//                System.exit(0);  启用的话会黑屏
             }
             return true;
         }

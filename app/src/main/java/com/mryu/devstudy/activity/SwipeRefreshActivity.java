@@ -32,14 +32,12 @@ public class SwipeRefreshActivity extends AppCompatActivity implements View.OnCl
         mRefresh = (SwipeRefreshLayout) findViewById(R.id.refresh);
     }
 
-
-    @SuppressLint("ResourceAsColor")
     private void setView() {
         mBtnTest1.setOnClickListener(this);
         mBtnTest2.setOnClickListener(this);
         mRefresh.setOnClickListener(this);
         mRefresh.setRefreshing(true);
-        mRefresh.setColorSchemeColors(R.color.colorHotpink,R.color.colorChocolate);
+        mRefresh.setColorSchemeResources(R.color.colorHotpink,R.color.colorChocolate);
         // 每次冷启动APP时自动刷新下
         new Thread(){
             @Override

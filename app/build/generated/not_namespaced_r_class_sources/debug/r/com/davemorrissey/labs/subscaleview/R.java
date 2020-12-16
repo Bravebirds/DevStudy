@@ -13,16 +13,16 @@ public final class R {
         private attr() {}
 
         public static final int assetName = 0x7f040035;
-        public static final int panEnabled = 0x7f040261;
-        public static final int quickScaleEnabled = 0x7f04028a;
-        public static final int src = 0x7f0402c3;
-        public static final int tileBackgroundColor = 0x7f040333;
-        public static final int zoomEnabled = 0x7f040376;
+        public static final int panEnabled = 0x7f040265;
+        public static final int quickScaleEnabled = 0x7f04028e;
+        public static final int src = 0x7f0402c7;
+        public static final int tileBackgroundColor = 0x7f040337;
+        public static final int zoomEnabled = 0x7f04037a;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] SubsamplingScaleImageView = { 0x7f040035, 0x7f040261, 0x7f04028a, 0x7f0402c3, 0x7f040333, 0x7f040376 };
+        public static final int[] SubsamplingScaleImageView = { 0x7f040035, 0x7f040265, 0x7f04028e, 0x7f0402c7, 0x7f040337, 0x7f04037a };
         public static final int SubsamplingScaleImageView_assetName = 0;
         public static final int SubsamplingScaleImageView_panEnabled = 1;
         public static final int SubsamplingScaleImageView_quickScaleEnabled = 2;

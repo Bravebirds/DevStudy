@@ -1,5 +1,6 @@
 package com.mryu.devstudy;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initView();
         setView();
     }
@@ -162,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
-                System.exit(0);
+//                System.exit(0);  启用的话会黑屏
             }
             return true;
         }

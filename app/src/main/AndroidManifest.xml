@@ -178,13 +178,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.NetWorkActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.NetWorkActivity"></activity>
         <activity android:name=".activity.SwipeRefreshActivity"></activity>
         <activity android:name=".fragment.DrawerFragment" />
         <activity android:name=".fragment.MySettingFragment" />
@@ -204,7 +198,13 @@
         <activity android:name=".activity.RegistActivity" />
         <activity android:name=".activity.ForgotpwdActivity" />
         <activity android:name=".activity.SplashActivity" />
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.GridViewActivity" />
         <activity android:name=".activity.BannerActvity" />
 

@@ -52,7 +52,6 @@
                     android:hint="QQ号/手机号/邮箱"
                     android:inputType="text"
                     android:lineHeight="25dp"
-                    android:maxLength="20"
                     android:maxLines="1" />
             </LinearLayout>
 
@@ -73,7 +72,6 @@
                     android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:hint="密码"
                     android:background="@drawable/shape_bottom_input"
-                    android:maxLength="18"
                     android:maxLines="1"
                     android:lineHeight="25dp" />
 

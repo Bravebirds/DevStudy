@@ -9,7 +9,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mryu.devstudy.R;
-import com.tbruyelle.rxpermissions3.RxPermissions;
 
 import java.io.File;
 

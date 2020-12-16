@@ -114,16 +114,14 @@
                 android:layout_gravity="center"
                 android:imeOptions="actionNext"
                 android:inputType="number"
-                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 android:hint="@string/regist_verifi"
-                android:maxLength="6"
                 android:maxLines="1"
                 android:lineHeight="25dp" />
 
             <Button
                 android:id="@+id/get_verifi"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="1.2"
                 android:background="@drawable/shape_send_btnstatus"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
@@ -152,7 +150,6 @@
                 android:hint="@string/regist_password"
                 android:inputType="textPassword"
                 android:lineHeight="25dp"
-                android:maxLength="16"
                 android:maxLines="1" />
         </LinearLayout>
 
