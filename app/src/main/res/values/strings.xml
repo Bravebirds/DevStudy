@@ -1,10 +1,5 @@
 <resources>
     <string name="app_name">DevStudy</string>
-    <string-array name="array_list">
-        <item>列表一</item>
-        <item>列表二</item>
-        <item>列表三</item>
-    </string-array>
     <string name="regist_phone">请输入手机号</string>
     <string name="regist_verifi">请输入收到的验证码</string>
     <string name="regist_password">请设置您的登录密码</string>
@@ -32,5 +27,9 @@
     <string name="my_page">我</string>
     <string name="request">请求</string>
     <string name="get_permission">获取权限</string>
+    <string name="phone_pwd_login">账号密码登录</string>
+    <string name="phone_auto_login">免密登录/注册</string>
+    <string name="welcome_register">欢迎使用手机号注册</string>
+    <string name="welcome_autoregister">免密注册</string>
 
 </resources>

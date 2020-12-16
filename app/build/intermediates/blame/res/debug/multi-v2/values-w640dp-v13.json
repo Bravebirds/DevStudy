@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Work_Spaces\\Flutter_Project\\DevStudy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w640dp-v13\\values-w640dp-v13.xml",
+            "outputFile": "E:\\WorkSpace\\Android_Project\\DevStudy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w640dp-v13\\values-w640dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MrYu\\.gradle\\caches\\transforms-2\\files-2.1\\6966c8810274884b402702ebe69b1ddf\\EasyPhotos-3.0.6\\res\\values-w640dp-v13\\values-w640dp-v13.xml",
+                    "source": "C:\\Users\\v_yanqyu\\.gradle\\caches\\transforms-2\\files-2.1\\6966c8810274884b402702ebe69b1ddf\\EasyPhotos-3.0.6\\res\\values-w640dp-v13\\values-w640dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,14 +1,21 @@
 package com.mryu.devstudy.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -17,13 +24,16 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.utils.KeyboardLayout;
+import com.mryu.devstudy.utils.ModelUtils;
 import com.mryu.devstudy.utils.SoftKeyInputHidWidget;
 import com.mryu.devstudy.utils.ToastUtils;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import static java.lang.Thread.sleep;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
@@ -66,6 +76,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private TextView mOpen;
     private ScrollView mAllLinear;
     private KeyboardLayout mMainlayout;
+    /**
+     * 免密登录
+     */
+    private TextView mPwdFreeAccess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,13 +87,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initView();
-        setView();
+        setListener();
         initData();
     }
 
     private void initData() {
-        mAccount.setText("");
-        mPassword.setText("");
         mAccount.setHint("QQ号/手机号/邮箱");
         mPassword.setHint("密码");
         mAccount.clearFocus();
@@ -100,10 +112,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mOpen = (TextView) findViewById(R.id.experience);
         mAllLinear = (ScrollView) findViewById(R.id.all_linear);
         mMainlayout = (KeyboardLayout) findViewById(R.id.mainlayout);
+        mPwdFreeAccess = (TextView) findViewById(R.id.pwd_free_access);
+        mPwdFreeAccess.setOnClickListener(this);
     }
 
 
-    private void setView() {
+    private void setListener() {
         mAccount.setOnClickListener(this);
         mAccount.setOnFocusChangeListener(this);
         mAccount.addTextChangedListener(this);
@@ -122,12 +136,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mOpen.setOnClickListener(this);
         mAllLinear.setOnClickListener(this);
         addLayoutListener();
-
-        // 重写可输入格式
-//        if (ModelUtils.isEMUI() && android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
-//            mPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_NORMAL);
-//            mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-//        }
 
     }
 
@@ -172,7 +180,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 finish();
                 break;
             case R.id.all_linear:
-
+                break;
+            case R.id.pwd_free_access:
+                Intent phonelogin = new Intent(this,PhoneLoginActivity.class);
+                startActivity(phonelogin);
                 break;
         }
     }
@@ -234,7 +245,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String newStr = accountText.substring(0, maxUserNameLength);
             mAccount.setText(newStr);
             mAccount.setSelection(mAccount.getText().length());
-            showToast("仅支持" + maxUserNameLength + "位用户名输入", R.drawable.toast_ic_ship);
+            HideKeyInput();
+            try {
+                sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            showToast("用户名仅支持" + maxUserNameLength + "位输入", R.drawable.toast_ic_ship);
         }
 
         // 密码长度限制
@@ -242,7 +259,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String newStr = passwordText.substring(0, maxPwdLength);
             mPassword.setText(newStr);
             mPassword.setSelection(mPassword.getText().length());
-            showToast("仅支持" + maxPwdLength + "位密码输入", R.drawable.toast_ic_ship);
+            HideKeyInput();
+            try {
+                sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            showToast("密码仅支持" + maxPwdLength + "位输入", R.drawable.toast_ic_ship);
         }
 
         if (accountText.equals("") == true || passwordText.equals("") == true) {
@@ -250,7 +273,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         if (mCheckAgreement.isChecked() == true) {
             if (accountText.equals("") == true && passwordText.equals("") == false) {
-                mPassword.setText("");  //清空！！！掉上个账号遗留的密码
+                mPassword.setText("");  //清空 掉上个账号遗留的密码！！！
                 showToast("请先输入账号", R.drawable.toast_ic_ship);
             } else if (accountText.equals("") == false && passwordText.equals("") == false) {
                 Log.d(TAG, "账号密码均检测有内容，登录按钮高亮状态！！！");
@@ -260,8 +283,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
-    public void onFocusChange(View v, boolean hasFocus) {
-        switch (v.getId()) {
+    public void onFocusChange(View view, boolean hasFocus) {
+        switch (view.getId()) {
             default:
             case R.id.account:
                 if (hasFocus) {
@@ -284,6 +307,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (isChecked) {
+            Log.d(TAG, "用户成功勾选协议");
+            if (TextUtils.isEmpty(mAccount.getText()) == false && TextUtils.isEmpty(mPassword.getText()) == false) {
+                mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_selected);
+            }
+        } else {
+            mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_unselect);
+            Log.d(TAG, "用户取消协议授权");
+        }
+    }
+
+    /**
+     * Toast调用
+     * @param message
+     * @param resId
+     */
+    private void showToast(String message, int resId) {
+        ToastUtils.showKevinToast(this, message, resId);
+    }
+
     /**
      * 监听键盘状态，布局有变化时，靠scrollView去滚动界面
      */
@@ -292,8 +337,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onKeyboardStateChanged(boolean isActive, int keyboardHeight) {
                 Log.e("onKeyboardStateChanged", "isActive:" + isActive + " keyboardHeight:" + keyboardHeight);
-                if (isActive){
-                    mMainlayout.setBackgroundResource(R.drawable.shape_bottom_write);
+                if (isActive) {
                     mMainlayout.setTop(170);
                     scrollToBottom();
                 }
@@ -316,6 +360,72 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+    /**
+     * Date 2020-12-16
+     * 修复华为等机型的安全键盘唤起时将toast遮挡以及点击非键盘区域无法收起键盘
+     * 增加友好性
+     * @param ev
+     * @return
+     */
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+            View view = getCurrentFocus();
+            if (isHideInput(view, ev)) {
+                HideSoftInput(view.getWindowToken());
+                view.clearFocus();
+            }
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+    /**
+     * 判定是否需要隐藏
+     */
+    private boolean isHideInput(View v, MotionEvent ev) {
+        if (v != null && (v instanceof EditText)) {
+            int[] l = {0, 0};
+            v.getLocationInWindow(l);
+            int left = l[0], top = l[1], bottom = top + v.getHeight(), right = left + v.getWidth();
+            if (ev.getX() > left && ev.getX() < right && ev.getY() > top && ev.getY() < bottom) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     * 隐藏软键盘
+     */
+    private void HideSoftInput(IBinder token) {
+        if (token != null) {
+            InputMethodManager manager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            manager.hideSoftInputFromWindow(token, InputMethodManager.HIDE_NOT_ALWAYS);
+        }
+    }
+
+    /**
+     * 禁用掉系统安全键盘 恢复至当前使用的输入法
+     */
+    private void keyInputType(){
+        if (ModelUtils.isEMUI() && android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            mPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_NORMAL);
+            mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        }
+    }
+
+    /**
+     * 收起键盘
+     */
+    private void HideKeyInput() {
+        InputMethodManager imm =  (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        if(imm != null) {
+
+            imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(),
+                    0);
+        }
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -324,21 +434,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initData();
     }
 
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (isChecked) {
-            Log.d(TAG, "用户成功勾选协议");
-            if (TextUtils.isEmpty(mAccount.getText()) == false && TextUtils.isEmpty(mPassword.getText()) == false) {
-                mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_selected);
-            }
-        } else {
-            mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_unselect);
-            Log.d(TAG, "用户取消协议授权");
-        }
-    }
-
     /**
-     * 重新返回键功能，将返回键功能替换成home功能
+     * 重新返回键功能
      */
     private Long mExitTime = 0L;
 
@@ -350,15 +447,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
-//                System.exit(0);  启用的话会黑屏
             }
             return true;
         }
         return super.onKeyDown(keyCode, event);
-    }
-
-    private void showToast(String message, int resId) {
-        ToastUtils.showKevinToast(this, message, resId);
     }
 
 }

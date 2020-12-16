@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -58,298 +58,303 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MrYu\.gradle\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
 	package
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:4:5-32
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-229:12
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-180:12
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:5-88
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:7:5-89
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:22-86
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:7:22-86
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:5-78
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:13:5-75
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:13:22-73
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:22-73
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:15:5-67
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:10:5-68
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:15:22-65
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:10:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:5-73
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:5-74
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:22-71
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:22-71
 uses-permission#android.permission.BROADCAST_STICKY
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:5-74
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:16:5-75
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:22-72
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:16:22-72
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:5-78
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:22-76
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:5-85
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:18:5-86
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:22-83
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:18:22-83
 uses-permission#android.permission.DISABLE_KEYGUARD
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:5-74
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:19:5-75
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:22-72
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:19:22-72
 uses-permission#android.permission.EXPAND_STATUS_BAR
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:5-75
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:5-76
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:22-73
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:22-73
 uses-permission#android.permission.GET_PACKAGE_SIZE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:30:5-74
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:21:5-75
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:30:22-72
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:21:22-72
 uses-permission#android.permission.INSTALL_SHORTCUT
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:32:5-74
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:5-75
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:32:22-72
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:22-72
 uses-permission#android.permission.INTERNET
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:34:5-66
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:34:22-64
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:23:22-64
 uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:5-83
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:5-84
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:22-81
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:22-81
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:38:5-79
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:25:5-80
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:38:22-77
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:25:22-77
 uses-permission#android.permission.NFC
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:40:5-61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:5-62
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:40:22-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:22-59
+uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:5-86
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:22-83
 uses-permission#android.permission.READ_SYNC_SETTINGS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:5-76
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:22-74
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:22-74
 uses-permission#android.permission.READ_SYNC_STATS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:44:5-73
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:29:5-74
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:44:22-71
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:29:22-71
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:5-80
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:5-81
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:22-78
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:22-78
 uses-permission#android.permission.REORDER_TASKS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:5-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:37:5-72
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:22-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:37:22-69
 uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:5-94
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:5-95
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:22-92
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:22-92
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:5-82
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:5-83
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:22-80
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:22-80
 uses-permission#android.permission.SET_ALARM
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:5-67
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:48:5-68
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:22-65
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:48:22-65
 uses-permission#android.permission.SET_TIME_ZONE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:5-62:47
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:5-51:47
 	tools:ignore
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:9-44
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:9-44
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:22-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:50:9-56
 uses-permission#android.permission.SET_WALLPAPER
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:5-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:5-72
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:22-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:22-69
 uses-permission#android.permission.SET_WALLPAPER_HINTS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:66:5-77
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:5-78
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:66:22-75
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:22-75
 uses-permission#android.permission.TRANSMIT_IR
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:68:5-69
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:5-70
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:68:22-67
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:22-67
 uses-permission#android.permission.UNINSTALL_SHORTCUT
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:5-76
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:5-77
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:22-74
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:22-74
 uses-permission#android.permission.USE_FINGERPRINT
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:5-73
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:5-74
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:22-71
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:22-71
 uses-permission#android.permission.VIBRATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:5-65
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:5-66
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:22-63
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:76:5-67
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:5-68
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:76:22-65
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:22-65
 uses-permission#android.permission.WRITE_SYNC_SETTINGS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:78:5-77
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:5-78
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:78:22-75
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:22-75
 permission-group#android.permission-group.CALENDAR
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:85:5-73
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:5-74
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:85:23-71
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:23-71
 uses-permission#android.permission.READ_CALENDAR
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:5-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:5-72
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:22-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:22-69
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:5-72
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:5-73
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:22-70
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:22-70
 permission-group#android.permission-group.CAMERA
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:92:5-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:65:5-72
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:92:23-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:65:23-69
 uses-permission#android.permission.CAMERA
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:96:5-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:5-65
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:12:5-65
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:12:5-65
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:96:22-62
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:22-62
 permission-group#android.permission-group.CONTACTS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:5-73
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:5-74
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:23-71
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:23-71
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:5-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:22-70
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:22-68
+permission-group#android.permission-group.LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:23-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:5-79
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:83:5-81
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:83:22-78
+permission-group#android.permission-group.MICROPHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:5-76
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:23-73
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:22-68
+permission-group#android.permission-group.PHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:90:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:90:23-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:5-75
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:22-72
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:5-69
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:22-66
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:5-72
 	android:name
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:22-69
-uses-permission#android.permission.WRITE_CONTACTS
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:22-70
+uses-permission#android.permission.ADD_VOICEMAIL
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:5-72
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:22-70
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:5-70
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:22-68
-permission-group#android.permission-group.LOCATION
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:5-73
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:23-71
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:5-78
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:22-76
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:5-80
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:22-78
-permission-group#android.permission-group.MICROPHONE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-75
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:23-73
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:5-70
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:22-68
-permission-group#android.permission-group.PHONE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:5-70
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:23-68
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:5-74
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:22-72
-uses-permission#android.permission.CALL_PHONE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:5-68
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:22-66
-uses-permission#android.permission.READ_CALL_LOG
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:5-71
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:22-69
-uses-permission#android.permission.WRITE_CALL_LOG
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:5-72
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:22-70
-uses-permission#android.permission.ADD_VOICEMAIL
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:5-71
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:22-69
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:22-69
 uses-permission#android.permission.USE_SIP
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:5-65
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:5-66
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:22-63
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:22-63
 uses-permission#android.permission.PROCESS_OUTGOING_CALLS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:5-80
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:5-81
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:22-78
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:22-78
 permission-group#android.permission-group.SENSORS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:5-72
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:5-73
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:23-70
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:23-70
 uses-permission#android.permission.BODY_SENSORS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:5-70
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:5-71
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:22-68
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:22-68
 permission-group#android.permission-group.SMS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:5-68
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:5-69
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:23-66
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:23-66
 uses-permission#android.permission.SEND_SMS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:5-66
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:5-67
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:22-64
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:5-69
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:5-70
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:22-67
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:22-67
 uses-permission#android.permission.READ_SMS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:5-66
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:5-67
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:22-64
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:22-64
 uses-permission#android.permission.RECEIVE_WAP_PUSH
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:5-74
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:5-75
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:22-72
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:22-72
 uses-permission#android.permission.RECEIVE_MMS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:5-69
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:5-70
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:22-67
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:22-67
 permission-group#android.permission-group.STORAGE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:5-72
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:5-73
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:23-70
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:23-70
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:5-79
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:5-80
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:13:5-80
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:22-77
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:22-77
 uses-feature#android.hardware.camera
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:5-60
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:5-60
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:19-57
 uses-feature#android.hardware.location.gps
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:5-66
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:5-66
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:19-63
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:19-63
 application
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:173:5-227:19
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:5-178:19
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -373,149 +378,161 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:178:9-35
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-35
 	android:label
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:9-41
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-41
 	android:windowSoftInputMode
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:179:9-51
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-51
+	android:focusableInTouchMode
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-44
+	android:clickable
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-33
 	android:roundIcon
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:177:9-54
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-54
 	android:icon
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:9-43
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-43
 	android:allowBackup
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:174:9-35
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-35
 	android:theme
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:180:9-40
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-40
 	android:usesCleartextTraffic
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:181:9-44
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-44
+activity#com.mryu.devstudy.activity.PhoneLoginActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:19-62
 activity#com.mryu.devstudy.activity.NetWorkActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:182:9-71
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:9-62
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:182:19-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:19-59
 activity#com.mryu.devstudy.activity.SwipeRefreshActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:183:9-76
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:9-67
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:183:19-64
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:19-64
 activity#com.mryu.devstudy.fragment.DrawerFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:184:9-61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:9-61
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:184:19-58
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:19-58
 activity#com.mryu.devstudy.fragment.MySettingFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:185:9-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:9-64
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:185:19-61
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:19-61
 activity#com.mryu.devstudy.fragment.MessageFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:186:9-62
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:9-62
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:186:19-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:19-59
 activity#com.mryu.devstudy.fragment.FindFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:187:9-59
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:187:19-56
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-56
 activity#com.mryu.devstudy.fragment.HomeFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:188:9-59
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:188:19-56
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
 activity#com.mryu.devstudy.fragment.BookFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:189:9-59
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:189:19-56
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-56
 activity#com.mryu.devstudy.fragment.VideoFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:190:9-60
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-60
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:190:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-57
 activity#com.mryu.devstudy.fragment.GameFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:191:9-59
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:191:19-56
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-56
 activity#com.mryu.devstudy.fragment.FriendsFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:192:9-62
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-62
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:192:19-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-59
 activity#com.mryu.devstudy.fragment.NewPeopleFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:193:9-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-64
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:193:19-61
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-61
+activity#com.mryu.devstudy.activity.SelectionActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-61
 activity#com.mryu.devstudy.fragment.RecomFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:194:9-60
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-60
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:194:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-57
 activity#com.mryu.devstudy.activity.LoadingActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:195:9-62
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-62
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:195:19-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-59
 activity#com.mryu.devstudy.activity.AgreementActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:196:9-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-64
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:196:19-61
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:19-61
 activity#com.mryu.devstudy.MainActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:197:9-50
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:9-50
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:197:19-47
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:19-47
 activity#com.mryu.devstudy.activity.TestHomeActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:198:9-63
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:9-63
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:198:19-60
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:19-60
 activity#com.mryu.devstudy.activity.RegistActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:199:9-61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-61
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:199:19-58
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:19-58
 activity#com.mryu.devstudy.activity.ForgotpwdActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:200:9-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:9-64
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:200:19-61
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:19-61
 activity#com.mryu.devstudy.activity.SplashActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:201:9-61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:9-61
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:201:19-58
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:19-58
 activity#com.mryu.devstudy.activity.LoginActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:202:9-208:20
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:9-159:20
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:202:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:19-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:203:13-207:29
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-158:29
 action#android.intent.action.MAIN
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:204:17-69
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:17-69
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:204:25-66
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:206:17-77
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:17-77
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:206:27-74
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:27-74
 activity#com.mryu.devstudy.activity.GridViewActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:209:9-63
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:9-63
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:209:19-60
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:19-60
 activity#com.mryu.devstudy.activity.BannerActvity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:210:9-60
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:9-162:20
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:210:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:19-57
 uses-library#org.apache.http.legacy
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:212:9-214:40
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:163:9-165:40
 	android:required
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:214:13-37
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:165:13-37
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:213:13-50
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:13-50
 activity#com.mryu.devstudy.activity.ScendActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:216:9-60
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:9-60
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:216:19-57
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:19-57
 provider#androidx.core.content.FileProvider
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:218:9-226:20
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:9-177:20
 	android:grantUriPermissions
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:222:13-47
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:173:13-47
 	android:authorities
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:220:13-59
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:171:13-59
 	android:exported
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:221:13-37
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:13-37
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:219:13-62
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:223:13-225:61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:174:13-176:61
 	android:resource
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:225:17-58
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:17-58
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:224:17-67
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:17-67
 uses-sdk
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
@@ -628,6 +645,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:7:5-9:41
+MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml

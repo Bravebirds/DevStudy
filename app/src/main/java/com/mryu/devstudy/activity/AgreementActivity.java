@@ -25,7 +25,6 @@ public class AgreementActivity extends AppCompatActivity implements View.OnClick
 
     private void setView() {
         mBackpage.setOnClickListener(this);
-
     }
 
     private void initView() {
@@ -38,7 +37,6 @@ public class AgreementActivity extends AppCompatActivity implements View.OnClick
             default:
                 break;
             case R.id.backpage:
-                startActivity(new Intent(this,RegistActivity.class));
                 finish();
                 break;
         }

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initView();
-        setView();
+        setListener();
     }
 
     private void initView() {
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
 
-    private void setView() {
+    private void setListener() {
         mViewpager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
             @NonNull
             @Override

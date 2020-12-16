@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,6 @@
     android:id="@+id/all_linear"
     android:orientation="vertical"
     android:background="@mipmap/login_background">
-
     <ImageView
         android:id="@+id/backpage"
         android:layout_width="wrap_content"
@@ -19,51 +19,142 @@
         android:layout_gravity="right"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="150dp"
         android:background="@drawable/shape_bottom_write">
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="9dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="欢迎注册账号"
-            android:textStyle="normal"
-            android:textColor="@color/colorBlack"
-            android:textSize="25dp"
-            android:layout_gravity="center"/>
         <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:lineHeight="25dp"
-            android:background="@drawable/shape_bottom_input">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:id="@+id/pwd_free_access"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="+86"
-                android:textSize="20dp"
+                android:text="@string/phone_auto_login"
+                android:textStyle="normal"
+                android:textColor="@color/colorGray"
+                android:textSize="18dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_register"
+                android:textStyle="normal"
                 android:textColor="@color/colorBlack"
-                android:textStyle="bold">
-            </TextView>
-            <EditText
-                android:id="@+id/account"
-                android:layout_width="0dp"
-                android:layout_weight="5"
+                android:textSize="25dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/iphone"
+                    android:layout_width="344dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:digits="0123456789"
+                    android:hint="@string/regist_phone"
+                    android:inputType="phone"
+                    android:lineHeight="25dp"
+                    android:maxLines="1"
+                    android:theme="@style/RegistTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingLeft="7dp"
-                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
-                android:hint="请输入手机号"
-                android:background="@null"
-                android:inputType="text"
-                android:layout_marginRight="15dp"
-                android:maxLines="1" />
+                android:layout_gravity="left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:theme="@style/RegistTheme"
+                    android:id="@+id/verifi"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/regist_verifi"
+                    android:maxLines="1"
+                    android:lineHeight="25dp" />
+                <Button
+                    android:id="@+id/get_verifi"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_send_btnstatus"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:text="@string/regist_getverifi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:theme="@style/RegistTheme"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                    android:hint="@string/regist_password"
+                    android:inputType="textPassword"
+                    android:lineHeight="25dp"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:theme="@style/RegistTheme"
+                    android:id="@+id/check_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:hint="@string/regist_agree"
+                    android:inputType="text"
+                    android:lineHeight="25dp"
+                    android:maxLength="20"
+                    android:maxLines="1" />
+                <TextView
+                    android:id="@+id/regist_ment"
+                    android:text="@string/regist_ment"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/account_regist"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/shape_nextstep_unselect"
+                android:text="→"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

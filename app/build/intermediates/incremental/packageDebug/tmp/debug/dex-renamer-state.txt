@@ -1,4 +1,4 @@
-#Thu Dec 17 01:41:21 GMT+08:00 2020
-base.0=D\:\\Work_Spaces\\Flutter_Project\\DevStudy\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Wed Dec 16 19:53:55 CST 2020
+base.0=E\:\\WorkSpace\\Android_Project\\DevStudy\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
