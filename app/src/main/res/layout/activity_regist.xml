@@ -10,8 +10,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingBottom="10dp"
+        android:layout_height="40dp"
         android:background="@color/colorPulms">
 
         <ImageView
@@ -24,11 +23,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="6dp"
             android:gravity="center"
-            android:lineHeight="35dp"
+            android:lineHeight="40dp"
             android:text="注册页"
             android:layout_marginRight="42dp"
+            android:layout_gravity="center"
             android:textColor="@color/colorOldlace"
             android:textSize="22dp"
             android:textStyle="normal" />

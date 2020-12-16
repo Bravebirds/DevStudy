@@ -2,10 +2,13 @@ package com.mryu.devstudy.activity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -19,8 +22,12 @@ import android.widget.Toast;
 
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
+import com.mryu.devstudy.utils.ModelUtils;
+import com.mryu.devstudy.utils.ToastUtils;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import static android.text.InputType.TYPE_TEXT_VARIATION_NORMAL;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
@@ -98,6 +105,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mCheckAgreement.setOnCheckedChangeListener(this);
         mMent.setOnClickListener(this);
 
+        // 重写可输入格式
+//        if (ModelUtils.isEMUI() && android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+//            mPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_NORMAL);
+//            mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+//        }
+
     }
 
     private void initView() {
@@ -128,13 +141,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 VerfiyLogin();
                 break;
             case R.id.qq_login:
-                Toast.makeText(LoginActivity.this, "微信注册/登录暂未实现！！！", Toast.LENGTH_SHORT).show();
+                showToast("QQ注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
                 break;
             case R.id.wx_login:
-                Toast.makeText(LoginActivity.this, "微信注册/登录暂未实现！！！", Toast.LENGTH_SHORT).show();
+                showToast("微信注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
                 break;
             case R.id.wb_login:
-                Toast.makeText(LoginActivity.this, "微博注册/登录暂未实现！！！", Toast.LENGTH_SHORT).show();
+                showToast("微博注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
                 break;
             case R.id.forgotpwd:
                 Intent intent = new Intent(LoginActivity.this, ForgotpwdActivity.class);
@@ -163,11 +176,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         String password_context = mPassword.getText().toString();
         if (mCheckAgreement.isChecked() == true) {
             if (account_context.equals("") == true && password_context.equals("") == false) {
-                Toast.makeText(LoginActivity.this, "账号不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("账号不允许为空！！！",R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == false && password_context.equals("") == true) {
-                Toast.makeText(LoginActivity.this, "密码不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("密码不允许为空！！！",R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == true && password_context.equals("") == true) {
-                Toast.makeText(LoginActivity.this, "账号密码不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("账号密码不允许为空！！！",R.drawable.toast_ic_ship);
             } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
                 Log.v(TAG, "登录成功,正在初始化进入首页！！！");
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -176,17 +189,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 finish();
             } else if (account_context.equals(account) == false || password_context.equals(password) == false) {
-                Toast.makeText(LoginActivity.this, "请输入正确的账号及密码！！！", Toast.LENGTH_SHORT).show();
+                showToast("请输入正确的账号及密码！！！",R.drawable.toast_ic_ship);
             }
         } else {
             if (account_context.equals("") == true && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                Toast.makeText(LoginActivity.this, "账号密码不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("账号密码不允许为空！！！",R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == true && password_context.equals("") == false && mCheckAgreement.isChecked() == false) {
-                Toast.makeText(LoginActivity.this, "账号不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("账号不允许为空！！！",R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == false && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                Toast.makeText(LoginActivity.this, "密码不允许为空！！！", Toast.LENGTH_SHORT).show();
+                showToast("密码不允许为空！！！",R.drawable.toast_ic_ship);
             } else {
-                Toast.makeText(LoginActivity.this, "请同意勾选协议", Toast.LENGTH_SHORT).show();
+                showToast("请先勾选协议",R.drawable.toast_ic_ship);
             }
         }
     }
@@ -207,23 +220,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
          */
         String accountText = mAccount.getText().toString();
         String passwordText = mPassword.getText().toString();
-        Log.d(TAG, "UserName："+accountText.isEmpty()+",PassWord："+passwordText.isEmpty());
+        Log.d(TAG, "UserName：" + accountText.isEmpty() + ",PassWord：" + passwordText.isEmpty());
         int maxUserNameLength = 16;
         int maxPwdLength = 20;
         // 用户名长度限制
-        if (accountText.length()>maxUserNameLength){
-            String newStr = accountText.substring(0,maxUserNameLength);
+        if (accountText.length() > maxUserNameLength) {
+            String newStr = accountText.substring(0, maxUserNameLength);
             mAccount.setText(newStr);
             mAccount.setSelection(mAccount.getText().length());
-            Toast.makeText(this,"仅支持"+maxUserNameLength+"位用户名输入",Toast.LENGTH_SHORT).show();
+            showToast("仅支持" + maxUserNameLength + "位用户名输入",R.drawable.toast_ic_ship);
         }
 
         // 密码长度限制
-        if (passwordText.length()>maxPwdLength){
-            String newStr = passwordText.substring(0,maxPwdLength);
+        if (passwordText.length() > maxPwdLength) {
+            String newStr = passwordText.substring(0, maxPwdLength);
             mPassword.setText(newStr);
             mPassword.setSelection(mPassword.getText().length());
-            Toast.makeText(this,"仅支持"+maxPwdLength+"位密码输入",Toast.LENGTH_SHORT).show();
+            showToast("仅支持" + maxPwdLength + "位密码输入",R.drawable.toast_ic_ship);
         }
 
         if (accountText.equals("") == true || passwordText.equals("") == true) {
@@ -231,8 +244,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         if (mCheckAgreement.isChecked() == true) {
             if (accountText.equals("") == true && passwordText.equals("") == false) {
-                mPassword.setText("");  //清空掉上个账号遗留的密码
-                Toast.makeText(this, "请先输入账号", Toast.LENGTH_SHORT).show();
+                mPassword.setText("");  //清空！！！掉上个账号遗留的密码
+                showToast("请先输入账号", R.drawable.toast_ic_ship);
             } else if (accountText.equals("") == false && passwordText.equals("") == false) {
                 Log.d(TAG, "账号密码均检测有内容，登录按钮高亮状态！！！");
                 mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_selected);
@@ -286,16 +299,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-
     /**
      * 重新返回键功能，将返回键功能替换成home功能
      */
     private Long mExitTime = 0L;
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (System.currentTimeMillis() - mExitTime > 2000) {
-                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                showToast("再按一次退出程序", R.drawable.toast_ic_ship);
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
@@ -306,6 +319,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         return super.onKeyDown(keyCode, event);
     }
 
+    private void showToast(String message, int resId) {
+        ToastUtils.showKevinToast(this, message, resId);
+    }
 
 }
-

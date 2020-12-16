@@ -2017,7 +2017,6 @@ public final class R {
      */
     public static final int defaultState=0x7f040103;
     /**
-     * 默认圆的半径
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2026,21 +2025,18 @@ public final class R {
      */
     public static final int default_circle_radius=0x7f040104;
     /**
-     * 默认圆实心的颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int default_circle_solide_color=0x7f040105;
     /**
-     * 默认圆边框的颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int default_circle_stroke_color=0x7f040106;
     /**
-     * 默认圆边框的宽度
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5059,14 +5055,12 @@ public final class R {
      */
     public static final int progressBarStyle=0x7f040289;
     /**
-     * 进度条的颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int progress_color=0x7f04028a;
     /**
-     * 进度条的宽度
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5392,7 +5386,6 @@ public final class R {
      */
     public static final int sliderStyle=0x7f0402ba;
     /**
-     * 小圆的半径
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5401,21 +5394,18 @@ public final class R {
      */
     public static final int small_circle_radius=0x7f0402bb;
     /**
-     * 小圆的实心颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int small_circle_solide_color=0x7f0402bc;
     /**
-     * 小圆的边框颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int small_circle_stroke_color=0x7f0402bd;
     /**
-     * 小圆的边框宽度
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -6151,14 +6141,12 @@ public final class R {
      */
     public static final int textStartPadding=0x7f040325;
     /**
-     * 文字的颜色
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int text_color=0x7f040326;
     /**
-     * 文字的字体大小
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -6886,322 +6874,324 @@ public final class R {
     public static final int colorBlack=0x7f060039;
     public static final int colorBlanchedalmond=0x7f06003a;
     public static final int colorBlue=0x7f06003b;
-    public static final int colorBlueviolet=0x7f06003c;
-    public static final int colorBrown=0x7f06003d;
-    public static final int colorBurlywood=0x7f06003e;
-    public static final int colorCadetblue=0x7f06003f;
-    public static final int colorChartreuse=0x7f060040;
-    public static final int colorChocolate=0x7f060041;
-    public static final int colorCoral=0x7f060042;
-    public static final int colorCornflowerblue=0x7f060043;
-    public static final int colorCornsilk=0x7f060044;
-    public static final int colorCrimson=0x7f060045;
-    public static final int colorCyan=0x7f060046;
-    public static final int colorDarkblue=0x7f060047;
-    public static final int colorDarkcyan=0x7f060048;
-    public static final int colorDarkgoldenrod=0x7f060049;
-    public static final int colorDarkgray=0x7f06004a;
-    public static final int colorDarkgreen=0x7f06004b;
-    public static final int colorDarkgrey=0x7f06004c;
-    public static final int colorDarkkhaki=0x7f06004d;
-    public static final int colorDarkmagenta=0x7f06004e;
-    public static final int colorDarkolivegreen=0x7f06004f;
-    public static final int colorDarkorange=0x7f060050;
-    public static final int colorDarkorchid=0x7f060051;
-    public static final int colorDarkred=0x7f060052;
-    public static final int colorDarksalmon=0x7f060053;
-    public static final int colorDarkseagreen=0x7f060054;
-    public static final int colorDarkslateblue=0x7f060055;
-    public static final int colorDarkslategray=0x7f060056;
-    public static final int colorDarkslategrey=0x7f060057;
-    public static final int colorDarkturquoise=0x7f060058;
-    public static final int colorDarkviolet=0x7f060059;
-    public static final int colorDeeppink=0x7f06005a;
-    public static final int colorDeepskyblue=0x7f06005b;
-    public static final int colorDimgray=0x7f06005c;
-    public static final int colorDimgrey=0x7f06005d;
-    public static final int colorDodgerblue=0x7f06005e;
-    public static final int colorFens=0x7f06005f;
-    public static final int colorFirebrick=0x7f060060;
-    public static final int colorFloralwhite=0x7f060061;
-    public static final int colorForestgreen=0x7f060062;
-    public static final int colorFuchsia=0x7f060063;
-    public static final int colorGainsboro=0x7f060064;
-    public static final int colorGhostwhite=0x7f060065;
-    public static final int colorGold=0x7f060066;
-    public static final int colorGoldenrod=0x7f060067;
-    public static final int colorGray=0x7f060068;
-    public static final int colorGreen=0x7f060069;
-    public static final int colorGreenyellow=0x7f06006a;
-    public static final int colorGrey=0x7f06006b;
-    public static final int colorHoneydew=0x7f06006c;
-    public static final int colorHotpink=0x7f06006d;
-    public static final int colorIndianred=0x7f06006e;
-    public static final int colorIndigo=0x7f06006f;
-    public static final int colorIvory=0x7f060070;
-    public static final int colorKhaki=0x7f060071;
-    public static final int colorLavender=0x7f060072;
-    public static final int colorLavenderblush=0x7f060073;
-    public static final int colorLawngreen=0x7f060074;
-    public static final int colorLemonchiffon=0x7f060075;
-    public static final int colorLightblue=0x7f060076;
-    public static final int colorLightcoral=0x7f060077;
-    public static final int colorLightcyan=0x7f060078;
-    public static final int colorLightgoldenrodyellow=0x7f060079;
-    public static final int colorLightgray=0x7f06007a;
-    public static final int colorLightgreen=0x7f06007b;
-    public static final int colorLightgrey=0x7f06007c;
-    public static final int colorLightpink=0x7f06007d;
-    public static final int colorLightsalmon=0x7f06007e;
-    public static final int colorLightseagreen=0x7f06007f;
-    public static final int colorLightskyblue=0x7f060080;
-    public static final int colorLightslategray=0x7f060081;
-    public static final int colorLightslategrey=0x7f060082;
-    public static final int colorLightsteelblue=0x7f060083;
-    public static final int colorLightyellow=0x7f060084;
-    public static final int colorLime=0x7f060085;
-    public static final int colorLimegreen=0x7f060086;
-    public static final int colorLinen=0x7f060087;
-    public static final int colorMagenta=0x7f060088;
-    public static final int colorMaroon=0x7f060089;
-    public static final int colorMediumaquamarine=0x7f06008a;
-    public static final int colorMediumblue=0x7f06008b;
-    public static final int colorMediumorchid=0x7f06008c;
-    public static final int colorMediumpurple=0x7f06008d;
-    public static final int colorMediumseagreen=0x7f06008e;
-    public static final int colorMediumslateblue=0x7f06008f;
-    public static final int colorMediumspringgreen=0x7f060090;
-    public static final int colorMediumturquoise=0x7f060091;
-    public static final int colorMediumvioletred=0x7f060092;
-    public static final int colorMidnightblue=0x7f060093;
-    public static final int colorMintcream=0x7f060094;
-    public static final int colorMistyrose=0x7f060095;
-    public static final int colorMoccasin=0x7f060096;
-    public static final int colorNavajowhite=0x7f060097;
-    public static final int colorNavy=0x7f060098;
-    public static final int colorOldlace=0x7f060099;
-    public static final int colorOlive=0x7f06009a;
-    public static final int colorOlivedrab=0x7f06009b;
-    public static final int colorOrange=0x7f06009c;
-    public static final int colorOrangered=0x7f06009d;
-    public static final int colorOrchid=0x7f06009e;
-    public static final int colorPalegoldenrod=0x7f06009f;
-    public static final int colorPalegreen=0x7f0600a0;
-    public static final int colorPaleturquoise=0x7f0600a1;
-    public static final int colorPalevioletred=0x7f0600a2;
-    public static final int colorPapayawhip=0x7f0600a3;
-    public static final int colorPeachpuff=0x7f0600a4;
-    public static final int colorPeru=0x7f0600a5;
-    public static final int colorPink=0x7f0600a6;
-    public static final int colorPlum=0x7f0600a7;
-    public static final int colorPowderblue=0x7f0600a8;
-    public static final int colorPrimaryDark=0x7f0600a9;
-    public static final int colorPulms=0x7f0600aa;
-    public static final int colorPurple=0x7f0600ab;
-    public static final int colorRed=0x7f0600ac;
-    public static final int colorRosybrown=0x7f0600ad;
-    public static final int colorRoyalblue=0x7f0600ae;
-    public static final int colorSaddlebrown=0x7f0600af;
-    public static final int colorSalmon=0x7f0600b0;
-    public static final int colorSandybrown=0x7f0600b1;
-    public static final int colorSeagreen=0x7f0600b2;
-    public static final int colorSeashell=0x7f0600b3;
-    public static final int colorSienna=0x7f0600b4;
-    public static final int colorSilver=0x7f0600b5;
-    public static final int colorSkyblue=0x7f0600b6;
-    public static final int colorSlateblue=0x7f0600b7;
-    public static final int colorSlategray=0x7f0600b8;
-    public static final int colorSlategrey=0x7f0600b9;
-    public static final int colorSnow=0x7f0600ba;
-    public static final int colorSpringgreen=0x7f0600bb;
-    public static final int colorSteelblue=0x7f0600bc;
-    public static final int colorTan=0x7f0600bd;
-    public static final int colorThistle=0x7f0600be;
-    public static final int colorTomato=0x7f0600bf;
-    public static final int colorTurquoise=0x7f0600c0;
-    public static final int colorViolet=0x7f0600c1;
-    public static final int colorWheat=0x7f0600c2;
-    public static final int colorWhite=0x7f0600c3;
-    public static final int colorWhitesmoke=0x7f0600c4;
-    public static final int colorYellow=0x7f0600c5;
-    public static final int design_bottom_navigation_shadow_color=0x7f0600c6;
-    public static final int design_box_stroke_color=0x7f0600c7;
-    public static final int design_dark_default_color_background=0x7f0600c8;
-    public static final int design_dark_default_color_error=0x7f0600c9;
-    public static final int design_dark_default_color_on_background=0x7f0600ca;
-    public static final int design_dark_default_color_on_error=0x7f0600cb;
-    public static final int design_dark_default_color_on_primary=0x7f0600cc;
-    public static final int design_dark_default_color_on_secondary=0x7f0600cd;
-    public static final int design_dark_default_color_on_surface=0x7f0600ce;
-    public static final int design_dark_default_color_primary=0x7f0600cf;
-    public static final int design_dark_default_color_primary_dark=0x7f0600d0;
-    public static final int design_dark_default_color_primary_variant=0x7f0600d1;
-    public static final int design_dark_default_color_secondary=0x7f0600d2;
-    public static final int design_dark_default_color_secondary_variant=0x7f0600d3;
-    public static final int design_dark_default_color_surface=0x7f0600d4;
-    public static final int design_default_color_background=0x7f0600d5;
-    public static final int design_default_color_error=0x7f0600d6;
-    public static final int design_default_color_on_background=0x7f0600d7;
-    public static final int design_default_color_on_error=0x7f0600d8;
-    public static final int design_default_color_on_primary=0x7f0600d9;
-    public static final int design_default_color_on_secondary=0x7f0600da;
-    public static final int design_default_color_on_surface=0x7f0600db;
-    public static final int design_default_color_primary=0x7f0600dc;
-    public static final int design_default_color_primary_dark=0x7f0600dd;
-    public static final int design_default_color_primary_variant=0x7f0600de;
-    public static final int design_default_color_secondary=0x7f0600df;
-    public static final int design_default_color_secondary_variant=0x7f0600e0;
-    public static final int design_default_color_surface=0x7f0600e1;
-    public static final int design_error=0x7f0600e2;
-    public static final int design_fab_shadow_end_color=0x7f0600e3;
-    public static final int design_fab_shadow_mid_color=0x7f0600e4;
-    public static final int design_fab_shadow_start_color=0x7f0600e5;
-    public static final int design_fab_stroke_end_inner_color=0x7f0600e6;
-    public static final int design_fab_stroke_end_outer_color=0x7f0600e7;
-    public static final int design_fab_stroke_top_inner_color=0x7f0600e8;
-    public static final int design_fab_stroke_top_outer_color=0x7f0600e9;
-    public static final int design_icon_tint=0x7f0600ea;
-    public static final int design_snackbar_background_color=0x7f0600eb;
-    public static final int dim_foreground_disabled_material_dark=0x7f0600ec;
-    public static final int dim_foreground_disabled_material_light=0x7f0600ed;
-    public static final int dim_foreground_material_dark=0x7f0600ee;
-    public static final int dim_foreground_material_light=0x7f0600ef;
-    public static final int easy_photos_bar_primary=0x7f0600f0;
-    public static final int easy_photos_bar_primary_dark=0x7f0600f1;
-    public static final int easy_photos_bar_primary_translation=0x7f0600f2;
-    public static final int easy_photos_bg_primary=0x7f0600f3;
-    public static final int easy_photos_fg_accent=0x7f0600f4;
-    public static final int easy_photos_fg_primary=0x7f0600f5;
-    public static final int easy_photos_fg_primary_dark=0x7f0600f6;
-    public static final int easy_photos_status_bar=0x7f0600f7;
-    public static final int error_color_material_dark=0x7f0600f8;
-    public static final int error_color_material_light=0x7f0600f9;
-    public static final int foreground_material_dark=0x7f0600fa;
-    public static final int foreground_material_light=0x7f0600fb;
-    public static final int highlighted_text_material_dark=0x7f0600fc;
-    public static final int highlighted_text_material_light=0x7f0600fd;
-    public static final int material_blue_grey_800=0x7f0600fe;
-    public static final int material_blue_grey_900=0x7f0600ff;
-    public static final int material_blue_grey_950=0x7f060100;
-    public static final int material_deep_teal_200=0x7f060101;
-    public static final int material_deep_teal_500=0x7f060102;
-    public static final int material_grey_100=0x7f060103;
-    public static final int material_grey_300=0x7f060104;
-    public static final int material_grey_50=0x7f060105;
-    public static final int material_grey_600=0x7f060106;
-    public static final int material_grey_800=0x7f060107;
-    public static final int material_grey_850=0x7f060108;
-    public static final int material_grey_900=0x7f060109;
-    public static final int material_on_background_disabled=0x7f06010a;
-    public static final int material_on_background_emphasis_high_type=0x7f06010b;
-    public static final int material_on_background_emphasis_medium=0x7f06010c;
-    public static final int material_on_primary_disabled=0x7f06010d;
-    public static final int material_on_primary_emphasis_high_type=0x7f06010e;
-    public static final int material_on_primary_emphasis_medium=0x7f06010f;
-    public static final int material_on_surface_disabled=0x7f060110;
-    public static final int material_on_surface_emphasis_high_type=0x7f060111;
-    public static final int material_on_surface_emphasis_medium=0x7f060112;
-    public static final int material_on_surface_stroke=0x7f060113;
-    public static final int material_slider_active_tick_marks_color=0x7f060114;
-    public static final int material_slider_active_track_color=0x7f060115;
-    public static final int material_slider_halo_color=0x7f060116;
-    public static final int material_slider_inactive_tick_marks_color=0x7f060117;
-    public static final int material_slider_inactive_track_color=0x7f060118;
-    public static final int material_slider_thumb_color=0x7f060119;
-    public static final int menu_text_easy_photos=0x7f06011a;
-    public static final int mtrl_bottom_nav_colored_item_tint=0x7f06011b;
-    public static final int mtrl_bottom_nav_colored_ripple_color=0x7f06011c;
-    public static final int mtrl_bottom_nav_item_tint=0x7f06011d;
-    public static final int mtrl_bottom_nav_ripple_color=0x7f06011e;
-    public static final int mtrl_btn_bg_color_selector=0x7f06011f;
-    public static final int mtrl_btn_ripple_color=0x7f060120;
-    public static final int mtrl_btn_stroke_color_selector=0x7f060121;
-    public static final int mtrl_btn_text_btn_bg_color_selector=0x7f060122;
-    public static final int mtrl_btn_text_btn_ripple_color=0x7f060123;
-    public static final int mtrl_btn_text_color_disabled=0x7f060124;
-    public static final int mtrl_btn_text_color_selector=0x7f060125;
-    public static final int mtrl_btn_transparent_bg_color=0x7f060126;
-    public static final int mtrl_calendar_item_stroke_color=0x7f060127;
-    public static final int mtrl_calendar_selected_range=0x7f060128;
-    public static final int mtrl_card_view_foreground=0x7f060129;
-    public static final int mtrl_card_view_ripple=0x7f06012a;
-    public static final int mtrl_chip_background_color=0x7f06012b;
-    public static final int mtrl_chip_close_icon_tint=0x7f06012c;
-    public static final int mtrl_chip_ripple_color=0x7f06012d;
-    public static final int mtrl_chip_surface_color=0x7f06012e;
-    public static final int mtrl_chip_text_color=0x7f06012f;
-    public static final int mtrl_choice_chip_background_color=0x7f060130;
-    public static final int mtrl_choice_chip_ripple_color=0x7f060131;
-    public static final int mtrl_choice_chip_text_color=0x7f060132;
-    public static final int mtrl_error=0x7f060133;
-    public static final int mtrl_fab_bg_color_selector=0x7f060134;
-    public static final int mtrl_fab_icon_text_color_selector=0x7f060135;
-    public static final int mtrl_fab_ripple_color=0x7f060136;
-    public static final int mtrl_filled_background_color=0x7f060137;
-    public static final int mtrl_filled_icon_tint=0x7f060138;
-    public static final int mtrl_filled_stroke_color=0x7f060139;
-    public static final int mtrl_indicator_text_color=0x7f06013a;
-    public static final int mtrl_navigation_item_background_color=0x7f06013b;
-    public static final int mtrl_navigation_item_icon_tint=0x7f06013c;
-    public static final int mtrl_navigation_item_text_color=0x7f06013d;
-    public static final int mtrl_on_primary_text_btn_text_color_selector=0x7f06013e;
-    public static final int mtrl_outlined_icon_tint=0x7f06013f;
-    public static final int mtrl_outlined_stroke_color=0x7f060140;
-    public static final int mtrl_popupmenu_overlay_color=0x7f060141;
-    public static final int mtrl_scrim_color=0x7f060142;
-    public static final int mtrl_tabs_colored_ripple_color=0x7f060143;
-    public static final int mtrl_tabs_icon_color_selector=0x7f060144;
-    public static final int mtrl_tabs_icon_color_selector_colored=0x7f060145;
-    public static final int mtrl_tabs_legacy_text_color_selector=0x7f060146;
-    public static final int mtrl_tabs_ripple_color=0x7f060147;
-    public static final int mtrl_text_btn_text_color_selector=0x7f060148;
-    public static final int mtrl_textinput_default_box_stroke_color=0x7f060149;
-    public static final int mtrl_textinput_disabled_color=0x7f06014a;
-    public static final int mtrl_textinput_filled_box_default_background_color=0x7f06014b;
-    public static final int mtrl_textinput_focused_box_stroke_color=0x7f06014c;
-    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f06014d;
-    public static final int notification_action_color_filter=0x7f06014e;
-    public static final int notification_icon_bg_color=0x7f06014f;
-    public static final int notification_material_background_media_default_color=0x7f060150;
-    public static final int primary_dark_material_dark=0x7f060151;
-    public static final int primary_dark_material_light=0x7f060152;
-    public static final int primary_material_dark=0x7f060153;
-    public static final int primary_material_light=0x7f060154;
-    public static final int primary_text_default_material_dark=0x7f060155;
-    public static final int primary_text_default_material_light=0x7f060156;
-    public static final int primary_text_disabled_material_dark=0x7f060157;
-    public static final int primary_text_disabled_material_light=0x7f060158;
-    public static final int radiobutton_themeable_attribute_color=0x7f060159;
-    public static final int ripple_material_dark=0x7f06015a;
-    public static final int ripple_material_light=0x7f06015b;
-    public static final int secondary_text_default_material_dark=0x7f06015c;
-    public static final int secondary_text_default_material_light=0x7f06015d;
-    public static final int secondary_text_disabled_material_dark=0x7f06015e;
-    public static final int secondary_text_disabled_material_light=0x7f06015f;
-    public static final int switch_thumb_disabled_material_dark=0x7f060160;
-    public static final int switch_thumb_disabled_material_light=0x7f060161;
-    public static final int switch_thumb_material_dark=0x7f060162;
-    public static final int switch_thumb_material_light=0x7f060163;
-    public static final int switch_thumb_normal_material_dark=0x7f060164;
-    public static final int switch_thumb_normal_material_light=0x7f060165;
-    public static final int test_mtrl_calendar_day=0x7f060166;
-    public static final int test_mtrl_calendar_day_selected=0x7f060167;
-    public static final int text_sticker_black_easy_photos=0x7f060168;
-    public static final int text_sticker_blue_easy_photos=0x7f060169;
-    public static final int text_sticker_cyan_easy_photos=0x7f06016a;
-    public static final int text_sticker_editor_fragment_bar_easy_photos=0x7f06016b;
-    public static final int text_sticker_editor_fragment_bg_easy_photos=0x7f06016c;
-    public static final int text_sticker_gray_easy_photos=0x7f06016d;
-    public static final int text_sticker_green_easy_photos=0x7f06016e;
-    public static final int text_sticker_orange_easy_photos=0x7f06016f;
-    public static final int text_sticker_purple_easy_photos=0x7f060170;
-    public static final int text_sticker_red_easy_photos=0x7f060171;
-    public static final int text_sticker_white_easy_photos=0x7f060172;
-    public static final int text_sticker_yellow_easy_photos=0x7f060173;
-    public static final int tooltip_background_dark=0x7f060174;
-    public static final int tooltip_background_light=0x7f060175;
-    public static final int transparent_easy_photos=0x7f060176;
-    public static final int white_easy_photos=0x7f060177;
+    public static final int colorBluePrimary=0x7f06003c;
+    public static final int colorBluePrimaryDark=0x7f06003d;
+    public static final int colorBlueviolet=0x7f06003e;
+    public static final int colorBrown=0x7f06003f;
+    public static final int colorBurlywood=0x7f060040;
+    public static final int colorCadetblue=0x7f060041;
+    public static final int colorChartreuse=0x7f060042;
+    public static final int colorChocolate=0x7f060043;
+    public static final int colorCoral=0x7f060044;
+    public static final int colorCornflowerblue=0x7f060045;
+    public static final int colorCornsilk=0x7f060046;
+    public static final int colorCrimson=0x7f060047;
+    public static final int colorCyan=0x7f060048;
+    public static final int colorDarkblue=0x7f060049;
+    public static final int colorDarkcyan=0x7f06004a;
+    public static final int colorDarkgoldenrod=0x7f06004b;
+    public static final int colorDarkgray=0x7f06004c;
+    public static final int colorDarkgreen=0x7f06004d;
+    public static final int colorDarkgrey=0x7f06004e;
+    public static final int colorDarkkhaki=0x7f06004f;
+    public static final int colorDarkmagenta=0x7f060050;
+    public static final int colorDarkolivegreen=0x7f060051;
+    public static final int colorDarkorange=0x7f060052;
+    public static final int colorDarkorchid=0x7f060053;
+    public static final int colorDarkred=0x7f060054;
+    public static final int colorDarksalmon=0x7f060055;
+    public static final int colorDarkseagreen=0x7f060056;
+    public static final int colorDarkslateblue=0x7f060057;
+    public static final int colorDarkslategray=0x7f060058;
+    public static final int colorDarkslategrey=0x7f060059;
+    public static final int colorDarkturquoise=0x7f06005a;
+    public static final int colorDarkviolet=0x7f06005b;
+    public static final int colorDeeppink=0x7f06005c;
+    public static final int colorDeepskyblue=0x7f06005d;
+    public static final int colorDimgray=0x7f06005e;
+    public static final int colorDimgrey=0x7f06005f;
+    public static final int colorDodgerblue=0x7f060060;
+    public static final int colorFens=0x7f060061;
+    public static final int colorFirebrick=0x7f060062;
+    public static final int colorFloralwhite=0x7f060063;
+    public static final int colorForestgreen=0x7f060064;
+    public static final int colorFuchsia=0x7f060065;
+    public static final int colorGainsboro=0x7f060066;
+    public static final int colorGhostwhite=0x7f060067;
+    public static final int colorGold=0x7f060068;
+    public static final int colorGoldenrod=0x7f060069;
+    public static final int colorGray=0x7f06006a;
+    public static final int colorGreen=0x7f06006b;
+    public static final int colorGreenyellow=0x7f06006c;
+    public static final int colorGrey=0x7f06006d;
+    public static final int colorHoneydew=0x7f06006e;
+    public static final int colorHotpink=0x7f06006f;
+    public static final int colorIndianred=0x7f060070;
+    public static final int colorIndigo=0x7f060071;
+    public static final int colorIvory=0x7f060072;
+    public static final int colorKhaki=0x7f060073;
+    public static final int colorLavender=0x7f060074;
+    public static final int colorLavenderblush=0x7f060075;
+    public static final int colorLawngreen=0x7f060076;
+    public static final int colorLemonchiffon=0x7f060077;
+    public static final int colorLightblue=0x7f060078;
+    public static final int colorLightcoral=0x7f060079;
+    public static final int colorLightcyan=0x7f06007a;
+    public static final int colorLightgoldenrodyellow=0x7f06007b;
+    public static final int colorLightgray=0x7f06007c;
+    public static final int colorLightgreen=0x7f06007d;
+    public static final int colorLightgrey=0x7f06007e;
+    public static final int colorLightpink=0x7f06007f;
+    public static final int colorLightsalmon=0x7f060080;
+    public static final int colorLightseagreen=0x7f060081;
+    public static final int colorLightskyblue=0x7f060082;
+    public static final int colorLightslategray=0x7f060083;
+    public static final int colorLightslategrey=0x7f060084;
+    public static final int colorLightsteelblue=0x7f060085;
+    public static final int colorLightyellow=0x7f060086;
+    public static final int colorLime=0x7f060087;
+    public static final int colorLimegreen=0x7f060088;
+    public static final int colorLinen=0x7f060089;
+    public static final int colorMagenta=0x7f06008a;
+    public static final int colorMaroon=0x7f06008b;
+    public static final int colorMediumaquamarine=0x7f06008c;
+    public static final int colorMediumblue=0x7f06008d;
+    public static final int colorMediumorchid=0x7f06008e;
+    public static final int colorMediumpurple=0x7f06008f;
+    public static final int colorMediumseagreen=0x7f060090;
+    public static final int colorMediumslateblue=0x7f060091;
+    public static final int colorMediumspringgreen=0x7f060092;
+    public static final int colorMediumturquoise=0x7f060093;
+    public static final int colorMediumvioletred=0x7f060094;
+    public static final int colorMidnightblue=0x7f060095;
+    public static final int colorMintcream=0x7f060096;
+    public static final int colorMistyrose=0x7f060097;
+    public static final int colorMoccasin=0x7f060098;
+    public static final int colorNavajowhite=0x7f060099;
+    public static final int colorNavy=0x7f06009a;
+    public static final int colorOldlace=0x7f06009b;
+    public static final int colorOlive=0x7f06009c;
+    public static final int colorOlivedrab=0x7f06009d;
+    public static final int colorOrange=0x7f06009e;
+    public static final int colorOrangered=0x7f06009f;
+    public static final int colorOrchid=0x7f0600a0;
+    public static final int colorPalegoldenrod=0x7f0600a1;
+    public static final int colorPalegreen=0x7f0600a2;
+    public static final int colorPaleturquoise=0x7f0600a3;
+    public static final int colorPalevioletred=0x7f0600a4;
+    public static final int colorPapayawhip=0x7f0600a5;
+    public static final int colorPeachpuff=0x7f0600a6;
+    public static final int colorPeru=0x7f0600a7;
+    public static final int colorPink=0x7f0600a8;
+    public static final int colorPlum=0x7f0600a9;
+    public static final int colorPowderblue=0x7f0600aa;
+    public static final int colorPrimaryDark=0x7f0600ab;
+    public static final int colorPulms=0x7f0600ac;
+    public static final int colorPurple=0x7f0600ad;
+    public static final int colorRed=0x7f0600ae;
+    public static final int colorRosybrown=0x7f0600af;
+    public static final int colorRoyalblue=0x7f0600b0;
+    public static final int colorSaddlebrown=0x7f0600b1;
+    public static final int colorSalmon=0x7f0600b2;
+    public static final int colorSandybrown=0x7f0600b3;
+    public static final int colorSeagreen=0x7f0600b4;
+    public static final int colorSeashell=0x7f0600b5;
+    public static final int colorSienna=0x7f0600b6;
+    public static final int colorSilver=0x7f0600b7;
+    public static final int colorSkyblue=0x7f0600b8;
+    public static final int colorSlateblue=0x7f0600b9;
+    public static final int colorSlategray=0x7f0600ba;
+    public static final int colorSlategrey=0x7f0600bb;
+    public static final int colorSnow=0x7f0600bc;
+    public static final int colorSpringgreen=0x7f0600bd;
+    public static final int colorSteelblue=0x7f0600be;
+    public static final int colorTan=0x7f0600bf;
+    public static final int colorThistle=0x7f0600c0;
+    public static final int colorTomato=0x7f0600c1;
+    public static final int colorTurquoise=0x7f0600c2;
+    public static final int colorViolet=0x7f0600c3;
+    public static final int colorWheat=0x7f0600c4;
+    public static final int colorWhite=0x7f0600c5;
+    public static final int colorWhitesmoke=0x7f0600c6;
+    public static final int colorYellow=0x7f0600c7;
+    public static final int design_bottom_navigation_shadow_color=0x7f0600c8;
+    public static final int design_box_stroke_color=0x7f0600c9;
+    public static final int design_dark_default_color_background=0x7f0600ca;
+    public static final int design_dark_default_color_error=0x7f0600cb;
+    public static final int design_dark_default_color_on_background=0x7f0600cc;
+    public static final int design_dark_default_color_on_error=0x7f0600cd;
+    public static final int design_dark_default_color_on_primary=0x7f0600ce;
+    public static final int design_dark_default_color_on_secondary=0x7f0600cf;
+    public static final int design_dark_default_color_on_surface=0x7f0600d0;
+    public static final int design_dark_default_color_primary=0x7f0600d1;
+    public static final int design_dark_default_color_primary_dark=0x7f0600d2;
+    public static final int design_dark_default_color_primary_variant=0x7f0600d3;
+    public static final int design_dark_default_color_secondary=0x7f0600d4;
+    public static final int design_dark_default_color_secondary_variant=0x7f0600d5;
+    public static final int design_dark_default_color_surface=0x7f0600d6;
+    public static final int design_default_color_background=0x7f0600d7;
+    public static final int design_default_color_error=0x7f0600d8;
+    public static final int design_default_color_on_background=0x7f0600d9;
+    public static final int design_default_color_on_error=0x7f0600da;
+    public static final int design_default_color_on_primary=0x7f0600db;
+    public static final int design_default_color_on_secondary=0x7f0600dc;
+    public static final int design_default_color_on_surface=0x7f0600dd;
+    public static final int design_default_color_primary=0x7f0600de;
+    public static final int design_default_color_primary_dark=0x7f0600df;
+    public static final int design_default_color_primary_variant=0x7f0600e0;
+    public static final int design_default_color_secondary=0x7f0600e1;
+    public static final int design_default_color_secondary_variant=0x7f0600e2;
+    public static final int design_default_color_surface=0x7f0600e3;
+    public static final int design_error=0x7f0600e4;
+    public static final int design_fab_shadow_end_color=0x7f0600e5;
+    public static final int design_fab_shadow_mid_color=0x7f0600e6;
+    public static final int design_fab_shadow_start_color=0x7f0600e7;
+    public static final int design_fab_stroke_end_inner_color=0x7f0600e8;
+    public static final int design_fab_stroke_end_outer_color=0x7f0600e9;
+    public static final int design_fab_stroke_top_inner_color=0x7f0600ea;
+    public static final int design_fab_stroke_top_outer_color=0x7f0600eb;
+    public static final int design_icon_tint=0x7f0600ec;
+    public static final int design_snackbar_background_color=0x7f0600ed;
+    public static final int dim_foreground_disabled_material_dark=0x7f0600ee;
+    public static final int dim_foreground_disabled_material_light=0x7f0600ef;
+    public static final int dim_foreground_material_dark=0x7f0600f0;
+    public static final int dim_foreground_material_light=0x7f0600f1;
+    public static final int easy_photos_bar_primary=0x7f0600f2;
+    public static final int easy_photos_bar_primary_dark=0x7f0600f3;
+    public static final int easy_photos_bar_primary_translation=0x7f0600f4;
+    public static final int easy_photos_bg_primary=0x7f0600f5;
+    public static final int easy_photos_fg_accent=0x7f0600f6;
+    public static final int easy_photos_fg_primary=0x7f0600f7;
+    public static final int easy_photos_fg_primary_dark=0x7f0600f8;
+    public static final int easy_photos_status_bar=0x7f0600f9;
+    public static final int error_color_material_dark=0x7f0600fa;
+    public static final int error_color_material_light=0x7f0600fb;
+    public static final int foreground_material_dark=0x7f0600fc;
+    public static final int foreground_material_light=0x7f0600fd;
+    public static final int highlighted_text_material_dark=0x7f0600fe;
+    public static final int highlighted_text_material_light=0x7f0600ff;
+    public static final int material_blue_grey_800=0x7f060100;
+    public static final int material_blue_grey_900=0x7f060101;
+    public static final int material_blue_grey_950=0x7f060102;
+    public static final int material_deep_teal_200=0x7f060103;
+    public static final int material_deep_teal_500=0x7f060104;
+    public static final int material_grey_100=0x7f060105;
+    public static final int material_grey_300=0x7f060106;
+    public static final int material_grey_50=0x7f060107;
+    public static final int material_grey_600=0x7f060108;
+    public static final int material_grey_800=0x7f060109;
+    public static final int material_grey_850=0x7f06010a;
+    public static final int material_grey_900=0x7f06010b;
+    public static final int material_on_background_disabled=0x7f06010c;
+    public static final int material_on_background_emphasis_high_type=0x7f06010d;
+    public static final int material_on_background_emphasis_medium=0x7f06010e;
+    public static final int material_on_primary_disabled=0x7f06010f;
+    public static final int material_on_primary_emphasis_high_type=0x7f060110;
+    public static final int material_on_primary_emphasis_medium=0x7f060111;
+    public static final int material_on_surface_disabled=0x7f060112;
+    public static final int material_on_surface_emphasis_high_type=0x7f060113;
+    public static final int material_on_surface_emphasis_medium=0x7f060114;
+    public static final int material_on_surface_stroke=0x7f060115;
+    public static final int material_slider_active_tick_marks_color=0x7f060116;
+    public static final int material_slider_active_track_color=0x7f060117;
+    public static final int material_slider_halo_color=0x7f060118;
+    public static final int material_slider_inactive_tick_marks_color=0x7f060119;
+    public static final int material_slider_inactive_track_color=0x7f06011a;
+    public static final int material_slider_thumb_color=0x7f06011b;
+    public static final int menu_text_easy_photos=0x7f06011c;
+    public static final int mtrl_bottom_nav_colored_item_tint=0x7f06011d;
+    public static final int mtrl_bottom_nav_colored_ripple_color=0x7f06011e;
+    public static final int mtrl_bottom_nav_item_tint=0x7f06011f;
+    public static final int mtrl_bottom_nav_ripple_color=0x7f060120;
+    public static final int mtrl_btn_bg_color_selector=0x7f060121;
+    public static final int mtrl_btn_ripple_color=0x7f060122;
+    public static final int mtrl_btn_stroke_color_selector=0x7f060123;
+    public static final int mtrl_btn_text_btn_bg_color_selector=0x7f060124;
+    public static final int mtrl_btn_text_btn_ripple_color=0x7f060125;
+    public static final int mtrl_btn_text_color_disabled=0x7f060126;
+    public static final int mtrl_btn_text_color_selector=0x7f060127;
+    public static final int mtrl_btn_transparent_bg_color=0x7f060128;
+    public static final int mtrl_calendar_item_stroke_color=0x7f060129;
+    public static final int mtrl_calendar_selected_range=0x7f06012a;
+    public static final int mtrl_card_view_foreground=0x7f06012b;
+    public static final int mtrl_card_view_ripple=0x7f06012c;
+    public static final int mtrl_chip_background_color=0x7f06012d;
+    public static final int mtrl_chip_close_icon_tint=0x7f06012e;
+    public static final int mtrl_chip_ripple_color=0x7f06012f;
+    public static final int mtrl_chip_surface_color=0x7f060130;
+    public static final int mtrl_chip_text_color=0x7f060131;
+    public static final int mtrl_choice_chip_background_color=0x7f060132;
+    public static final int mtrl_choice_chip_ripple_color=0x7f060133;
+    public static final int mtrl_choice_chip_text_color=0x7f060134;
+    public static final int mtrl_error=0x7f060135;
+    public static final int mtrl_fab_bg_color_selector=0x7f060136;
+    public static final int mtrl_fab_icon_text_color_selector=0x7f060137;
+    public static final int mtrl_fab_ripple_color=0x7f060138;
+    public static final int mtrl_filled_background_color=0x7f060139;
+    public static final int mtrl_filled_icon_tint=0x7f06013a;
+    public static final int mtrl_filled_stroke_color=0x7f06013b;
+    public static final int mtrl_indicator_text_color=0x7f06013c;
+    public static final int mtrl_navigation_item_background_color=0x7f06013d;
+    public static final int mtrl_navigation_item_icon_tint=0x7f06013e;
+    public static final int mtrl_navigation_item_text_color=0x7f06013f;
+    public static final int mtrl_on_primary_text_btn_text_color_selector=0x7f060140;
+    public static final int mtrl_outlined_icon_tint=0x7f060141;
+    public static final int mtrl_outlined_stroke_color=0x7f060142;
+    public static final int mtrl_popupmenu_overlay_color=0x7f060143;
+    public static final int mtrl_scrim_color=0x7f060144;
+    public static final int mtrl_tabs_colored_ripple_color=0x7f060145;
+    public static final int mtrl_tabs_icon_color_selector=0x7f060146;
+    public static final int mtrl_tabs_icon_color_selector_colored=0x7f060147;
+    public static final int mtrl_tabs_legacy_text_color_selector=0x7f060148;
+    public static final int mtrl_tabs_ripple_color=0x7f060149;
+    public static final int mtrl_text_btn_text_color_selector=0x7f06014a;
+    public static final int mtrl_textinput_default_box_stroke_color=0x7f06014b;
+    public static final int mtrl_textinput_disabled_color=0x7f06014c;
+    public static final int mtrl_textinput_filled_box_default_background_color=0x7f06014d;
+    public static final int mtrl_textinput_focused_box_stroke_color=0x7f06014e;
+    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f06014f;
+    public static final int notification_action_color_filter=0x7f060150;
+    public static final int notification_icon_bg_color=0x7f060151;
+    public static final int notification_material_background_media_default_color=0x7f060152;
+    public static final int primary_dark_material_dark=0x7f060153;
+    public static final int primary_dark_material_light=0x7f060154;
+    public static final int primary_material_dark=0x7f060155;
+    public static final int primary_material_light=0x7f060156;
+    public static final int primary_text_default_material_dark=0x7f060157;
+    public static final int primary_text_default_material_light=0x7f060158;
+    public static final int primary_text_disabled_material_dark=0x7f060159;
+    public static final int primary_text_disabled_material_light=0x7f06015a;
+    public static final int radiobutton_themeable_attribute_color=0x7f06015b;
+    public static final int ripple_material_dark=0x7f06015c;
+    public static final int ripple_material_light=0x7f06015d;
+    public static final int secondary_text_default_material_dark=0x7f06015e;
+    public static final int secondary_text_default_material_light=0x7f06015f;
+    public static final int secondary_text_disabled_material_dark=0x7f060160;
+    public static final int secondary_text_disabled_material_light=0x7f060161;
+    public static final int switch_thumb_disabled_material_dark=0x7f060162;
+    public static final int switch_thumb_disabled_material_light=0x7f060163;
+    public static final int switch_thumb_material_dark=0x7f060164;
+    public static final int switch_thumb_material_light=0x7f060165;
+    public static final int switch_thumb_normal_material_dark=0x7f060166;
+    public static final int switch_thumb_normal_material_light=0x7f060167;
+    public static final int test_mtrl_calendar_day=0x7f060168;
+    public static final int test_mtrl_calendar_day_selected=0x7f060169;
+    public static final int text_sticker_black_easy_photos=0x7f06016a;
+    public static final int text_sticker_blue_easy_photos=0x7f06016b;
+    public static final int text_sticker_cyan_easy_photos=0x7f06016c;
+    public static final int text_sticker_editor_fragment_bar_easy_photos=0x7f06016d;
+    public static final int text_sticker_editor_fragment_bg_easy_photos=0x7f06016e;
+    public static final int text_sticker_gray_easy_photos=0x7f06016f;
+    public static final int text_sticker_green_easy_photos=0x7f060170;
+    public static final int text_sticker_orange_easy_photos=0x7f060171;
+    public static final int text_sticker_purple_easy_photos=0x7f060172;
+    public static final int text_sticker_red_easy_photos=0x7f060173;
+    public static final int text_sticker_white_easy_photos=0x7f060174;
+    public static final int text_sticker_yellow_easy_photos=0x7f060175;
+    public static final int tooltip_background_dark=0x7f060176;
+    public static final int tooltip_background_light=0x7f060177;
+    public static final int transparent_easy_photos=0x7f060178;
+    public static final int white_easy_photos=0x7f060179;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f070000;
@@ -7751,14 +7741,16 @@ public final class R {
     public static final int shape_send_btn_selected=0x7f0800c5;
     public static final int shape_send_btn_unselect=0x7f0800c6;
     public static final int shape_send_btnstatus=0x7f0800c7;
-    public static final int shape_wblogin_btnstatus=0x7f0800c8;
-    public static final int shape_wxlogin_btnstatus=0x7f0800c9;
-    public static final int test_custom_background=0x7f0800ca;
-    public static final int textcolor_bottom_main=0x7f0800cb;
-    public static final int thumb_seek_bar_alpha_easy_photos=0x7f0800cc;
-    public static final int tooltip_frame_dark=0x7f0800cd;
-    public static final int tooltip_frame_light=0x7f0800ce;
-    public static final int videopage_btn_bg=0x7f0800cf;
+    public static final int shape_toast_bg=0x7f0800c8;
+    public static final int shape_wblogin_btnstatus=0x7f0800c9;
+    public static final int shape_wxlogin_btnstatus=0x7f0800ca;
+    public static final int test_custom_background=0x7f0800cb;
+    public static final int textcolor_bottom_main=0x7f0800cc;
+    public static final int thumb_seek_bar_alpha_easy_photos=0x7f0800cd;
+    public static final int toast_ic_ship=0x7f0800ce;
+    public static final int tooltip_frame_dark=0x7f0800cf;
+    public static final int tooltip_frame_light=0x7f0800d0;
+    public static final int videopage_btn_bg=0x7f0800d1;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
@@ -8229,60 +8221,62 @@ public final class R {
     public static final int title=0x7f0901d1;
     public static final int titleDividerNoCustom=0x7f0901d2;
     public static final int title_template=0x7f0901d3;
-    public static final int toggle=0x7f0901d4;
-    public static final int top=0x7f0901d5;
-    public static final int topPanel=0x7f0901d6;
-    public static final int touch_outside=0x7f0901d7;
-    public static final int transitionToEnd=0x7f0901d8;
-    public static final int transitionToStart=0x7f0901d9;
-    public static final int transition_current_scene=0x7f0901da;
-    public static final int transition_layout_save=0x7f0901db;
-    public static final int transition_position=0x7f0901dc;
-    public static final int transition_scene_layoutid_cache=0x7f0901dd;
-    public static final int transition_transform=0x7f0901de;
-    public static final int triangle=0x7f0901df;
-    public static final int tv_album_items=0x7f0901e0;
-    public static final int tv_album_name=0x7f0901e1;
-    public static final int tv_album_photos_count=0x7f0901e2;
-    public static final int tv_back=0x7f0901e3;
-    public static final int tv_clear=0x7f0901e4;
-    public static final int tv_done=0x7f0901e5;
-    public static final int tv_edit=0x7f0901e6;
-    public static final int tv_message=0x7f0901e7;
-    public static final int tv_number=0x7f0901e8;
-    public static final int tv_original=0x7f0901e9;
-    public static final int tv_permission=0x7f0901ea;
-    public static final int tv_preview=0x7f0901eb;
-    public static final int tv_puzzle=0x7f0901ec;
-    public static final int tv_sample=0x7f0901ed;
-    public static final int tv_selector=0x7f0901ee;
-    public static final int tv_template=0x7f0901ef;
-    public static final int tv_text_sticker=0x7f0901f0;
-    public static final int tv_title=0x7f0901f1;
-    public static final int tv_type=0x7f0901f2;
-    public static final int unchecked=0x7f0901f3;
-    public static final int uniform=0x7f0901f4;
-    public static final int unlabeled=0x7f0901f5;
-    public static final int up=0x7f0901f6;
-    public static final int updata_image=0x7f0901f7;
-    public static final int update_data=0x7f0901f8;
-    public static final int uploadphoto=0x7f0901f9;
-    public static final int useLogo=0x7f0901fa;
-    public static final int v_selector=0x7f0901fb;
-    public static final int verifi=0x7f0901fc;
-    public static final int video_page=0x7f0901fd;
-    public static final int video_tab=0x7f0901fe;
-    public static final int view_offset_helper=0x7f0901ff;
-    public static final int viewpager=0x7f090200;
-    public static final int visible=0x7f090201;
-    public static final int visible_removing_fragment_view_tag=0x7f090202;
-    public static final int wb_login=0x7f090203;
-    public static final int withText=0x7f090204;
-    public static final int withinBounds=0x7f090205;
-    public static final int wrap=0x7f090206;
-    public static final int wrap_content=0x7f090207;
-    public static final int wx_login=0x7f090208;
-    public static final int zero_corner_chip=0x7f090209;
+    public static final int toast_image=0x7f0901d4;
+    public static final int toast_text=0x7f0901d5;
+    public static final int toggle=0x7f0901d6;
+    public static final int top=0x7f0901d7;
+    public static final int topPanel=0x7f0901d8;
+    public static final int touch_outside=0x7f0901d9;
+    public static final int transitionToEnd=0x7f0901da;
+    public static final int transitionToStart=0x7f0901db;
+    public static final int transition_current_scene=0x7f0901dc;
+    public static final int transition_layout_save=0x7f0901dd;
+    public static final int transition_position=0x7f0901de;
+    public static final int transition_scene_layoutid_cache=0x7f0901df;
+    public static final int transition_transform=0x7f0901e0;
+    public static final int triangle=0x7f0901e1;
+    public static final int tv_album_items=0x7f0901e2;
+    public static final int tv_album_name=0x7f0901e3;
+    public static final int tv_album_photos_count=0x7f0901e4;
+    public static final int tv_back=0x7f0901e5;
+    public static final int tv_clear=0x7f0901e6;
+    public static final int tv_done=0x7f0901e7;
+    public static final int tv_edit=0x7f0901e8;
+    public static final int tv_message=0x7f0901e9;
+    public static final int tv_number=0x7f0901ea;
+    public static final int tv_original=0x7f0901eb;
+    public static final int tv_permission=0x7f0901ec;
+    public static final int tv_preview=0x7f0901ed;
+    public static final int tv_puzzle=0x7f0901ee;
+    public static final int tv_sample=0x7f0901ef;
+    public static final int tv_selector=0x7f0901f0;
+    public static final int tv_template=0x7f0901f1;
+    public static final int tv_text_sticker=0x7f0901f2;
+    public static final int tv_title=0x7f0901f3;
+    public static final int tv_type=0x7f0901f4;
+    public static final int unchecked=0x7f0901f5;
+    public static final int uniform=0x7f0901f6;
+    public static final int unlabeled=0x7f0901f7;
+    public static final int up=0x7f0901f8;
+    public static final int updata_image=0x7f0901f9;
+    public static final int update_data=0x7f0901fa;
+    public static final int uploadphoto=0x7f0901fb;
+    public static final int useLogo=0x7f0901fc;
+    public static final int v_selector=0x7f0901fd;
+    public static final int verifi=0x7f0901fe;
+    public static final int video_page=0x7f0901ff;
+    public static final int video_tab=0x7f090200;
+    public static final int view_offset_helper=0x7f090201;
+    public static final int viewpager=0x7f090202;
+    public static final int visible=0x7f090203;
+    public static final int visible_removing_fragment_view_tag=0x7f090204;
+    public static final int wb_login=0x7f090205;
+    public static final int withText=0x7f090206;
+    public static final int withinBounds=0x7f090207;
+    public static final int wrap=0x7f090208;
+    public static final int wrap_content=0x7f090209;
+    public static final int wx_login=0x7f09020a;
+    public static final int zero_corner_chip=0x7f09020b;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -8380,98 +8374,99 @@ public final class R {
     public static final int activity_setting=0x7f0c0037;
     public static final int activity_splash=0x7f0c0038;
     public static final int activity_swipe_refresh=0x7f0c0039;
-    public static final int activity_video_fragment=0x7f0c003a;
-    public static final int adapter_grid_test=0x7f0c003b;
-    public static final int custom_dialog=0x7f0c003c;
-    public static final int design_bottom_navigation_item=0x7f0c003d;
-    public static final int design_bottom_sheet_dialog=0x7f0c003e;
-    public static final int design_layout_snackbar=0x7f0c003f;
-    public static final int design_layout_snackbar_include=0x7f0c0040;
-    public static final int design_layout_tab_icon=0x7f0c0041;
-    public static final int design_layout_tab_text=0x7f0c0042;
-    public static final int design_menu_item_action_area=0x7f0c0043;
-    public static final int design_navigation_item=0x7f0c0044;
-    public static final int design_navigation_item_header=0x7f0c0045;
-    public static final int design_navigation_item_separator=0x7f0c0046;
-    public static final int design_navigation_item_subheader=0x7f0c0047;
-    public static final int design_navigation_menu=0x7f0c0048;
-    public static final int design_navigation_menu_item=0x7f0c0049;
-    public static final int design_text_input_end_icon=0x7f0c004a;
-    public static final int design_text_input_start_icon=0x7f0c004b;
-    public static final int dialog_uploaddcim=0x7f0c004c;
-    public static final int fragment_preview_easy_photos=0x7f0c004d;
-    public static final int fragment_text_sticker_easy_photos=0x7f0c004e;
-    public static final int item_ad_easy_photos=0x7f0c004f;
-    public static final int item_camera_easy_photos=0x7f0c0050;
-    public static final int item_dialog_album_items_easy_photos=0x7f0c0051;
-    public static final int item_preview_photo_easy_photos=0x7f0c0052;
-    public static final int item_preview_selected_photos_easy_photos=0x7f0c0053;
-    public static final int item_puzzle_easy_photos=0x7f0c0054;
-    public static final int item_puzzle_selector_easy_photos=0x7f0c0055;
-    public static final int item_puzzle_selector_preview_easy_photos=0x7f0c0056;
-    public static final int item_rv_photos_easy_photos=0x7f0c0057;
-    public static final int item_text_sticker_easy_photos=0x7f0c0058;
-    public static final int mtrl_alert_dialog=0x7f0c0059;
-    public static final int mtrl_alert_dialog_actions=0x7f0c005a;
-    public static final int mtrl_alert_dialog_title=0x7f0c005b;
-    public static final int mtrl_alert_select_dialog_item=0x7f0c005c;
-    public static final int mtrl_alert_select_dialog_multichoice=0x7f0c005d;
-    public static final int mtrl_alert_select_dialog_singlechoice=0x7f0c005e;
-    public static final int mtrl_calendar_day=0x7f0c005f;
-    public static final int mtrl_calendar_day_of_week=0x7f0c0060;
-    public static final int mtrl_calendar_days_of_week=0x7f0c0061;
-    public static final int mtrl_calendar_horizontal=0x7f0c0062;
-    public static final int mtrl_calendar_month=0x7f0c0063;
-    public static final int mtrl_calendar_month_labeled=0x7f0c0064;
-    public static final int mtrl_calendar_month_navigation=0x7f0c0065;
-    public static final int mtrl_calendar_months=0x7f0c0066;
-    public static final int mtrl_calendar_vertical=0x7f0c0067;
-    public static final int mtrl_calendar_year=0x7f0c0068;
-    public static final int mtrl_layout_snackbar=0x7f0c0069;
-    public static final int mtrl_layout_snackbar_include=0x7f0c006a;
-    public static final int mtrl_picker_actions=0x7f0c006b;
-    public static final int mtrl_picker_dialog=0x7f0c006c;
-    public static final int mtrl_picker_fullscreen=0x7f0c006d;
-    public static final int mtrl_picker_header_dialog=0x7f0c006e;
-    public static final int mtrl_picker_header_fullscreen=0x7f0c006f;
-    public static final int mtrl_picker_header_selection_text=0x7f0c0070;
-    public static final int mtrl_picker_header_title_text=0x7f0c0071;
-    public static final int mtrl_picker_header_toggle=0x7f0c0072;
-    public static final int mtrl_picker_text_input_date=0x7f0c0073;
-    public static final int mtrl_picker_text_input_date_range=0x7f0c0074;
-    public static final int notification_action=0x7f0c0075;
-    public static final int notification_action_tombstone=0x7f0c0076;
-    public static final int notification_media_action=0x7f0c0077;
-    public static final int notification_media_cancel_action=0x7f0c0078;
-    public static final int notification_template_big_media=0x7f0c0079;
-    public static final int notification_template_big_media_custom=0x7f0c007a;
-    public static final int notification_template_big_media_narrow=0x7f0c007b;
-    public static final int notification_template_big_media_narrow_custom=0x7f0c007c;
-    public static final int notification_template_custom_big=0x7f0c007d;
-    public static final int notification_template_icon_group=0x7f0c007e;
-    public static final int notification_template_lines_media=0x7f0c007f;
-    public static final int notification_template_media=0x7f0c0080;
-    public static final int notification_template_media_custom=0x7f0c0081;
-    public static final int notification_template_part_chronometer=0x7f0c0082;
-    public static final int notification_template_part_time=0x7f0c0083;
-    public static final int select_dialog_item_material=0x7f0c0084;
-    public static final int select_dialog_multichoice_material=0x7f0c0085;
-    public static final int select_dialog_singlechoice_material=0x7f0c0086;
-    public static final int support_simple_spinner_dropdown_item=0x7f0c0087;
-    public static final int test_action_chip=0x7f0c0088;
-    public static final int test_chip_zero_corner_radius=0x7f0c0089;
-    public static final int test_design_checkbox=0x7f0c008a;
-    public static final int test_design_radiobutton=0x7f0c008b;
-    public static final int test_reflow_chipgroup=0x7f0c008c;
-    public static final int test_toolbar=0x7f0c008d;
-    public static final int test_toolbar_custom_background=0x7f0c008e;
-    public static final int test_toolbar_elevation=0x7f0c008f;
-    public static final int test_toolbar_surface=0x7f0c0090;
-    public static final int text_view_with_line_height_from_appearance=0x7f0c0091;
-    public static final int text_view_with_line_height_from_layout=0x7f0c0092;
-    public static final int text_view_with_line_height_from_style=0x7f0c0093;
-    public static final int text_view_with_theme_line_height=0x7f0c0094;
-    public static final int text_view_without_line_height=0x7f0c0095;
+    public static final int activity_toast_style=0x7f0c003a;
+    public static final int activity_video_fragment=0x7f0c003b;
+    public static final int adapter_grid_test=0x7f0c003c;
+    public static final int custom_dialog=0x7f0c003d;
+    public static final int design_bottom_navigation_item=0x7f0c003e;
+    public static final int design_bottom_sheet_dialog=0x7f0c003f;
+    public static final int design_layout_snackbar=0x7f0c0040;
+    public static final int design_layout_snackbar_include=0x7f0c0041;
+    public static final int design_layout_tab_icon=0x7f0c0042;
+    public static final int design_layout_tab_text=0x7f0c0043;
+    public static final int design_menu_item_action_area=0x7f0c0044;
+    public static final int design_navigation_item=0x7f0c0045;
+    public static final int design_navigation_item_header=0x7f0c0046;
+    public static final int design_navigation_item_separator=0x7f0c0047;
+    public static final int design_navigation_item_subheader=0x7f0c0048;
+    public static final int design_navigation_menu=0x7f0c0049;
+    public static final int design_navigation_menu_item=0x7f0c004a;
+    public static final int design_text_input_end_icon=0x7f0c004b;
+    public static final int design_text_input_start_icon=0x7f0c004c;
+    public static final int dialog_uploaddcim=0x7f0c004d;
+    public static final int fragment_preview_easy_photos=0x7f0c004e;
+    public static final int fragment_text_sticker_easy_photos=0x7f0c004f;
+    public static final int item_ad_easy_photos=0x7f0c0050;
+    public static final int item_camera_easy_photos=0x7f0c0051;
+    public static final int item_dialog_album_items_easy_photos=0x7f0c0052;
+    public static final int item_preview_photo_easy_photos=0x7f0c0053;
+    public static final int item_preview_selected_photos_easy_photos=0x7f0c0054;
+    public static final int item_puzzle_easy_photos=0x7f0c0055;
+    public static final int item_puzzle_selector_easy_photos=0x7f0c0056;
+    public static final int item_puzzle_selector_preview_easy_photos=0x7f0c0057;
+    public static final int item_rv_photos_easy_photos=0x7f0c0058;
+    public static final int item_text_sticker_easy_photos=0x7f0c0059;
+    public static final int mtrl_alert_dialog=0x7f0c005a;
+    public static final int mtrl_alert_dialog_actions=0x7f0c005b;
+    public static final int mtrl_alert_dialog_title=0x7f0c005c;
+    public static final int mtrl_alert_select_dialog_item=0x7f0c005d;
+    public static final int mtrl_alert_select_dialog_multichoice=0x7f0c005e;
+    public static final int mtrl_alert_select_dialog_singlechoice=0x7f0c005f;
+    public static final int mtrl_calendar_day=0x7f0c0060;
+    public static final int mtrl_calendar_day_of_week=0x7f0c0061;
+    public static final int mtrl_calendar_days_of_week=0x7f0c0062;
+    public static final int mtrl_calendar_horizontal=0x7f0c0063;
+    public static final int mtrl_calendar_month=0x7f0c0064;
+    public static final int mtrl_calendar_month_labeled=0x7f0c0065;
+    public static final int mtrl_calendar_month_navigation=0x7f0c0066;
+    public static final int mtrl_calendar_months=0x7f0c0067;
+    public static final int mtrl_calendar_vertical=0x7f0c0068;
+    public static final int mtrl_calendar_year=0x7f0c0069;
+    public static final int mtrl_layout_snackbar=0x7f0c006a;
+    public static final int mtrl_layout_snackbar_include=0x7f0c006b;
+    public static final int mtrl_picker_actions=0x7f0c006c;
+    public static final int mtrl_picker_dialog=0x7f0c006d;
+    public static final int mtrl_picker_fullscreen=0x7f0c006e;
+    public static final int mtrl_picker_header_dialog=0x7f0c006f;
+    public static final int mtrl_picker_header_fullscreen=0x7f0c0070;
+    public static final int mtrl_picker_header_selection_text=0x7f0c0071;
+    public static final int mtrl_picker_header_title_text=0x7f0c0072;
+    public static final int mtrl_picker_header_toggle=0x7f0c0073;
+    public static final int mtrl_picker_text_input_date=0x7f0c0074;
+    public static final int mtrl_picker_text_input_date_range=0x7f0c0075;
+    public static final int notification_action=0x7f0c0076;
+    public static final int notification_action_tombstone=0x7f0c0077;
+    public static final int notification_media_action=0x7f0c0078;
+    public static final int notification_media_cancel_action=0x7f0c0079;
+    public static final int notification_template_big_media=0x7f0c007a;
+    public static final int notification_template_big_media_custom=0x7f0c007b;
+    public static final int notification_template_big_media_narrow=0x7f0c007c;
+    public static final int notification_template_big_media_narrow_custom=0x7f0c007d;
+    public static final int notification_template_custom_big=0x7f0c007e;
+    public static final int notification_template_icon_group=0x7f0c007f;
+    public static final int notification_template_lines_media=0x7f0c0080;
+    public static final int notification_template_media=0x7f0c0081;
+    public static final int notification_template_media_custom=0x7f0c0082;
+    public static final int notification_template_part_chronometer=0x7f0c0083;
+    public static final int notification_template_part_time=0x7f0c0084;
+    public static final int select_dialog_item_material=0x7f0c0085;
+    public static final int select_dialog_multichoice_material=0x7f0c0086;
+    public static final int select_dialog_singlechoice_material=0x7f0c0087;
+    public static final int support_simple_spinner_dropdown_item=0x7f0c0088;
+    public static final int test_action_chip=0x7f0c0089;
+    public static final int test_chip_zero_corner_radius=0x7f0c008a;
+    public static final int test_design_checkbox=0x7f0c008b;
+    public static final int test_design_radiobutton=0x7f0c008c;
+    public static final int test_reflow_chipgroup=0x7f0c008d;
+    public static final int test_toolbar=0x7f0c008e;
+    public static final int test_toolbar_custom_background=0x7f0c008f;
+    public static final int test_toolbar_elevation=0x7f0c0090;
+    public static final int test_toolbar_surface=0x7f0c0091;
+    public static final int text_view_with_line_height_from_appearance=0x7f0c0092;
+    public static final int text_view_with_line_height_from_layout=0x7f0c0093;
+    public static final int text_view_with_line_height_from_style=0x7f0c0094;
+    public static final int text_view_with_theme_line_height=0x7f0c0095;
+    public static final int text_view_without_line_height=0x7f0c0096;
   }
   public static final class mipmap {
     public static final int backpage_black=0x7f0d0000;
@@ -20572,18 +20567,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CountDownProgress_default_circle_radius com.mryu.devstudy:default_circle_radius}</code></td><td>默认圆的半径</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_default_circle_solide_color com.mryu.devstudy:default_circle_solide_color}</code></td><td>默认圆实心的颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_default_circle_stroke_color com.mryu.devstudy:default_circle_stroke_color}</code></td><td>默认圆边框的颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_default_circle_stroke_width com.mryu.devstudy:default_circle_stroke_width}</code></td><td>默认圆边框的宽度</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_progress_color com.mryu.devstudy:progress_color}</code></td><td>进度条的颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_progress_width com.mryu.devstudy:progress_width}</code></td><td>进度条的宽度</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_small_circle_radius com.mryu.devstudy:small_circle_radius}</code></td><td>小圆的半径</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_small_circle_solide_color com.mryu.devstudy:small_circle_solide_color}</code></td><td>小圆的实心颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_small_circle_stroke_color com.mryu.devstudy:small_circle_stroke_color}</code></td><td>小圆的边框颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_small_circle_stroke_width com.mryu.devstudy:small_circle_stroke_width}</code></td><td>小圆的边框宽度</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_text_color com.mryu.devstudy:text_color}</code></td><td>文字的颜色</td></tr>
-     * <tr><td><code>{@link #CountDownProgress_text_size com.mryu.devstudy:text_size}</code></td><td>文字的字体大小</td></tr>
+     * <tr><td><code>{@link #CountDownProgress_default_circle_radius com.mryu.devstudy:default_circle_radius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_default_circle_solide_color com.mryu.devstudy:default_circle_solide_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_default_circle_stroke_color com.mryu.devstudy:default_circle_stroke_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_default_circle_stroke_width com.mryu.devstudy:default_circle_stroke_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_progress_color com.mryu.devstudy:progress_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_progress_width com.mryu.devstudy:progress_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_small_circle_radius com.mryu.devstudy:small_circle_radius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_small_circle_solide_color com.mryu.devstudy:small_circle_solide_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_small_circle_stroke_color com.mryu.devstudy:small_circle_stroke_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_small_circle_stroke_width com.mryu.devstudy:small_circle_stroke_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_text_color com.mryu.devstudy:text_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CountDownProgress_text_size com.mryu.devstudy:text_size}</code></td><td></td></tr>
      * </table>
      * @see #CountDownProgress_default_circle_radius
      * @see #CountDownProgress_default_circle_solide_color
@@ -20604,9 +20599,8 @@ public final class R {
       0x7f0402bd, 0x7f0402be, 0x7f040326, 0x7f040327
     };
     /**
-     * <p>
-     * @attr description
-     * 默认圆的半径
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#default_circle_radius}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20618,9 +20612,8 @@ public final class R {
      */
     public static final int CountDownProgress_default_circle_radius=0;
     /**
-     * <p>
-     * @attr description
-     * 默认圆实心的颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#default_circle_solide_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20630,9 +20623,8 @@ public final class R {
      */
     public static final int CountDownProgress_default_circle_solide_color=1;
     /**
-     * <p>
-     * @attr description
-     * 默认圆边框的颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#default_circle_stroke_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20642,9 +20634,8 @@ public final class R {
      */
     public static final int CountDownProgress_default_circle_stroke_color=2;
     /**
-     * <p>
-     * @attr description
-     * 默认圆边框的宽度
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#default_circle_stroke_width}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20656,9 +20647,8 @@ public final class R {
      */
     public static final int CountDownProgress_default_circle_stroke_width=3;
     /**
-     * <p>
-     * @attr description
-     * 进度条的颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#progress_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20668,9 +20658,8 @@ public final class R {
      */
     public static final int CountDownProgress_progress_color=4;
     /**
-     * <p>
-     * @attr description
-     * 进度条的宽度
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#progress_width}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20682,9 +20671,8 @@ public final class R {
      */
     public static final int CountDownProgress_progress_width=5;
     /**
-     * <p>
-     * @attr description
-     * 小圆的半径
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#small_circle_radius}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20696,9 +20684,8 @@ public final class R {
      */
     public static final int CountDownProgress_small_circle_radius=6;
     /**
-     * <p>
-     * @attr description
-     * 小圆的实心颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#small_circle_solide_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20708,9 +20695,8 @@ public final class R {
      */
     public static final int CountDownProgress_small_circle_solide_color=7;
     /**
-     * <p>
-     * @attr description
-     * 小圆的边框颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#small_circle_stroke_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20720,9 +20706,8 @@ public final class R {
      */
     public static final int CountDownProgress_small_circle_stroke_color=8;
     /**
-     * <p>
-     * @attr description
-     * 小圆的边框宽度
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#small_circle_stroke_width}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20734,9 +20719,8 @@ public final class R {
      */
     public static final int CountDownProgress_small_circle_stroke_width=9;
     /**
-     * <p>
-     * @attr description
-     * 文字的颜色
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#text_color}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20746,9 +20730,8 @@ public final class R {
      */
     public static final int CountDownProgress_text_color=10;
     /**
-     * <p>
-     * @attr description
-     * 文字的字体大小
+     * <p>This symbol is the offset where the {@link com.mryu.devstudy.R.attr#text_size}
+     * attribute's value can be found in the {@link #CountDownProgress} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".

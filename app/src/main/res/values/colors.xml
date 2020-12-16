@@ -161,4 +161,6 @@
     <!--状态栏-->
     <color name="easy_photos_status_bar">#393a3f</color>//#ffffff
 
+    <color name="colorBluePrimary">#2196F3</color>
+    <color name="colorBluePrimaryDark">#1976D2</color>
 </resources>

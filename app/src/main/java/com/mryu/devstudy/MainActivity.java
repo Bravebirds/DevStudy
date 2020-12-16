@@ -2,16 +2,15 @@ package com.mryu.devstudy;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.mryu.devstudy.fragment.FindFragment;
 import com.mryu.devstudy.fragment.HomeFragment;
 import com.mryu.devstudy.fragment.MySettingFragment;
 import com.mryu.devstudy.fragment.VideoFragment;
+import com.mryu.devstudy.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (System.currentTimeMillis() - mExitTime > 2000) {
-                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                showToast("再按一次退出程序",R.drawable.toast_ic_ship);
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
@@ -169,6 +169,10 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    private void showToast(String message, int resId) {
+        ToastUtils.showKevinToast(this, message, resId);
     }
 
 }

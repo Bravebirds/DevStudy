@@ -1,6 +1,4 @@
 package com.mryu.devstudy.activity;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -18,8 +16,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.huantansheng.easyphotos.EasyPhotos;
@@ -27,6 +23,7 @@ import com.mryu.devstudy.R;
 import com.mryu.devstudy.utils.GlideEngine;
 import com.mryu.devstudy.utils.MobileUtil;
 import com.mryu.devstudy.utils.PhotoChioceDialog;
+import com.mryu.devstudy.utils.ToastUtils;
 
 public class RegistActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener, TextWatcher, CompoundButton.OnCheckedChangeListener, PhotoChioceDialog.ClickCallback {
     private static final String TAG = "RegistActivity";
@@ -129,14 +126,15 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.get_verifi:
                 final String phoneNumber = mIphone.getText().toString();
+                // CheckPhone是否符合正则表达式 true则高亮获取 false 置灰
                 if (MobileUtil.checkPhone(phoneNumber) == false) {
                     mIphone.setText("");
                     mVerifi.setText("");
                     mPassword.setText("");
-                    Toast.makeText(this, "请输入正确的手机号再获取验证码", Toast.LENGTH_SHORT).show();
+                    showToast("请输入正确的手机号再获取验证码",R.drawable.toast_ic_ship);
                 } else {
                     mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_unselect);
-                    Toast.makeText(this, "走到发送验证码逻辑，但该功能还未实现", Toast.LENGTH_SHORT).show();
+                    showToast("走到发送验证码逻辑，但该功能还未实现",R.drawable.toast_ic_ship);
                     mGetVerifi.setEnabled(false);//在发送数据的时候设置为不能点击
                     mGetVerifi.setBackgroundResource(R.drawable.shape_nextstep_unselect);//背景色设为灰色
                     /**
@@ -170,13 +168,19 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.check_agreement:
                 break;
             case R.id.account_regist:
+                // 手机、验证码、密码均不为空且协议已勾选时注册流程通过
                 if (TextUtils.isEmpty(mIphone.getText()) == false && TextUtils.isEmpty(mVerifi.getText()) == false && TextUtils.isEmpty(mPassword.getText()) == false) {
                     if (mCheckAgreement.isChecked() == true) {
-                        Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+                        showToast("注册成功",R.drawable.toast_ic_ship);
                         Intent intent = new Intent(this, LoadingActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
+                }
+
+                // 手机号、验证码、密码其中一项为空
+                if (TextUtils.isEmpty(mIphone.getText()) == true || TextUtils.isEmpty(mVerifi.getText()) == true || TextUtils.isEmpty(mPassword.getText()) == true) {
+                    showToast("请确定注册信息均已填写",R.drawable.toast_ic_ship);
                 }
                 break;
             case R.id.ment:
@@ -263,7 +267,7 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
             String newStr = verifiNumber.substring(0,maxVerifi);
             mVerifi.setText(newStr);
             mVerifi.setSelection(mVerifi.getText().length());
-            Toast.makeText(this,"不支持输入长度>"+maxVerifi+"位的验证码",Toast.LENGTH_SHORT).show();
+            showToast("不支持输入长度>"+maxVerifi+"位的验证码",R.drawable.toast_ic_ship);
         }
 
         // 密码长度限制
@@ -271,7 +275,7 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
             String newStr = passwordText.substring(0,maxPwdLength);
             mPassword.setText(newStr);
             mPassword.setSelection(mPassword.getText().length());
-            Toast.makeText(this,"仅支持"+maxPwdLength+"位密码输入",Toast.LENGTH_SHORT).show();
+            showToast("不支持"+maxPwdLength+"位密码输入",R.drawable.toast_ic_ship);
         }
 
         if (phoneNumber.equals("") == true || verifiNumber.equals("") == true || passwordText.equals("") == true) {
@@ -305,6 +309,13 @@ public class RegistActivity extends AppCompatActivity implements View.OnClickLis
             Log.d(TAG, "用户取消协议授权");
         }
     }
+
+
+
+    private void showToast(String message, int resId) {
+        ToastUtils.showKevinToast(this, message, resId);
+    }
+
 
     /**
      * removeCallbacksAndMessages移除消息队列中所有消息(/所有的Runnable/)

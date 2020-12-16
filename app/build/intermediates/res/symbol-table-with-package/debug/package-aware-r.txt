@@ -1012,6 +1012,8 @@ color colorBisque
 color colorBlack
 color colorBlanchedalmond
 color colorBlue
+color colorBluePrimary
+color colorBluePrimaryDark
 color colorBlueviolet
 color colorBrown
 color colorBurlywood
@@ -1873,11 +1875,13 @@ drawable shape_qqlogin_btnstatus
 drawable shape_send_btn_selected
 drawable shape_send_btn_unselect
 drawable shape_send_btnstatus
+drawable shape_toast_bg
 drawable shape_wblogin_btnstatus
 drawable shape_wxlogin_btnstatus
 drawable test_custom_background
 drawable textcolor_bottom_main
 drawable thumb_seek_bar_alpha_easy_photos
+drawable toast_ic_ship
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable videopage_btn_bg
@@ -2349,6 +2353,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toast_image
+id toast_text
 id toggle
 id top
 id topPanel
@@ -2494,6 +2500,7 @@ layout activity_scend
 layout activity_setting
 layout activity_splash
 layout activity_swipe_refresh
+layout activity_toast_style
 layout activity_video_fragment
 layout adapter_grid_test
 layout custom_dialog
