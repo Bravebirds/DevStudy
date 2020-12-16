@@ -4,193 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/all_linear"
     android:orientation="vertical"
-    android:background="@color/colorLavender"
-    tools:context=".activity.LoginActivity">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/colorPulms">
+    android:background="@mipmap/login_background">
 
-        <ImageView
-            android:id="@+id/backpage"
-            android:layout_width="35dp"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/backpage_white"
-            android:layout_marginLeft="7dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:lineHeight="40dp"
-            android:text="注册页"
-            android:layout_marginRight="42dp"
-            android:layout_gravity="center"
-            android:textColor="@color/colorOldlace"
-            android:textSize="22dp"
-            android:textStyle="normal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="35dp"
-        android:id="@+id/head_portrait"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <LinearLayout
-            android:id="@+id/uploadphoto"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:orientation="horizontal"
-            android:layout_gravity="bottom"
-            android:gravity="center"
-            android:background="@color/colorGray">
-            <ImageView
-                android:src="@mipmap/upload_photos_bg"
-                android:layout_width="22dp"
-                android:layout_height="22dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="2dp"
-                android:textSize="12dp"
-                android:textColor="@color/colorWhite"
-                android:text="@string/upload_dicm"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-
-    </LinearLayout>
-
+    <ImageView
+        android:id="@+id/backpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/regist_close"
+        android:layout_gravity="right"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingBottom="150dp"
         android:background="@drawable/shape_bottom_write">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="28dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/iphone"
-                android:layout_width="344dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:digits="0123456789"
-                android:hint="@string/regist_phone"
-                android:inputType="phone"
-                android:lineHeight="25dp"
-                android:maxLength="11"
-                android:maxLines="1"
-                android:theme="@style/RegistTheme" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="7dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:theme="@style/RegistTheme"
-                android:id="@+id/verifi"
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:hint="@string/regist_verifi"
-                android:maxLines="1"
-                android:lineHeight="25dp" />
-
-            <Button
-                android:id="@+id/get_verifi"
-                android:layout_width="0dp"
-                android:layout_weight="1.2"
-                android:background="@drawable/shape_send_btnstatus"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:text="@string/regist_getverifi"
-                android:textColor="@color/colorWhite"
-                android:textSize="12dp"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:theme="@style/RegistTheme"
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
-                android:hint="@string/regist_password"
-                android:inputType="textPassword"
-                android:lineHeight="25dp"
-                android:maxLines="1" />
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎注册账号"
+            android:textStyle="normal"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:theme="@style/RegistTheme"
-                android:id="@+id/check_agreement"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:hint="@string/regist_agree"
-                android:inputType="text"
-                android:lineHeight="25dp"
-                android:maxLength="20"
-                android:maxLines="1" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:lineHeight="25dp"
+            android:background="@drawable/shape_bottom_input">
             <TextView
-                android:id="@+id/ment"
-                android:text="@string/regist_ment"
-                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="+86"
+                android:textSize="20dp"
                 android:textColor="@color/colorBlack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="7dp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:hint="请输入手机号"
+                android:background="@null"
+                android:inputType="text"
+                android:layout_marginRight="15dp"
+                android:maxLines="1" />
         </LinearLayout>
-
-        <Button
-            android:id="@+id/account_regist"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:paddingBottom="7dp"
-            android:background="@drawable/shape_nextstep_unselect"
-            android:text="→"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"
-            android:textSize="30dp" />
-
-
     </LinearLayout>
 </LinearLayout>

@@ -2,13 +2,10 @@ package com.mryu.devstudy.activity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -17,17 +14,16 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.mryu.devstudy.MainActivity;
-import com.mryu.devstudy.R;
-import com.mryu.devstudy.utils.ModelUtils;
-import com.mryu.devstudy.utils.ToastUtils;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import static android.text.InputType.TYPE_TEXT_VARIATION_NORMAL;
+import com.mryu.devstudy.MainActivity;
+import com.mryu.devstudy.R;
+import com.mryu.devstudy.utils.KeyboardLayout;
+import com.mryu.devstudy.utils.SoftKeyInputHidWidget;
+import com.mryu.devstudy.utils.ToastUtils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
@@ -68,6 +64,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * 暂不登录、立即体验
      */
     private TextView mOpen;
+    private ScrollView mAllLinear;
+    private KeyboardLayout mMainlayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +86,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mPassword.clearFocus();
     }
 
+    private void initView() {
+        mAccount = (EditText) findViewById(R.id.account);
+        mPassword = (EditText) findViewById(R.id.password);
+        mAccountLogin = (Button) findViewById(R.id.account_login);
+        mQqLogin = (ImageView) findViewById(R.id.qq_login);
+        mWxLogin = (ImageView) findViewById(R.id.wx_login);
+        mWbLogin = (ImageView) findViewById(R.id.wb_login);
+        mForgotpwd = (TextView) findViewById(R.id.forgotpwd);
+        mRegist = (TextView) findViewById(R.id.regist);
+        mCheckAgreement = (CheckBox) findViewById(R.id.check_agreement);
+        mMent = (TextView) findViewById(R.id.ment);
+        mOpen = (TextView) findViewById(R.id.experience);
+        mAllLinear = (ScrollView) findViewById(R.id.all_linear);
+        mMainlayout = (KeyboardLayout) findViewById(R.id.mainlayout);
+    }
+
+
     private void setView() {
         mAccount.setOnClickListener(this);
         mAccount.setOnFocusChangeListener(this);
@@ -104,6 +119,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mCheckAgreement.setOnClickListener(this);
         mCheckAgreement.setOnCheckedChangeListener(this);
         mMent.setOnClickListener(this);
+        mOpen.setOnClickListener(this);
+        mAllLinear.setOnClickListener(this);
+        addLayoutListener();
 
         // 重写可输入格式
 //        if (ModelUtils.isEMUI() && android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
@@ -111,21 +129,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //            mPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
 //        }
 
-    }
-
-    private void initView() {
-        mAccount = (EditText) findViewById(R.id.account);
-        mPassword = (EditText) findViewById(R.id.password);
-        mAccountLogin = (Button) findViewById(R.id.account_login);
-        mQqLogin = (ImageView) findViewById(R.id.qq_login);
-        mWxLogin = (ImageView) findViewById(R.id.wx_login);
-        mWbLogin = (ImageView) findViewById(R.id.wb_login);
-        mForgotpwd = (TextView) findViewById(R.id.forgotpwd);
-        mRegist = (TextView) findViewById(R.id.regist);
-        mCheckAgreement = (CheckBox) findViewById(R.id.check_agreement);
-        mMent = (TextView) findViewById(R.id.ment);
-        mOpen = (TextView) findViewById(R.id.experience);
-        mOpen.setOnClickListener(this);
     }
 
     @Override
@@ -141,13 +144,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 VerfiyLogin();
                 break;
             case R.id.qq_login:
-                showToast("QQ注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
+                showToast("QQ注册/登录暂未实现！！！", R.drawable.toast_ic_ship);
                 break;
             case R.id.wx_login:
-                showToast("微信注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
+                showToast("微信注册/登录暂未实现！！！", R.drawable.toast_ic_ship);
                 break;
             case R.id.wb_login:
-                showToast("微博注册/登录暂未实现！！！",R.drawable.toast_ic_ship);
+                showToast("微博注册/登录暂未实现！！！", R.drawable.toast_ic_ship);
                 break;
             case R.id.forgotpwd:
                 Intent intent = new Intent(LoginActivity.this, ForgotpwdActivity.class);
@@ -168,6 +171,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(experienceIntent);
                 finish();
                 break;
+            case R.id.all_linear:
+
+                break;
         }
     }
 
@@ -176,11 +182,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         String password_context = mPassword.getText().toString();
         if (mCheckAgreement.isChecked() == true) {
             if (account_context.equals("") == true && password_context.equals("") == false) {
-                showToast("账号不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("账号不允许为空！！！", R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == false && password_context.equals("") == true) {
-                showToast("密码不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("密码不允许为空！！！", R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == true && password_context.equals("") == true) {
-                showToast("账号密码不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("账号密码不允许为空！！！", R.drawable.toast_ic_ship);
             } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
                 Log.v(TAG, "登录成功,正在初始化进入首页！！！");
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -189,17 +195,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 finish();
             } else if (account_context.equals(account) == false || password_context.equals(password) == false) {
-                showToast("请输入正确的账号及密码！！！",R.drawable.toast_ic_ship);
+                showToast("请输入正确的账号及密码！！！", R.drawable.toast_ic_ship);
             }
         } else {
             if (account_context.equals("") == true && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                showToast("账号密码不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("账号密码不允许为空！！！", R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == true && password_context.equals("") == false && mCheckAgreement.isChecked() == false) {
-                showToast("账号不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("账号不允许为空！！！", R.drawable.toast_ic_ship);
             } else if (account_context.equals("") == false && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                showToast("密码不允许为空！！！",R.drawable.toast_ic_ship);
+                showToast("密码不允许为空！！！", R.drawable.toast_ic_ship);
             } else {
-                showToast("请先勾选协议",R.drawable.toast_ic_ship);
+                showToast("请先勾选协议", R.drawable.toast_ic_ship);
             }
         }
     }
@@ -228,7 +234,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String newStr = accountText.substring(0, maxUserNameLength);
             mAccount.setText(newStr);
             mAccount.setSelection(mAccount.getText().length());
-            showToast("仅支持" + maxUserNameLength + "位用户名输入",R.drawable.toast_ic_ship);
+            showToast("仅支持" + maxUserNameLength + "位用户名输入", R.drawable.toast_ic_ship);
         }
 
         // 密码长度限制
@@ -236,7 +242,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             String newStr = passwordText.substring(0, maxPwdLength);
             mPassword.setText(newStr);
             mPassword.setSelection(mPassword.getText().length());
-            showToast("仅支持" + maxPwdLength + "位密码输入",R.drawable.toast_ic_ship);
+            showToast("仅支持" + maxPwdLength + "位密码输入", R.drawable.toast_ic_ship);
         }
 
         if (accountText.equals("") == true || passwordText.equals("") == true) {
@@ -276,6 +282,38 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 break;
         }
+    }
+
+    /**
+     * 监听键盘状态，布局有变化时，靠scrollView去滚动界面
+     */
+    public void addLayoutListener() {
+        mMainlayout.setKeyboardListener(new KeyboardLayout.KeyboardLayoutListener() {
+            @Override
+            public void onKeyboardStateChanged(boolean isActive, int keyboardHeight) {
+                Log.e("onKeyboardStateChanged", "isActive:" + isActive + " keyboardHeight:" + keyboardHeight);
+                if (isActive){
+                    mMainlayout.setBackgroundResource(R.drawable.shape_bottom_write);
+                    mMainlayout.setTop(170);
+                    scrollToBottom();
+                }
+            }
+        });
+    }
+
+    /**
+     * 弹出软键盘时将SVContainer滑到底
+     */
+    private void scrollToBottom() {
+
+        mMainlayout.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                mAllLinear.smoothScrollTo(0, mAllLinear.getBottom() + SoftKeyInputHidWidget.getStatusBarHeight(LoginActivity.this));
+            }
+        }, 1000);
+
     }
 
     @Override
