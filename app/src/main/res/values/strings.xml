@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DevStudy</string>
+    <string-array name="array_list">
+        <item>列表一</item>
+        <item>列表二</item>
+        <item>列表三</item>
+    </string-array>
+    <string name="regist_phone">请输入手机号</string>
+    <string name="regist_verifi">请输入收到的验证码</string>
+    <string name="regist_password">请设置您的登录密码</string>
+    <string name="regist_agree">我已阅读并同意</string>
+    <string name="regist_getverifi">获取验证码</string>
+    <string name="regist_ment">《用户协议》</string>
+    <string name="title_activity_loading">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="upload_dicm">更新头像</string>
+    <string name="make_friends">交友</string>
+    <string name="recom_top">热门</string>
+    <string name="setting_page">设置页</string>
+    <string name="game_page">游戏</string>
+    <string name="book_page">书籍</string>
+    <string name="home_page">首页</string>
+    <string name="find_page">发现</string>
+    <string name="video_page">视频</string>
+    <string name="my_page">我</string>
+    <string name="request">请求</string>
+    <string name="get_permission">获取权限</string>
+
+</resources>

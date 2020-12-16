@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Work_Spaces\\Flutter_Project\\DevStudy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MrYu\\.gradle\\caches\\transforms-2\\files-2.1\\6966c8810274884b402702ebe69b1ddf\\EasyPhotos-3.0.6\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,509",
+                        "endLines": "8,9",
+                        "endColumns": "12,78",
+                        "endOffsets": "504,583"
+                    }
+                }
+            ]
+        }
+    ]
+}

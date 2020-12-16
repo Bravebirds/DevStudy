@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 配置RadioButton被选中时，显示的图片 -->
+    <item android:drawable="@mipmap/my_isclicked" android:state_checked="true"></item>
+    <!-- 配置RadioButton没被选中时，显示的图片 -->
+    <item android:drawable="@mipmap/my_noclicked" android:state_checked="false"></item>
+
+</selector>

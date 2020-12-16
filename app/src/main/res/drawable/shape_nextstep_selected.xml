@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_pressed="false"  >   <!-- 按钮未点击-->
+        <shape >
+            <stroke android:color="@color/colorPulms"></stroke>
+            <solid android:color="@color/colorPulms"></solid>
+            <corners android:radius="100dp"/>
+            <size
+                android:height="60dp"
+                android:width="60dp"/>
+        </shape>
+    </item>
+
+</selector>

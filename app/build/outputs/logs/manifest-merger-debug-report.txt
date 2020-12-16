@@ -1,0 +1,702 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:2:1-46:12
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7b7a29c1bccf21006825764dd3e73707\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\dbbe73b7bd1130734374823ec69fa1d8\PhotoView-2.3.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\c1210059822c0f4a6a60a6d67e3f9ee5\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1f155579a16e24a6a774f2c25a5ad576\butterknife-10.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\881fff42ad1f84a0ad8fbad1cc6eb8c9\appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2dd52bdeda96a748df5d7e83cece6c38\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df075d1e0ebaa8f20062e116464b1eeb\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5bbb72600245c24a4fed81f14e5302b4\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bfb36a8a02a6b71b49ca7ec649145b26\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5fbb65e41e4c4cf967c9a2a9de21098e\navigation-common-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\63dca38f6832352d0414ad7faf5de168\activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bf0780c4040aadc6bcabed0b9962602f\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1162dfc4708142e2976ba251e87dc077\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\9e4b610c62519349fb9900f993a8204f\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df7ed6a622d95eed91a323609bdae09e\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bc452342bfee356d6b01786353f9367d\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\61b36bcd44c689e23dd0e5a9c933fba0\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\69ba81d17fd1c26c75281615add0554c\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cb34feab5db2b919c5bcf32eec0920cb\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a057afb287564d4965e14d9868850d9e\gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\602e442dd3acd86edd3f0beffa18fe16\jetified-subsampling-scale-image-view-3.10.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+	package
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:4:5-32
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-228:12
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:5-88
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:9:22-86
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:17:22-71
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:20:22-72
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:5-85
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:24:22-83
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:22-72
+uses-permission#android.permission.EXPAND_STATUS_BAR
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:5-75
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:22-73
+uses-permission#android.permission.GET_PACKAGE_SIZE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:30:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:30:22-72
+uses-permission#android.permission.INSTALL_SHORTCUT
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:32:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:32:22-72
+uses-permission#android.permission.INTERNET
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:34:5-66
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:34:22-64
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:5-83
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:22-81
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:38:5-79
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:38:22-77
+uses-permission#android.permission.NFC
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:40:5-61
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:40:22-59
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:5-76
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:22-74
+uses-permission#android.permission.READ_SYNC_STATS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:44:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:44:22-71
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:5-80
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:22-78
+uses-permission#android.permission.REORDER_TASKS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:22-69
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:5-94
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:22-92
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:5-82
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:22-80
+uses-permission#android.permission.SET_ALARM
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:5-67
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:22-65
+uses-permission#android.permission.SET_TIME_ZONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:5-62:47
+	tools:ignore
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:9-44
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:22-69
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:22-69
+uses-permission#android.permission.SET_WALLPAPER_HINTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:66:5-77
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:66:22-75
+uses-permission#android.permission.TRANSMIT_IR
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:68:5-69
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:68:22-67
+uses-permission#android.permission.UNINSTALL_SHORTCUT
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:5-76
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:22-74
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:5-65
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:76:5-67
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:76:22-65
+uses-permission#android.permission.WRITE_SYNC_SETTINGS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:78:5-77
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:78:22-75
+permission-group#android.permission-group.CALENDAR
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:85:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:85:23-71
+uses-permission#android.permission.READ_CALENDAR
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:22-70
+permission-group#android.permission-group.CAMERA
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:92:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:92:23-69
+uses-permission#android.permission.CAMERA
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:96:5-64
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:12:5-65
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:96:22-62
+permission-group#android.permission-group.CONTACTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:23-71
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:22-70
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:5-70
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:22-68
+permission-group#android.permission-group.LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:5-73
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:23-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:5-78
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:5-80
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:22-78
+permission-group#android.permission-group.MICROPHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-75
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:23-73
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:5-70
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:22-68
+permission-group#android.permission-group.PHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:5-70
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:23-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:22-72
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:5-68
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:22-66
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:22-69
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:22-70
+uses-permission#android.permission.ADD_VOICEMAIL
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:5-71
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:22-69
+uses-permission#android.permission.USE_SIP
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:5-65
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:22-63
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:5-80
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:22-78
+permission-group#android.permission-group.SENSORS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:23-70
+uses-permission#android.permission.BODY_SENSORS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:5-70
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:22-68
+permission-group#android.permission-group.SMS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:5-68
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:23-66
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:5-66
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:5-69
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:5-66
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:22-64
+uses-permission#android.permission.RECEIVE_WAP_PUSH
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:5-74
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:22-72
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:5-69
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:22-67
+permission-group#android.permission-group.STORAGE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:5-72
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:23-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:5-79
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:13:5-80
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:22-77
+uses-feature#android.hardware.camera
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:5-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:19-57
+uses-feature#android.hardware.location.gps
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:5-66
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:19-63
+application
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:173:5-226:19
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7b7a29c1bccf21006825764dd3e73707\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7b7a29c1bccf21006825764dd3e73707\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a057afb287564d4965e14d9868850d9e\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a057afb287564d4965e14d9868850d9e\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:21:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:178:9-35
+	android:label
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:9-41
+	android:roundIcon
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:177:9-54
+	android:icon
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:9-43
+	android:allowBackup
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:174:9-35
+	android:theme
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:179:9-40
+	android:usesCleartextTraffic
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:180:9-44
+activity#com.mryu.devstudy.activity.NetWorkActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:181:9-187:20
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:181:19-59
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:182:13-186:29
+action#android.intent.action.MAIN
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:183:17-69
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:183:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:185:17-77
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:185:27-74
+activity#com.mryu.devstudy.activity.SwipeRefreshActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:188:9-76
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:188:19-64
+activity#com.mryu.devstudy.fragment.DrawerFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:189:9-61
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:189:19-58
+activity#com.mryu.devstudy.fragment.MySettingFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:190:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:190:19-61
+activity#com.mryu.devstudy.fragment.MessageFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:191:9-62
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:191:19-59
+activity#com.mryu.devstudy.fragment.FindFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:192:9-59
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:192:19-56
+activity#com.mryu.devstudy.fragment.HomeFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:193:9-59
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:193:19-56
+activity#com.mryu.devstudy.fragment.BookFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:194:9-59
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:194:19-56
+activity#com.mryu.devstudy.fragment.VideoFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:195:9-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:195:19-57
+activity#com.mryu.devstudy.fragment.GameFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:196:9-59
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:196:19-56
+activity#com.mryu.devstudy.fragment.FriendsFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:197:9-62
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:197:19-59
+activity#com.mryu.devstudy.fragment.NewPeopleFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:198:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:198:19-61
+activity#com.mryu.devstudy.fragment.RecomFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:199:9-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:199:19-57
+activity#com.mryu.devstudy.activity.LoadingActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:200:9-62
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:200:19-59
+activity#com.mryu.devstudy.activity.AgreementActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:201:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:201:19-61
+activity#com.mryu.devstudy.MainActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:202:9-50
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:202:19-47
+activity#com.mryu.devstudy.activity.TestHomeActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:203:9-63
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:203:19-60
+activity#com.mryu.devstudy.activity.RegistActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:204:9-61
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:204:19-58
+activity#com.mryu.devstudy.activity.ForgotpwdActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:205:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:205:19-61
+activity#com.mryu.devstudy.activity.SplashActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:206:9-61
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:206:19-58
+activity#com.mryu.devstudy.activity.LoginActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:207:9-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:207:19-57
+activity#com.mryu.devstudy.activity.GridViewActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:208:9-63
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:208:19-60
+activity#com.mryu.devstudy.activity.BannerActvity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:209:9-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:209:19-57
+uses-library#org.apache.http.legacy
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:211:9-213:40
+	android:required
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:213:13-37
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:212:13-50
+activity#com.mryu.devstudy.activity.ScendActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:215:9-60
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:215:19-57
+provider#androidx.core.content.FileProvider
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:217:9-225:20
+	android:grantUriPermissions
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:221:13-47
+	android:authorities
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:219:13-59
+	android:exported
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:220:13-37
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:218:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:222:13-224:61
+	android:resource
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:224:17-58
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:223:17-67
+uses-sdk
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7b7a29c1bccf21006825764dd3e73707\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7b7a29c1bccf21006825764dd3e73707\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\dbbe73b7bd1130734374823ec69fa1d8\PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.chrisbanes:PhotoView:2.3.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\dbbe73b7bd1130734374823ec69fa1d8\PhotoView-2.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\c1210059822c0f4a6a60a6d67e3f9ee5\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\c1210059822c0f4a6a60a6d67e3f9ee5\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1f155579a16e24a6a774f2c25a5ad576\butterknife-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1f155579a16e24a6a774f2c25a5ad576\butterknife-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\881fff42ad1f84a0ad8fbad1cc6eb8c9\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\881fff42ad1f84a0ad8fbad1cc6eb8c9\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2dd52bdeda96a748df5d7e83cece6c38\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2dd52bdeda96a748df5d7e83cece6c38\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df075d1e0ebaa8f20062e116464b1eeb\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df075d1e0ebaa8f20062e116464b1eeb\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5bbb72600245c24a4fed81f14e5302b4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5bbb72600245c24a4fed81f14e5302b4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bfb36a8a02a6b71b49ca7ec649145b26\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bfb36a8a02a6b71b49ca7ec649145b26\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5fbb65e41e4c4cf967c9a2a9de21098e\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5fbb65e41e4c4cf967c9a2a9de21098e\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\63dca38f6832352d0414ad7faf5de168\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\63dca38f6832352d0414ad7faf5de168\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bf0780c4040aadc6bcabed0b9962602f\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bf0780c4040aadc6bcabed0b9962602f\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1162dfc4708142e2976ba251e87dc077\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1162dfc4708142e2976ba251e87dc077\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\9e4b610c62519349fb9900f993a8204f\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\9e4b610c62519349fb9900f993a8204f\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df7ed6a622d95eed91a323609bdae09e\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\df7ed6a622d95eed91a323609bdae09e\lifecycle-viewmodel-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bc452342bfee356d6b01786353f9367d\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bc452342bfee356d6b01786353f9367d\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\61b36bcd44c689e23dd0e5a9c933fba0\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\61b36bcd44c689e23dd0e5a9c933fba0\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\69ba81d17fd1c26c75281615add0554c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\69ba81d17fd1c26c75281615add0554c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cb34feab5db2b919c5bcf32eec0920cb\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cb34feab5db2b919c5bcf32eec0920cb\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a057afb287564d4965e14d9868850d9e\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a057afb287564d4965e14d9868850d9e\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\602e442dd3acd86edd3f0beffa18fe16\jetified-subsampling-scale-image-view-3.10.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\602e442dd3acd86edd3f0beffa18fe16\jetified-subsampling-scale-image-view-3.10.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:15:5-17:47
+	tools:ignore
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:17:9-44
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:16:9-68
+activity#com.huantansheng.easyphotos.ui.EasyPhotosActivity
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:23:9-27:54
+	android:screenOrientation
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:26:13-49
+	android:configChanges
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:25:13-74
+	android:theme
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:27:13-51
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:24:13-77
+activity#com.huantansheng.easyphotos.ui.PreviewActivity
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:28:9-32:64
+	android:screenOrientation
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:31:13-49
+	android:configChanges
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:30:13-74
+	android:theme
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:32:13-61
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:29:13-74
+activity#com.huantansheng.easyphotos.ui.PuzzleActivity
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:33:9-38:55
+	android:screenOrientation
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:36:13-49
+	android:windowSoftInputMode
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:38:13-52
+	android:configChanges
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:37:13-51
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:34:13-73
+activity#com.huantansheng.easyphotos.ui.PuzzleSelectorActivity
+ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:39:9-43:54
+	android:screenOrientation
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:42:13-49
+	android:configChanges
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:41:13-74
+	android:theme
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:43:13-51
+	android:name
+		ADDED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:40:13-81
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
