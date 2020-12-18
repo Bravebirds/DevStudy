@@ -29,7 +29,6 @@
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 允许应用修改全局音频设置 -->
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- 允许应用程序执行I/O操作在NFC -->
     <uses-permission android:name="android.permission.NFC" /> <!-- 允许应用程式读取同步设定 -->
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" /> <!-- 允许应用程序读取同步统计信息 -->
     <uses-permission android:name="android.permission.READ_SYNC_STATS" />
     <!--
@@ -137,12 +136,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize" >
-        <activity android:name="com.mryu.devstudy.activity.PhoneLoginActivity" />
-        <activity android:name="com.mryu.devstudy.activity.NetWorkActivity" />
-        <activity android:name="com.mryu.devstudy.activity.SwipeRefreshActivity" />
-        <activity android:name="com.mryu.devstudy.fragment.DrawerFragment" />
+        <activity android:name="com.mryu.devstudy.activity.LoginCovenActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.MessageFragment" />
+        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
         <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
         <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
         <activity android:name="com.mryu.devstudy.fragment.BookFragment" />
@@ -152,29 +154,12 @@
         <activity android:name="com.mryu.devstudy.fragment.NewPeopleFragment" />
         <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
         <activity android:name="com.mryu.devstudy.fragment.RecomFragment" />
-        <activity android:name="com.mryu.devstudy.activity.LoadingActivity" />
         <activity android:name="com.mryu.devstudy.activity.AgreementActivity" />
         <activity android:name="com.mryu.devstudy.MainActivity" />
-        <activity android:name="com.mryu.devstudy.activity.TestHomeActivity" />
-        <activity android:name="com.mryu.devstudy.activity.RegistActivity" />
-        <activity android:name="com.mryu.devstudy.activity.ForgotpwdActivity" />
-        <activity android:name="com.mryu.devstudy.activity.SplashActivity" />
-        <activity android:name="com.mryu.devstudy.activity.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.mryu.devstudy.activity.GridViewActivity" />
-        <activity android:name="com.mryu.devstudy.activity.BannerActvity" >
-        </activity>
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
-        <activity android:name="com.mryu.devstudy.activity.ScendActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

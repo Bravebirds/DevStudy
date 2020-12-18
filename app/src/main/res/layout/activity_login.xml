@@ -19,19 +19,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingBottom="60dp">
-
-            <TextView
-                android:id="@+id/pwd_free_access"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="8dp"
-                android:text="@string/phone_auto_login"
-                android:textStyle="normal"
-                android:textColor="@color/colorGray"
-                android:textSize="18dp"/>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,15 +29,13 @@
                 android:textStyle="normal"
                 android:textColor="@color/colorBlack"
                 android:textSize="25dp"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
                 <EditText
                     android:id="@+id/account"
                     android:layout_width="250dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
                     android:background="@drawable/shape_bottom_input"
                     android:gravity="center"
                     android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
@@ -58,19 +43,12 @@
                     android:inputType="text"
                     android:lineHeight="25dp"
                     android:maxLines="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="7dp"
-                android:orientation="horizontal">
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="250dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:gravity="center"
+                    android:layout_gravity="center"
                     android:imeOptions="actionNext"
                     android:inputType="textPassword"
                     android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -78,7 +56,6 @@
                     android:background="@drawable/shape_bottom_input"
                     android:maxLines="1"
                     android:lineHeight="25dp" />
-            </LinearLayout>
 
             <Button
                 android:id="@+id/account_login"
@@ -93,45 +70,6 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="30dp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="9dp"
-                android:layout_gravity="center">
-                <TextView
-                    android:id="@+id/forgotpwd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="忘记密码？"
-                    android:textColor="@color/colorPlum"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorPlum"
-                    android:text="|"/>
-                <TextView
-                    android:id="@+id/regist"
-                    android:paddingLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="去注册"
-                    android:textColor="@color/colorPlum"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorPlum"
-                    android:text="|"/>
-                <TextView
-                    android:id="@+id/experience"
-                    android:paddingLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="暂不登录、立即体验"
-                    android:textColor="@color/colorPlum"/>
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

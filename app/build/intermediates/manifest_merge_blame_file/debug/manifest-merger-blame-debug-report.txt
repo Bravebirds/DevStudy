@@ -63,405 +63,364 @@
 31    <uses-permission android:name="android.permission.NFC" /> <!-- 允许应用程式读取同步设定 -->
 31-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:5-62
 31-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:26:22-59
-32    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
-32-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:5-86
-32-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:22-83
-33    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" /> <!-- 允许应用程序读取同步统计信息 -->
-33-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:5-77
-33-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:22-74
-34    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
-34-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:29:5-74
-34-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:29:22-71
-35    <!--
-36 允许应用程序接收系统完成引导后广播的ACTION_BOOT_COMPLETED。
-37         如果您不请求此权限，您将不会在当时收到广播。虽然拥有此权限没有任何安全隐患，
-38         但它可能会对用户体验产生负面影响，即增加系统启动所需的时间，并允许应用程序
-39         在用户不知情的情况下运行应用程序。因此，您必须明确声明您使用此工具使其对用户可见。
-40    -->
-41    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 允许应用更改任务的Z顺序 -->
-41-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:5-81
-41-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:22-78
-42    <uses-permission android:name="android.permission.REORDER_TASKS" />
-42-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:37:5-72
-42-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:37:22-69
-43    <!--
-44 必须持有应用程序的权限才能使用ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS。
-45         这是一个正常的权限：请求它的应用程序将始终被授予权限，用户无需批准或查看它。
-46    -->
-47    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-47-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:5-95
-47-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:42:22-92
-48    <!--
-49 允许应用程序请求安装软件包。
-50         指定大于22的API的应用程式必须拥有此权限才能使用ACTION_INSTALL_PACKAGE。
-51    -->
-52    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 允许应用程序广播用于为用户设置闹钟的意图。 -->
-52-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:5-83
-52-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:22-80
-53    <uses-permission android:name="android.permission.SET_ALARM" /> <!-- 允许应用程序设置系统时区。 -->
-53-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:48:5-68
-53-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:48:22-65
-54    <uses-permission android:name="android.permission.SET_TIME_ZONE" /> <!-- 允许应用程序设置壁纸。 -->
-54-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:5-51:47
-54-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:50:9-56
-55    <uses-permission android:name="android.permission.SET_WALLPAPER" /> <!-- 允许应用程序设置壁纸提示。 -->
-55-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:5-72
-55-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:22-69
-56    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" /> <!-- 允许使用设备的红外发射器（如果有）。 -->
-56-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:5-78
-56-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:22-75
-57    <uses-permission android:name="android.permission.TRANSMIT_IR" /> <!-- 不再支持此权限。。 -->
-57-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:5-70
-57-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:22-67
-58    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" /> <!-- 允许应用使用指纹硬件。 -->
-58-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:5-77
-58-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:22-74
-59    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- 允许访问振动器。。 -->
-59-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:5-74
-59-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:22-71
-60    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 允许使用PowerManager WakeLocks防止处理器休眠或屏幕变暗。 -->
-60-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:5-66
-60-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:22-63
-61    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 允许应用程序写入同步设置。 -->
-61-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:5-68
-61-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:22-65
-62    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" /> <!-- PROTECTION_NORMAL 普通权限++++++++++++++++++++++++++++++++++++++++++++++++++++++++- End -->
-62-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:5-78
-62-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:59:22-75
-63    <!-- 表 1. 危险权限和权限组。=========================================================  Start -->
-64    <!-- 用于与用户日历相关的运行时权限 -->
-65    <permission-group android:name="android.permission-group.CALENDAR" /> <!-- 允许应用程式读取使用者的日历资料。 -->
-65-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:5-74
-65-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:23-71
-66    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- 允许应用程序写入用户的日历数据。 -->
-66-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:5-72
-66-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:22-69
-67    <uses-permission android:name="android.permission.WRITE_CALENDAR" /> <!-- 用于与访问摄像头或从设备捕获图像/视频相关联的权限。 -->
-67-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:5-73
-67-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:22-70
-68    <permission-group android:name="android.permission-group.CAMERA" />
-68-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:65:5-72
-68-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:65:23-69
-69    <!--
-70 需要能够访问摄像机设备。这将自动强制所有相机功能的}清单元素。
-71         如果您不需要所有相机功能，或者如果相机不可用则可以正常操作，
-72         则必须根据需要修改清单，以便在不支持所有相机功能的设备上进行安装。
-73    -->
-74    <uses-permission android:name="android.permission.CAMERA" /> <!-- 用于与此设备上的联系人和个人资料相关的运行时权限 -->
-74-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:5-65
-74-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:22-62
-75    <permission-group android:name="android.permission-group.CONTACTS" /> <!-- Allows an application to read the user's contacts data. -->
-75-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:5-74
-75-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:23-71
-76    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Allows an application to write the user's contacts data. -->
-76-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:5-72
-76-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:22-69
-77    <uses-permission android:name="android.permission.WRITE_CONTACTS" /> <!-- 允许访问帐户服务中的帐户列表。 -->
-77-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:5-73
-77-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:74:22-70
-78    <!--
-79 注意：从Android 6.0（API级别23）开始，如果应用程序共享管理帐户的验证器的签名，
-80         则它不需要“GET_ACCOUNTS”权限来读取有关该帐户的信息。在Android 5.1及更低版本中，
-81         所有应用程序都需要“GET_ACCOUNTS”权限才能读取任何帐户的相关信息。
-82    -->
-83    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- 用于允许访问设备位置的权限 -->
-83-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:5-71
-83-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:22-68
-84    <permission-group android:name="android.permission-group.LOCATION" /> <!-- 允许应用程序访问精确位置。或者，你可能想access_coarse_location。 -->
-84-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:5-74
-84-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:23-71
-85    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 允许应用程序访问近似位置。或者，你可能想access_fine_location。 -->
-85-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:5-79
-85-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:22-76
-86    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-86-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:83:5-81
-86-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:83:22-78
-87    <!--
-88 用于与从设备访问麦克风音频相关联的权限。
-89         请注意，电话呼叫也会捕获音频，但是位于单独（更可见）权限组中。
-90    -->
-91    <permission-group android:name="android.permission-group.MICROPHONE" /> <!-- Allows an application to record audio. -->
-91-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:5-76
-91-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:23-73
-92    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 用于关联电话功能的权限。 -->
+32    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" /> <!-- 允许应用程序读取同步统计信息 -->
+32-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:5-77
+32-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:27:22-74
+33    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+33-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:5-74
+33-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:28:22-71
+34    <!--
+35 允许应用程序接收系统完成引导后广播的ACTION_BOOT_COMPLETED。
+36         如果您不请求此权限，您将不会在当时收到广播。虽然拥有此权限没有任何安全隐患，
+37         但它可能会对用户体验产生负面影响，即增加系统启动所需的时间，并允许应用程序
+38         在用户不知情的情况下运行应用程序。因此，您必须明确声明您使用此工具使其对用户可见。
+39    -->
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 允许应用更改任务的Z顺序 -->
+40-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:35:5-81
+40-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:35:22-78
+41    <uses-permission android:name="android.permission.REORDER_TASKS" />
+41-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:5-72
+41-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:36:22-69
+42    <!--
+43 必须持有应用程序的权限才能使用ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS。
+44         这是一个正常的权限：请求它的应用程序将始终被授予权限，用户无需批准或查看它。
+45    -->
+46    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+46-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:41:5-95
+46-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:41:22-92
+47    <!--
+48 允许应用程序请求安装软件包。
+49         指定大于22的API的应用程式必须拥有此权限才能使用ACTION_INSTALL_PACKAGE。
+50    -->
+51    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 允许应用程序广播用于为用户设置闹钟的意图。 -->
+51-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:46:5-83
+51-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:46:22-80
+52    <uses-permission android:name="android.permission.SET_ALARM" /> <!-- 允许应用程序设置系统时区。 -->
+52-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:5-68
+52-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:47:22-65
+53    <uses-permission android:name="android.permission.SET_TIME_ZONE" /> <!-- 允许应用程序设置壁纸。 -->
+53-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:48:5-50:47
+53-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:49:9-56
+54    <uses-permission android:name="android.permission.SET_WALLPAPER" /> <!-- 允许应用程序设置壁纸提示。 -->
+54-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:5-72
+54-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:51:22-69
+55    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" /> <!-- 允许使用设备的红外发射器（如果有）。 -->
+55-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:5-78
+55-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:52:22-75
+56    <uses-permission android:name="android.permission.TRANSMIT_IR" /> <!-- 不再支持此权限。。 -->
+56-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:5-70
+56-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:53:22-67
+57    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" /> <!-- 允许应用使用指纹硬件。 -->
+57-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:5-77
+57-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:54:22-74
+58    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- 允许访问振动器。。 -->
+58-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:5-74
+58-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:55:22-71
+59    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 允许使用PowerManager WakeLocks防止处理器休眠或屏幕变暗。 -->
+59-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:5-66
+59-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:56:22-63
+60    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 允许应用程序写入同步设置。 -->
+60-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:5-68
+60-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:57:22-65
+61    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" /> <!-- PROTECTION_NORMAL 普通权限++++++++++++++++++++++++++++++++++++++++++++++++++++++++- End -->
+61-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:5-78
+61-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:58:22-75
+62    <!-- 表 1. 危险权限和权限组。=========================================================  Start -->
+63    <!-- 用于与用户日历相关的运行时权限 -->
+64    <permission-group android:name="android.permission-group.CALENDAR" /> <!-- 允许应用程式读取使用者的日历资料。 -->
+64-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:5-74
+64-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:61:23-71
+65    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- 允许应用程序写入用户的日历数据。 -->
+65-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:5-72
+65-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:62:22-69
+66    <uses-permission android:name="android.permission.WRITE_CALENDAR" /> <!-- 用于与访问摄像头或从设备捕获图像/视频相关联的权限。 -->
+66-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:5-73
+66-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:63:22-70
+67    <permission-group android:name="android.permission-group.CAMERA" />
+67-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:5-72
+67-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:64:23-69
+68    <!--
+69 需要能够访问摄像机设备。这将自动强制所有相机功能的}清单元素。
+70         如果您不需要所有相机功能，或者如果相机不可用则可以正常操作，
+71         则必须根据需要修改清单，以便在不支持所有相机功能的设备上进行安装。
+72    -->
+73    <uses-permission android:name="android.permission.CAMERA" /> <!-- 用于与此设备上的联系人和个人资料相关的运行时权限 -->
+73-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:5-65
+73-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:70:22-62
+74    <permission-group android:name="android.permission-group.CONTACTS" /> <!-- Allows an application to read the user's contacts data. -->
+74-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:5-74
+74-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:71:23-71
+75    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Allows an application to write the user's contacts data. -->
+75-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:5-72
+75-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:72:22-69
+76    <uses-permission android:name="android.permission.WRITE_CONTACTS" /> <!-- 允许访问帐户服务中的帐户列表。 -->
+76-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:5-73
+76-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:73:22-70
+77    <!--
+78 注意：从Android 6.0（API级别23）开始，如果应用程序共享管理帐户的验证器的签名，
+79         则它不需要“GET_ACCOUNTS”权限来读取有关该帐户的信息。在Android 5.1及更低版本中，
+80         所有应用程序都需要“GET_ACCOUNTS”权限才能读取任何帐户的相关信息。
+81    -->
+82    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- 用于允许访问设备位置的权限 -->
+82-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:79:5-71
+82-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:79:22-68
+83    <permission-group android:name="android.permission-group.LOCATION" /> <!-- 允许应用程序访问精确位置。或者，你可能想access_coarse_location。 -->
+83-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:5-74
+83-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:80:23-71
+84    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 允许应用程序访问近似位置。或者，你可能想access_fine_location。 -->
+84-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:5-79
+84-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:81:22-76
+85    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+85-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:5-81
+85-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:82:22-78
+86    <!--
+87 用于与从设备访问麦克风音频相关联的权限。
+88         请注意，电话呼叫也会捕获音频，但是位于单独（更可见）权限组中。
+89    -->
+90    <permission-group android:name="android.permission-group.MICROPHONE" /> <!-- Allows an application to record audio. -->
+90-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:5-76
+90-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:87:23-73
+91    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 用于关联电话功能的权限。 -->
+91-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:5-71
+91-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:88:22-68
+92    <permission-group android:name="android.permission-group.PHONE" />
 92-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:5-71
-92-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:22-68
-93    <permission-group android:name="android.permission-group.PHONE" />
-93-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:90:5-71
-93-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:90:23-68
-94    <!--
-95 允许只读访问电话状态，包括设备的电话号码，当前蜂窝网络信息，
-96         任何正在进行的通话的状态，以及在设备上注册的任何PhoneAccount列表
-97    -->
-98    <!--
-99 注意：如果您的minSdkVersion和targetSdkVersion值都设置为3或更低，
-100         系统会向您的应用程序隐式授予此权限。如果您不需要此权限，请确保您的targetSdkVersion为4或更高。
-101    -->
-102    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许应用程序发起电话呼叫，而无需通过拨号器用户界面让用户确认呼叫. -->
-102-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:5-75
-102-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:22-72
-103    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Allows an application to read the user's call log. -->
-103-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:5-69
-103-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:22-66
-104    <uses-permission android:name="android.permission.READ_CALL_LOG" /> <!-- Allows an application to write (but not read) the user's call log data. -->
-104-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:5-72
-104-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:22-69
-105    <uses-permission android:name="android.permission.WRITE_CALL_LOG" /> <!-- 允许应用程序向系统中添加语音邮件 -->
-105-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:5-73
-105-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:22-70
-106    <uses-permission android:name="android.permission.ADD_VOICEMAIL" /> <!-- Allows an application to use SIP service. 会话发起协议 -->
-106-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:5-72
-106-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:22-69
-107    <uses-permission android:name="android.permission.USE_SIP" /> <!-- 允许应用程序查看在拨出呼叫期间拨打的号码，以及将呼叫重定向到其他号码或完全中止该呼叫的选项。 -->
-107-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:5-66
-107-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:22-63
-108    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> <!-- 用于与访问摄像头或从设备捕获图像/视频相关联的权限。 -->
-108-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:5-81
-108-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:22-78
-109    <permission-group android:name="android.permission-group.SENSORS" /> <!-- 允许应用程序访问来自传感器的数据，用户使用这些传感器来测量他/她身体内部发生的情况，例如心率。 -->
-109-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:5-73
-109-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:23-70
-110    <uses-permission android:name="android.permission.BODY_SENSORS" /> <!-- 用于与用户的SMS消息相关的运行时权限 -->
-110-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:5-71
-110-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:22-68
-111    <permission-group android:name="android.permission-group.SMS" /> <!-- Allows an application to send SMS messages. -->
-111-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:5-69
-111-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:23-66
-112    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- Allows an application to receive SMS messages. -->
-112-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:5-67
-112-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:22-64
-113    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- Allows an application to read SMS messages. -->
-113-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:5-70
-113-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:22-67
-114    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 允许应用程序接收WAP推式消息。 -->
-114-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:5-67
-114-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:22-64
-115    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> <!-- 允许应用程序监视传入的彩信。 -->
-115-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:5-75
-115-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:22-72
-116    <uses-permission android:name="android.permission.RECEIVE_MMS" /> <!-- 用于与共享外部存储相关的运行时权限。 -->
-116-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:5-70
-116-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:22-67
-117    <permission-group android:name="android.permission-group.STORAGE" /> <!-- 允许应用程序从外部存储设备读取。 -->
-117-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:5-73
-117-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:23-70
-118    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 允许应用程序写入外部存储。 -->
-118-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:5-80
-118-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:22-77
-119    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 表 1. 危险权限和权限组。=========================================================  End -->
-119-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:5-80
-119-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:115:22-77
-120    <uses-feature android:name="android.hardware.camera" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
-120-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:5-60
-120-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:19-57
-121    <uses-feature android:name="android.hardware.location.gps" />
-121-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:5-66
-121-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:19-63
-122
-123    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-123-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:5-81
-123-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:22-78
-124    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-124-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:15:5-17:47
-124-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:16:9-68
-125
-126    <application
-126-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:5-178:19
-127        android:allowBackup="true"
-127-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-35
-128        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-128-->[androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
-129        android:clickable="true"
-129-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-33
-130        android:debuggable="true"
-131        android:focusableInTouchMode="true"
-131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-44
-132        android:icon="@mipmap/ic_launcher"
-132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-43
-133        android:label="@string/app_name"
-133-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-41
-134        android:requestLegacyExternalStorage="true"
-134-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:21:9-52
-135        android:roundIcon="@mipmap/ic_launcher_round"
-135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-54
-136        android:supportsRtl="true"
-136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-35
-137        android:theme="@style/AppTheme"
-137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-40
-138        android:usesCleartextTraffic="true"
-138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-44
-139        android:windowSoftInputMode="adjustResize" >
-139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-51
-140        <activity android:name="com.mryu.devstudy.activity.PhoneLoginActivity" />
-140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-74
-140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:19-62
-141        <activity android:name="com.mryu.devstudy.activity.NetWorkActivity" />
-141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:9-62
-141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:19-59
-142        <activity android:name="com.mryu.devstudy.activity.SwipeRefreshActivity" />
-142-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:9-67
-142-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:19-64
-143        <activity android:name="com.mryu.devstudy.fragment.DrawerFragment" />
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:9-61
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:19-58
-144        <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
-144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:9-64
-144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:19-61
-145        <activity android:name="com.mryu.devstudy.fragment.MessageFragment" />
-145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:9-62
-145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:19-59
-146        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-59
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-56
-147        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
+92-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:89:23-68
+93    <!--
+94 允许只读访问电话状态，包括设备的电话号码，当前蜂窝网络信息，
+95         任何正在进行的通话的状态，以及在设备上注册的任何PhoneAccount列表
+96    -->
+97    <!--
+98 注意：如果您的minSdkVersion和targetSdkVersion值都设置为3或更低，
+99         系统会向您的应用程序隐式授予此权限。如果您不需要此权限，请确保您的targetSdkVersion为4或更高。
+100    -->
+101    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许应用程序发起电话呼叫，而无需通过拨号器用户界面让用户确认呼叫. -->
+101-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:98:5-75
+101-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:98:22-72
+102    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Allows an application to read the user's call log. -->
+102-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:5-69
+102-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:99:22-66
+103    <uses-permission android:name="android.permission.READ_CALL_LOG" /> <!-- Allows an application to write (but not read) the user's call log data. -->
+103-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:5-72
+103-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:100:22-69
+104    <uses-permission android:name="android.permission.WRITE_CALL_LOG" /> <!-- 允许应用程序向系统中添加语音邮件 -->
+104-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:5-73
+104-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:101:22-70
+105    <uses-permission android:name="android.permission.ADD_VOICEMAIL" /> <!-- Allows an application to use SIP service. 会话发起协议 -->
+105-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:5-72
+105-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:102:22-69
+106    <uses-permission android:name="android.permission.USE_SIP" /> <!-- 允许应用程序查看在拨出呼叫期间拨打的号码，以及将呼叫重定向到其他号码或完全中止该呼叫的选项。 -->
+106-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:5-66
+106-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:103:22-63
+107    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> <!-- 用于与访问摄像头或从设备捕获图像/视频相关联的权限。 -->
+107-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:5-81
+107-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:104:22-78
+108    <permission-group android:name="android.permission-group.SENSORS" /> <!-- 允许应用程序访问来自传感器的数据，用户使用这些传感器来测量他/她身体内部发生的情况，例如心率。 -->
+108-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:5-73
+108-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:105:23-70
+109    <uses-permission android:name="android.permission.BODY_SENSORS" /> <!-- 用于与用户的SMS消息相关的运行时权限 -->
+109-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:5-71
+109-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:106:22-68
+110    <permission-group android:name="android.permission-group.SMS" /> <!-- Allows an application to send SMS messages. -->
+110-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:5-69
+110-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:107:23-66
+111    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- Allows an application to receive SMS messages. -->
+111-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:5-67
+111-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:108:22-64
+112    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- Allows an application to read SMS messages. -->
+112-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:5-70
+112-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:109:22-67
+113    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 允许应用程序接收WAP推式消息。 -->
+113-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:5-67
+113-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:110:22-64
+114    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> <!-- 允许应用程序监视传入的彩信。 -->
+114-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:5-75
+114-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:111:22-72
+115    <uses-permission android:name="android.permission.RECEIVE_MMS" /> <!-- 用于与共享外部存储相关的运行时权限。 -->
+115-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:5-70
+115-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:112:22-67
+116    <permission-group android:name="android.permission-group.STORAGE" /> <!-- 允许应用程序从外部存储设备读取。 -->
+116-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:5-73
+116-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:113:23-70
+117    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 允许应用程序写入外部存储。 -->
+117-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:5-80
+117-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:22-77
+118    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 表 1. 危险权限和权限组。=========================================================  End -->
+118-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:5-80
+118-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:114:22-77
+119    <uses-feature android:name="android.hardware.camera" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+119-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:116:5-60
+119-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:116:19-57
+120    <uses-feature android:name="android.hardware.location.gps" />
+120-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:5-66
+120-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:19-63
+121
+122    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+122-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:5-81
+122-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:14:22-78
+123    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+123-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:15:5-17:47
+123-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:16:9-68
+124
+125    <application
+125-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-164:19
+126        android:allowBackup="true"
+126-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:9-35
+127        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+127-->[androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
+128        android:clickable="true"
+128-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-33
+129        android:debuggable="true"
+130        android:focusableInTouchMode="true"
+130-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-44
+131        android:icon="@mipmap/ic_launcher"
+131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-43
+132        android:label="@string/app_name"
+132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-41
+133        android:requestLegacyExternalStorage="true"
+133-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:21:9-52
+134        android:roundIcon="@mipmap/ic_launcher_round"
+134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-54
+135        android:supportsRtl="true"
+135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-35
+136        android:theme="@style/AppTheme"
+136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-40
+137        android:usesCleartextTraffic="true"
+137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-44
+138        android:windowSoftInputMode="adjustResize" >
+138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-51
+139        <activity android:name="com.mryu.devstudy.activity.LoginCovenActivity" >
+139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-136:20
+139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-62
+140            <intent-filter>
+140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:13-135:29
+141                <action android:name="android.intent.action.MAIN" />
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:17-69
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:25-66
+142
+143                <category android:name="android.intent.category.LAUNCHER" />
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:17-77
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:27-74
+144            </intent-filter>
+145        </activity>
+146        <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-64
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-61
+147        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
 147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
 147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
-148        <activity android:name="com.mryu.devstudy.fragment.BookFragment" />
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-59
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-56
-149        <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
-149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-60
-149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-57
-150        <activity android:name="com.mryu.devstudy.fragment.GameFragment" />
+148        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
+149        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
+149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-59
+149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-56
+150        <activity android:name="com.mryu.devstudy.fragment.BookFragment" />
 150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-59
 150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-56
-151        <activity android:name="com.mryu.devstudy.fragment.FriendsFragment" />
-151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-62
-151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-59
-152        <activity android:name="com.mryu.devstudy.fragment.NewPeopleFragment" />
-152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-64
-152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-61
-153        <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
-153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-64
-153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-61
-154        <activity android:name="com.mryu.devstudy.fragment.RecomFragment" />
-154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-60
-154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-57
-155        <activity android:name="com.mryu.devstudy.activity.LoadingActivity" />
-155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-62
-155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-59
-156        <activity android:name="com.mryu.devstudy.activity.AgreementActivity" />
-156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-64
-156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:19-61
-157        <activity android:name="com.mryu.devstudy.MainActivity" />
-157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:9-50
-157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:19-47
-158        <activity android:name="com.mryu.devstudy.activity.TestHomeActivity" />
-158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:9-63
-158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:19-60
-159        <activity android:name="com.mryu.devstudy.activity.RegistActivity" />
-159-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-61
-159-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:19-58
-160        <activity android:name="com.mryu.devstudy.activity.ForgotpwdActivity" />
-160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:9-64
-160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:19-61
-161        <activity android:name="com.mryu.devstudy.activity.SplashActivity" />
-161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:9-61
-161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:19-58
-162        <activity android:name="com.mryu.devstudy.activity.LoginActivity" >
-162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:9-159:20
-162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:19-57
-163            <intent-filter>
-163-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-158:29
-164                <action android:name="android.intent.action.MAIN" />
-164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:17-69
-164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:25-66
-165
-166                <category android:name="android.intent.category.LAUNCHER" />
-166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:17-77
-166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:27-74
-167            </intent-filter>
-168        </activity>
-169        <activity android:name="com.mryu.devstudy.activity.GridViewActivity" />
-169-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:9-63
-169-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:19-60
-170        <activity android:name="com.mryu.devstudy.activity.BannerActvity" >
-170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:9-162:20
-170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:19-57
-171        </activity>
-172
-173        <uses-library
-173-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:163:9-165:40
-174            android:name="org.apache.http.legacy"
-174-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:13-50
-175            android:required="false" />
-175-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:165:13-37
-176
-177        <activity android:name="com.mryu.devstudy.activity.ScendActivity" />
-177-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:9-60
-177-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:19-57
-178
-179        <provider
-179-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:9-177:20
-180            android:name="androidx.core.content.FileProvider"
-180-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:13-62
-181            android:authorities=".activity.RegistActivity"
-181-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:171:13-59
-182            android:exported="false"
-182-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:13-37
-183            android:grantUriPermissions="true" >
-183-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:173:13-47
-184            <meta-data
-184-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:174:13-176:61
-185                android:name="android.support.FILE_PROVIDER_PATHS"
-185-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:17-67
-186                android:resource="@xml/file_paths_public" />
-186-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:17-58
-187        </provider>
-188
-189        <activity
-189-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:23:9-27:54
-190            android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity"
-190-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:24:13-77
-191            android:configChanges="orientation|keyboardHidden|screenSize"
-191-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:25:13-74
-192            android:screenOrientation="portrait"
-192-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:26:13-49
-193            android:theme="@style/EasyPhotosTheme" />
-193-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:27:13-51
-194        <activity
-194-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:28:9-32:64
-195            android:name="com.huantansheng.easyphotos.ui.PreviewActivity"
-195-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:29:13-74
-196            android:configChanges="orientation|keyboardHidden|screenSize"
-196-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:30:13-74
-197            android:screenOrientation="portrait"
-197-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:31:13-49
-198            android:theme="@style/EasyPhotosFullscreenTheme" />
-198-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:32:13-61
-199        <activity
-199-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:33:9-38:55
-200            android:name="com.huantansheng.easyphotos.ui.PuzzleActivity"
-200-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:34:13-73
-201            android:configChanges="orientation|keyboardHidden|screenSize"
-201-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:35:13-74
-202            android:screenOrientation="portrait"
-202-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:36:13-49
-203            android:theme="@style/EasyPhotosTheme"
-203-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:37:13-51
-204            android:windowSoftInputMode="adjustPan" />
-204-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:38:13-52
-205        <activity
-205-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:39:9-43:54
-206            android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity"
-206-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:40:13-81
-207            android:configChanges="orientation|keyboardHidden|screenSize"
-207-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:41:13-74
-208            android:screenOrientation="portrait"
-208-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:42:13-49
-209            android:theme="@style/EasyPhotosTheme" />
-209-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:43:13-51
-210
-211        <provider
-211-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-212            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-212-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-213            android:authorities="com.mryu.devstudy.lifecycle-process"
-213-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-214            android:exported="false"
-214-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-215            android:multiprocess="true" />
-215-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-216    </application>
-217
-218</manifest>
+151        <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
+151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-60
+151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-57
+152        <activity android:name="com.mryu.devstudy.fragment.GameFragment" />
+152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-59
+152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-56
+153        <activity android:name="com.mryu.devstudy.fragment.FriendsFragment" />
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-62
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-59
+154        <activity android:name="com.mryu.devstudy.fragment.NewPeopleFragment" />
+154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-64
+154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-61
+155        <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
+155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-64
+155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-61
+156        <activity android:name="com.mryu.devstudy.fragment.RecomFragment" />
+156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-60
+156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:19-57
+157        <activity android:name="com.mryu.devstudy.activity.AgreementActivity" />
+157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:9-64
+157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:19-61
+158        <activity android:name="com.mryu.devstudy.MainActivity" />
+158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:9-50
+158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:19-47
+159
+160        <uses-library
+160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:9-153:40
+161            android:name="org.apache.http.legacy"
+161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-50
+162            android:required="false" />
+162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:13-37
+163
+164        <provider
+164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:9-163:20
+165            android:name="androidx.core.content.FileProvider"
+165-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:13-62
+166            android:authorities=".activity.RegistActivity"
+166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:13-59
+167            android:exported="false"
+167-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:158:13-37
+168            android:grantUriPermissions="true" >
+168-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:13-47
+169            <meta-data
+169-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:13-162:61
+170                android:name="android.support.FILE_PROVIDER_PATHS"
+170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:17-67
+171                android:resource="@xml/file_paths_public" />
+171-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:17-58
+172        </provider>
+173
+174        <activity
+174-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:23:9-27:54
+175            android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity"
+175-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:24:13-77
+176            android:configChanges="orientation|keyboardHidden|screenSize"
+176-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:25:13-74
+177            android:screenOrientation="portrait"
+177-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:26:13-49
+178            android:theme="@style/EasyPhotosTheme" />
+178-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:27:13-51
+179        <activity
+179-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:28:9-32:64
+180            android:name="com.huantansheng.easyphotos.ui.PreviewActivity"
+180-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:29:13-74
+181            android:configChanges="orientation|keyboardHidden|screenSize"
+181-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:30:13-74
+182            android:screenOrientation="portrait"
+182-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:31:13-49
+183            android:theme="@style/EasyPhotosFullscreenTheme" />
+183-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:32:13-61
+184        <activity
+184-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:33:9-38:55
+185            android:name="com.huantansheng.easyphotos.ui.PuzzleActivity"
+185-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:34:13-73
+186            android:configChanges="orientation|keyboardHidden|screenSize"
+186-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:35:13-74
+187            android:screenOrientation="portrait"
+187-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:36:13-49
+188            android:theme="@style/EasyPhotosTheme"
+188-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:37:13-51
+189            android:windowSoftInputMode="adjustPan" />
+189-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:38:13-52
+190        <activity
+190-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:39:9-43:54
+191            android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity"
+191-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:40:13-81
+192            android:configChanges="orientation|keyboardHidden|screenSize"
+192-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:41:13-74
+193            android:screenOrientation="portrait"
+193-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:42:13-49
+194            android:theme="@style/EasyPhotosTheme" />
+194-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:43:13-51
+195
+196        <provider
+196-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+197            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+197-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+198            android:authorities="com.mryu.devstudy.lifecycle-process"
+198-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+199            android:exported="false"
+199-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+200            android:multiprocess="true" />
+200-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+201    </application>
+202
+203</manifest>
