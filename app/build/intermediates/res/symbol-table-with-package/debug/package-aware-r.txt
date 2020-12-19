@@ -2143,7 +2143,6 @@ id hideable
 id home
 id homeAsUp
 id home_page
-id home_refresh
 id home_tab
 id honorRequest
 id icon

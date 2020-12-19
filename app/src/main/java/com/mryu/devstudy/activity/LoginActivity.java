@@ -1,18 +1,26 @@
 package com.mryu.devstudy.activity;
-
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.text.Editable;
 import android.text.InputType;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.LinkMovementMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.text.style.ClickableSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -26,6 +34,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -78,7 +87,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * 《用户协议》
      */
     private TextView mUserPrivacy;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -158,8 +166,35 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 mCheckAgreement.setChecked(true);
             }
         });
-    }
+        final SpannableStringBuilder style = new SpannableStringBuilder();
+        //设置文字
+        String str = mText.getText().toString();
+        style.append(str);
 
+        //设置部分文字点击事件
+        ClickableSpan ClickuserRule = new ClickableSpan() {
+            @Override
+            public void onClick(View widget) {
+                userClick();
+            }
+        };
+        ClickableSpan ClickprivateRule = new ClickableSpan() {
+            @Override
+            public void onClick(View widget) {
+                privacyClick();
+            }
+        };
+        style.setSpan(ClickuserRule, 67, 71, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        style.setSpan(ClickprivateRule, 74, 78, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //设置部分文字颜色
+        ForegroundColorSpan userRulesColor = new ForegroundColorSpan(Color.parseColor("#FF1493"));
+        ForegroundColorSpan privateRulesColor = new ForegroundColorSpan(Color.parseColor("#FF1493"));
+        style.setSpan(userRulesColor, 67, 71, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        style.setSpan(privateRulesColor, 74, 78, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //配置给TextView
+        mText.setText(style);
+        mText.setMovementMethod(LinkMovementMethod.getInstance());
+    }
 
     @Override
     public void onClick(View v) {

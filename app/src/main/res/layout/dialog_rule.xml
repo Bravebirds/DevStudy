@@ -30,12 +30,12 @@
             android:lineSpacingMultiplier="1.2"
             android:layout_weight="1"
             android:paddingLeft="10dp"
-            android:paddingTop="20dp"
+            android:paddingTop="10dp"
             android:paddingRight="10dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="10dp"
             android:text=""
-            android:textColor="#56595e"
-            android:textSize="14sp" />
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
 
         <View
             android:layout_width="match_parent"
