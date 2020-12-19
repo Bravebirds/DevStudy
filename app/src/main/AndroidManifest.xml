@@ -118,34 +118,29 @@
 
     <application
         android:allowBackup="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:clickable="true"
-        android:focusableInTouchMode="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize">
-        <activity android:name=".activity.LoginCovenActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activity.AdvertisActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+        <activity android:name=".activity.RuleActivity" />
+        <activity android:name=".activity.LoginActivity"/>
         <activity android:name=".fragment.MySettingFragment" />
         <activity android:name=".fragment.FindFragment" />
-        <activity android:name=".fragment.FindFragment" />
         <activity android:name=".fragment.HomeFragment" />
-        <activity android:name=".fragment.BookFragment" />
         <activity android:name=".fragment.VideoFragment" />
-        <activity android:name=".fragment.GameFragment" />
-        <activity android:name=".fragment.FriendsFragment" />
-        <activity android:name=".fragment.NewPeopleFragment" />
         <activity android:name=".activity.SelectionActivity" />
-        <activity android:name=".fragment.RecomFragment" />
-        <activity android:name=".activity.AgreementActivity" />
         <activity android:name=".MainActivity" />
 
         <uses-library

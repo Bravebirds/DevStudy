@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -13,6 +13,8 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\MrYu\.gradle\caches\tr
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1f155579a16e24a6a774f2c25a5ad576\butterknife-10.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -24,17 +26,15 @@ MERGED from [androidx.transition:transition:1.2.0] C:\Users\MrYu\.gradle\caches\
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\11213af1c2b64f71d296e6c1b2c0e8ff\glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bfb36a8a02a6b71b49ca7ec649145b26\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -60,22 +60,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
-INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
 	package
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:4:5-32
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-166:12
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-161:12
 		INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:11-69
@@ -350,7 +350,7 @@ ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:117:19-63
 application
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-164:19
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-159:19
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
 MERGED from [com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:19:5-44:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -374,52 +374,56 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-35
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-35
 	android:label
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-41
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-41
 	android:windowSoftInputMode
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-51
 	android:focusableInTouchMode
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-44
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-44
 	android:clickable
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-33
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-33
 	android:roundIcon
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-54
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-54
 	android:icon
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-43
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-43
 	android:allowBackup
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:9-35
 	android:theme
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-40
 	android:usesCleartextTraffic
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-44
-activity#com.mryu.devstudy.activity.LoginCovenActivity
+activity#com.mryu.devstudy.activity.AdvertisActivity
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-136:20
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-62
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:13-135:29
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-135:25
 action#android.intent.action.MAIN
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:17-69
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:13-65
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:25-66
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:17-77
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:13-73
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:27-74
-activity#com.mryu.devstudy.fragment.MySettingFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-64
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:23-70
+activity#com.mryu.devstudy.activity.RuleActivity
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-61
-activity#com.mryu.devstudy.fragment.FindFragment
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-56
+activity#com.mryu.devstudy.activity.LoginActivity
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
-activity#com.mryu.devstudy.fragment.HomeFragment
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-57
+activity#com.mryu.devstudy.fragment.MySettingFragment
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-64
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-61
+activity#com.mryu.devstudy.fragment.FindFragment
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-59
 	android:name
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-56
-activity#com.mryu.devstudy.fragment.BookFragment
+activity#com.mryu.devstudy.fragment.HomeFragment
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-59
 	android:name
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-56
@@ -427,56 +431,36 @@ activity#com.mryu.devstudy.fragment.VideoFragment
 ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-60
 	android:name
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-57
-activity#com.mryu.devstudy.fragment.GameFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-59
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-56
-activity#com.mryu.devstudy.fragment.FriendsFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-62
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-59
-activity#com.mryu.devstudy.fragment.NewPeopleFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-64
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-61
 activity#com.mryu.devstudy.activity.SelectionActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-64
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-64
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-61
-activity#com.mryu.devstudy.fragment.RecomFragment
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-60
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:19-57
-activity#com.mryu.devstudy.activity.AgreementActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:9-64
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:19-61
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-61
 activity#com.mryu.devstudy.MainActivity
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:9-50
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-50
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:19-47
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-47
 uses-library#org.apache.http.legacy
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:9-153:40
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-148:40
 	android:required
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:13-37
+	android:name
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:13-50
+provider#androidx.core.content.FileProvider
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-158:20
+	android:grantUriPermissions
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-47
+	android:authorities
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-59
+	android:exported
 		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:13-37
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-50
-provider#androidx.core.content.FileProvider
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:9-163:20
-	android:grantUriPermissions
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:13-47
-	android:authorities
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:13-59
-	android:exported
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:158:13-37
-	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:13-62
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:13-162:61
+ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:13-157:61
 	android:resource
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:17-58
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:17-58
 	android:name
-		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:17-67
+		ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:17-67
 uses-sdk
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
@@ -499,6 +483,10 @@ MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\tr
 MERGED from [com.jakewharton:butterknife:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\1f155579a16e24a6a774f2c25a5ad576\butterknife-10.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\cf5bb25c241819ce26d452227629c79a\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\04005ad7c478d573db38b1bee16fcc6a\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -521,28 +509,24 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrY
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\bfb36a8a02a6b71b49ca7ec649145b26\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\ed5a9132108c5b2ae9625fd37b95cb34\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\23dd6a47c3dc00cf876a0e3c18b2990b\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
-MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\afa78d6cc2eb5d8f8507c2a81c997cbb\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fce1a57be9ae7537041c368aad3a085b\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\4677d8a5382c107f6965fb7455600737\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:10.1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\57ddb702da79e240c20e31c46278bd1f\butterknife-runtime-10.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44

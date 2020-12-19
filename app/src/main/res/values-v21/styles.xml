@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="POLICY_DIALOG" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 没有标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景是否半透明 -->
+        <!--各个控制控件的默认颜色-->
+        <item name="android:colorControlNormal">@color/colorDarkgray</item>
+        <!--一般控件的选种效果默认采用该颜色-->
+        <item name="android:colorAccent">@color/colorDeeppink</item>
+        <!--控件选中时的颜色，默认使用colorAccent-->
+        <item name="android:colorControlActivated">@color/colorDeeppink</item>
+        <!--控件按压时的色调-->
+        <item name="android:colorControlHighlight">@color/colorDeeppink</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--状态栏颜色，应用的主要暗色调，statusBarColor默认使用该颜色-->
+        <item name="android:statusBarColor">@color/colorDeeppink</item>
+        <!--Appbar背景色，应用的主要色调，actionBar默认使用该颜色-->
+        <item name="android:colorPrimary">@color/colorDarkgray</item>
+        <!--页面背景色-->
+        <item name="android:windowBackground">@color/colorWhitesmoke</item>
+        <!--底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/colorWhitesmoke</item>
+        <!--应用的主要文字颜色，actionBar的标题文字默认使用该颜色-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--各个控制控件的默认颜色-->
+        <item name="android:colorControlNormal">@color/colorDarkgray</item>
+        <!--一般控件的选种效果默认采用该颜色-->
+        <item name="android:colorAccent">@color/colorDeeppink</item>
+        <!--控件选中时的颜色，默认使用colorAccent-->
+        <item name="android:colorControlActivated">@color/colorDeeppink</item>
+        <!--控件按压时的色调-->
+        <item name="android:colorControlHighlight">@color/colorDeeppink</item>
+        <!--Button，textView的文字颜色-->
+        <item name="android:textColor">@color/colorBlack</item>
+
+        <!--RadioButton checkbox等控件的文字-->
+        <item name="android:textColorPrimaryDisableOnly">@color/colorDeeppink</item>
+
+        <!--默认按钮的背景颜色-->
+        <item name="android:colorButtonNormal">@color/colorDarkgray</item>
+
+        <!--对话框的背景是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!--允许使用transitions(过渡动画)-->
+        <item name="android:windowContentTransitions">true</item>
+        <!--是否覆盖执行，其实可以理解成前后两个页面是同步执行还是顺序执行-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <!--与上面相同。即上一个设置了退出动画，这个设置了进入动画，两者是否同时执行。-->
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+        <item name="android:windowTranslucentStatus" >false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--Android 5.x开始需要把颜色设置为程序的主题色白色，否则导航栏会呈现系统默认的浅灰色-->
+    </style>
+</resources>

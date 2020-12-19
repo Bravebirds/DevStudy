@@ -263,164 +263,149 @@
 123-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:16:9-68
 124
 125    <application
-125-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-164:19
+125-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:5-159:19
 126        android:allowBackup="true"
 126-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:9-35
 127        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 127-->[androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
 128        android:clickable="true"
-128-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-33
+128-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-33
 129        android:debuggable="true"
 130        android:focusableInTouchMode="true"
-130-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-44
+130-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-44
 131        android:icon="@mipmap/ic_launcher"
-131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-43
+131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-43
 132        android:label="@string/app_name"
-132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-41
+132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-41
 133        android:requestLegacyExternalStorage="true"
 133-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:21:9-52
 134        android:roundIcon="@mipmap/ic_launcher_round"
-134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-54
+134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-54
 135        android:supportsRtl="true"
-135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-35
+135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-35
 136        android:theme="@style/AppTheme"
 136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-40
 137        android:usesCleartextTraffic="true"
 137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-44
 138        android:windowSoftInputMode="adjustResize" >
 138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-51
-139        <activity android:name="com.mryu.devstudy.activity.LoginCovenActivity" >
+139        <activity android:name="com.mryu.devstudy.activity.AdvertisActivity" >
 139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-136:20
-139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-62
+139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-60
 140            <intent-filter>
-140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:13-135:29
+140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-135:25
 141                <action android:name="android.intent.action.MAIN" />
-141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:17-69
-141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:25-66
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:13-65
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:21-62
 142
 143                <category android:name="android.intent.category.LAUNCHER" />
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:17-77
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:27-74
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:13-73
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:23-70
 144            </intent-filter>
 145        </activity>
-146        <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-64
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-61
-147        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
+146        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-59
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-56
+147        <activity android:name="com.mryu.devstudy.activity.LoginActivity" />
 147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
-147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
-148        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
-149        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
+147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-57
+148        <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-64
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-61
+149        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
 149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-59
 149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-56
-150        <activity android:name="com.mryu.devstudy.fragment.BookFragment" />
+150        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
 150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-59
 150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-56
 151        <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
 151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-60
 151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-57
-152        <activity android:name="com.mryu.devstudy.fragment.GameFragment" />
-152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-59
-152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-56
-153        <activity android:name="com.mryu.devstudy.fragment.FriendsFragment" />
-153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-62
-153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-59
-154        <activity android:name="com.mryu.devstudy.fragment.NewPeopleFragment" />
-154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-64
-154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-61
-155        <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
-155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-64
-155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-61
-156        <activity android:name="com.mryu.devstudy.fragment.RecomFragment" />
-156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-60
-156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:19-57
-157        <activity android:name="com.mryu.devstudy.activity.AgreementActivity" />
-157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:9-64
-157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:19-61
-158        <activity android:name="com.mryu.devstudy.MainActivity" />
-158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:9-50
-158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:19-47
-159
-160        <uses-library
-160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:9-153:40
-161            android:name="org.apache.http.legacy"
-161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-50
-162            android:required="false" />
+152        <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
+152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-64
+152-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-61
+153        <activity android:name="com.mryu.devstudy.MainActivity" />
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-50
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-47
+154
+155        <uses-library
+155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-148:40
+156            android:name="org.apache.http.legacy"
+156-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:13-50
+157            android:required="false" />
+157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:13-37
+158
+159        <provider
+159-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-158:20
+160            android:name="androidx.core.content.FileProvider"
+160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:13-62
+161            android:authorities=".activity.RegistActivity"
+161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-59
+162            android:exported="false"
 162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:13-37
-163
-164        <provider
-164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:9-163:20
-165            android:name="androidx.core.content.FileProvider"
-165-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:13-62
-166            android:authorities=".activity.RegistActivity"
-166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:13-59
-167            android:exported="false"
-167-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:158:13-37
-168            android:grantUriPermissions="true" >
-168-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:13-47
-169            <meta-data
-169-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:13-162:61
-170                android:name="android.support.FILE_PROVIDER_PATHS"
-170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:17-67
-171                android:resource="@xml/file_paths_public" />
-171-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:17-58
-172        </provider>
-173
+163            android:grantUriPermissions="true" >
+163-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-47
+164            <meta-data
+164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:13-157:61
+165                android:name="android.support.FILE_PROVIDER_PATHS"
+165-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:17-67
+166                android:resource="@xml/file_paths_public" />
+166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:17-58
+167        </provider>
+168
+169        <activity
+169-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:23:9-27:54
+170            android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity"
+170-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:24:13-77
+171            android:configChanges="orientation|keyboardHidden|screenSize"
+171-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:25:13-74
+172            android:screenOrientation="portrait"
+172-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:26:13-49
+173            android:theme="@style/EasyPhotosTheme" />
+173-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:27:13-51
 174        <activity
-174-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:23:9-27:54
-175            android:name="com.huantansheng.easyphotos.ui.EasyPhotosActivity"
-175-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:24:13-77
+174-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:28:9-32:64
+175            android:name="com.huantansheng.easyphotos.ui.PreviewActivity"
+175-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:29:13-74
 176            android:configChanges="orientation|keyboardHidden|screenSize"
-176-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:25:13-74
+176-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:30:13-74
 177            android:screenOrientation="portrait"
-177-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:26:13-49
-178            android:theme="@style/EasyPhotosTheme" />
-178-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:27:13-51
+177-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:31:13-49
+178            android:theme="@style/EasyPhotosFullscreenTheme" />
+178-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:32:13-61
 179        <activity
-179-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:28:9-32:64
-180            android:name="com.huantansheng.easyphotos.ui.PreviewActivity"
-180-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:29:13-74
+179-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:33:9-38:55
+180            android:name="com.huantansheng.easyphotos.ui.PuzzleActivity"
+180-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:34:13-73
 181            android:configChanges="orientation|keyboardHidden|screenSize"
-181-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:30:13-74
+181-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:35:13-74
 182            android:screenOrientation="portrait"
-182-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:31:13-49
-183            android:theme="@style/EasyPhotosFullscreenTheme" />
-183-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:32:13-61
-184        <activity
-184-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:33:9-38:55
-185            android:name="com.huantansheng.easyphotos.ui.PuzzleActivity"
-185-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:34:13-73
-186            android:configChanges="orientation|keyboardHidden|screenSize"
-186-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:35:13-74
-187            android:screenOrientation="portrait"
-187-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:36:13-49
-188            android:theme="@style/EasyPhotosTheme"
-188-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:37:13-51
-189            android:windowSoftInputMode="adjustPan" />
-189-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:38:13-52
-190        <activity
-190-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:39:9-43:54
-191            android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity"
-191-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:40:13-81
-192            android:configChanges="orientation|keyboardHidden|screenSize"
-192-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:41:13-74
-193            android:screenOrientation="portrait"
-193-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:42:13-49
-194            android:theme="@style/EasyPhotosTheme" />
-194-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:43:13-51
-195
-196        <provider
-196-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-197            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-197-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-198            android:authorities="com.mryu.devstudy.lifecycle-process"
-198-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-199            android:exported="false"
-199-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-200            android:multiprocess="true" />
-200-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-201    </application>
-202
-203</manifest>
+182-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:36:13-49
+183            android:theme="@style/EasyPhotosTheme"
+183-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:37:13-51
+184            android:windowSoftInputMode="adjustPan" />
+184-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:38:13-52
+185        <activity
+185-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:39:9-43:54
+186            android:name="com.huantansheng.easyphotos.ui.PuzzleSelectorActivity"
+186-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:40:13-81
+187            android:configChanges="orientation|keyboardHidden|screenSize"
+187-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:41:13-74
+188            android:screenOrientation="portrait"
+188-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:42:13-49
+189            android:theme="@style/EasyPhotosTheme" />
+189-->[com.github.HuanTanSheng:EasyPhotos:3.0.6] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\6966c8810274884b402702ebe69b1ddf\EasyPhotos-3.0.6\AndroidManifest.xml:43:13-51
+190
+191        <provider
+191-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+192            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+192-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+193            android:authorities="com.mryu.devstudy.lifecycle-process"
+193-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+194            android:exported="false"
+194-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+195            android:multiprocess="true" />
+195-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+196    </application>
+197
+198</manifest>

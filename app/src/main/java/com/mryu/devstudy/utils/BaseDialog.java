@@ -15,7 +15,7 @@ public class BaseDialog implements View.OnClickListener{
 
     protected BaseDialog(Context context) {
         this.mContext = context;
-        this.dialog = new Dialog(mContext, R.style.RegistTheme);
+        this.dialog = new Dialog(mContext, R.style.AppTheme);
     }
 
     /**
@@ -25,7 +25,7 @@ public class BaseDialog implements View.OnClickListener{
      */
     protected void setDialogLocation(Context context, Dialog dialog) {
         Window window = dialog.getWindow();
-        window.setWindowAnimations(R.style.RegistTheme);
+        window.setWindowAnimations(R.style.AppTheme);
         WindowManager.LayoutParams lp      = window.getAttributes();
         WindowManager              manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         lp.x = 0;

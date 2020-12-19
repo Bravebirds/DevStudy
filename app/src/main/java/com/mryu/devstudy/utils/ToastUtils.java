@@ -80,7 +80,7 @@ public class ToastUtils {
         View v = inflate.inflate(R.layout.activity_toast_style, null);
         mKevinShortToast.setView(v);
         int height = context.getResources().getDisplayMetrics().heightPixels;
-        mKevinShortToast.setGravity(Gravity.TOP, 0, (int) (height * 0.03));
+        mKevinShortToast.setGravity(Gravity.TOP, 0, (int) (height * 0.06));
         TextView tv = (TextView) v.findViewById(R.id.toast_text);
         ImageView iv = (ImageView) v.findViewById(R.id.toast_image);
         tv.setText(message);

@@ -136,25 +136,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize" >
-        <activity android:name="com.mryu.devstudy.activity.LoginCovenActivity" >
+        <activity android:name="com.mryu.devstudy.activity.AdvertisActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
+        <activity android:name="com.mryu.devstudy.activity.LoginActivity" />
         <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
         <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
         <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.BookFragment" />
         <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.GameFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.FriendsFragment" />
-        <activity android:name="com.mryu.devstudy.fragment.NewPeopleFragment" />
         <activity android:name="com.mryu.devstudy.activity.SelectionActivity" />
-        <activity android:name="com.mryu.devstudy.fragment.RecomFragment" />
-        <activity android:name="com.mryu.devstudy.activity.AgreementActivity" />
         <activity android:name="com.mryu.devstudy.MainActivity" />
 
         <uses-library
