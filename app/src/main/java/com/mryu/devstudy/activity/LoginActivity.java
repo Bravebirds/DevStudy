@@ -1,7 +1,9 @@
 package com.mryu.devstudy.activity;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.text.TextWatcher;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -24,13 +27,13 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.utils.KeyboardLayout;
 import com.mryu.devstudy.utils.ModelUtils;
-import com.mryu.devstudy.utils.RulesDialog;
 import com.mryu.devstudy.utils.SoftKeyInputHidWidget;
 import com.mryu.devstudy.utils.ToastUtils;
 
@@ -43,12 +46,9 @@ import static java.lang.Thread.sleep;
  */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
-    private String text = "欢迎使用DevStudy！使用过程中我们会需要访问您的存储权限、录制、相机权限、获取设备信息等权限及信息\n" +
-            "• 您可以点击《用户协议》和《隐私政策》了解个人信息类型与用途的对应关系等更加详尽的个人信息处理规则。\n" +
-            "• 我们会采用业界领先的安全技术保护好您的个人信息，如您同意，请点击“同意”开始接受我们的服务。";
     private String account = "501893067";
     private String password = "123567";
-    private static volatile RulesDialog instance = null;
+    private SharedPreferences sharedPreferences;
     private ImageView mQqLogin;
     private ImageView mWxLogin;
     private ImageView mWbLogin;
@@ -86,6 +86,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initView();
         setListener();
+        sharedPreferences = getSharedPreferences("ruleDialog", Context.MODE_PRIVATE);
+        SharedPreferences.Editor writeFile = sharedPreferences.edit();
+        int dialogStatus = sharedPreferences.getInt("ruleDialog",0);
+        Log.d(TAG,"CheckBoxStatus："+mCheckAgreement.isChecked()+"  isDialogStatus："+sharedPreferences.getInt("ruleDialog",0));
+        if (dialogStatus == 0 ) {
+            addDiaolog();
+        }else{
+            mCheckAgreement.setChecked(true);
+            writeFile.putInt("ruleDialog",1);
+            writeFile.commit();
+        }
     }
 
     private void initView() {
@@ -100,8 +111,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mAllLinear = (ScrollView) findViewById(R.id.all_linear);
         mMainlayout = (KeyboardLayout) findViewById(R.id.mainlayout);
         mUserPrivacy = (TextView) findViewById(R.id.user_privacy);
-        mCheckAgreement.setChecked(false);
-
     }
 
 
@@ -122,8 +131,35 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mAllLinear.setOnClickListener(this);
         mUserPrivacy.setOnClickListener(this);
         addLayoutListener();
-
     }
+
+    /**
+     * 用户权限弹窗
+     */
+    private void addDiaolog() {
+        View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.dialog_rule,null);
+        TextView mTvCancel = view.findViewById(R.id.tv_cancel);
+        TextView mTvOk = view.findViewById(R.id.tv_ok);
+        TextView mText = view.findViewById(R.id.tv_text);
+        mText.setText(R.string.rule);
+        final AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .show();
+        mTvCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.cancel();
+            }
+        });
+        mTvOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.cancel();
+                mCheckAgreement.setChecked(true);
+            }
+        });
+    }
+
 
     @Override
     public void onClick(View v) {
@@ -138,13 +174,25 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 VerfiyLogin();
                 break;
             case R.id.qq_login:
-                showToast("QQ注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                if (mCheckAgreement.isChecked()==false){
+                    addDiaolog();
+                }else{
+                    showToast("QQ注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                }
                 break;
             case R.id.wx_login:
-                showToast("微信注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                if (mCheckAgreement.isChecked()==false){
+                    addDiaolog();
+                }else{
+                    showToast("微信注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                }
                 break;
             case R.id.wb_login:
-                showToast("微博注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                if (mCheckAgreement.isChecked()==false){
+                    addDiaolog();
+                }else{
+                    showToast("微博注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
+                }
                 break;
             case R.id.check_agreement:
                 break;
@@ -192,24 +240,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
                 Log.v(TAG, "登录成功,正在初始化进入首页！！！");
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                intent.putExtra("account", account_context);
-                intent.putExtra("password", password_context);
                 startActivity(intent);
                 finish();
             } else if (account_context.equals(account) == false || password_context.equals(password) == false) {
                 showToast("请输入正确的账号及密码！！！", R.drawable.icon_waring_yellow);
             }
-        } else {
-            if (account_context.equals("") == true && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                showToast("账号密码不允许为空！！！", R.drawable.icon_waring_yellow);
-            } else if (account_context.equals("") == true && password_context.equals("") == false && mCheckAgreement.isChecked() == false) {
-                showToast("账号不允许为空！！！", R.drawable.icon_waring_yellow);
-            } else if (account_context.equals("") == false && password_context.equals("") == true && mCheckAgreement.isChecked() == false) {
-                showToast("密码不允许为空！！！", R.drawable.icon_waring_yellow);
-            } else {
-                showToast("请先勾选协议", R.drawable.icon_waring_yellow);
+        } else if (mCheckAgreement.isChecked()==false){
+                addDiaolog();
             }
-        }
     }
 
     @Override
@@ -300,6 +338,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        sharedPreferences = getSharedPreferences("ruleDialog", Context.MODE_PRIVATE);
+        SharedPreferences.Editor writeFile = sharedPreferences.edit();
         if (isChecked) {
             Log.d(TAG, "用户成功勾选协议");
             if (TextUtils.isEmpty(mAccount.getText()) == false && TextUtils.isEmpty(mPassword.getText()) == false) {
@@ -308,7 +348,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         } else {
             mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_unselect);
             Log.d(TAG, "用户未勾选协议授权");
+            writeFile.putInt("ruleDialog",0);
+            writeFile.commit();
         }
+        if (mCheckAgreement.isChecked() == true){
+            writeFile.putInt("ruleDialog",1);
+            writeFile.commit();
+        }
+        Log.d(TAG,"CheckBoxStatus："+mCheckAgreement.isChecked());
     }
 
     /**

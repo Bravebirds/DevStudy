@@ -127,15 +127,18 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize">
-        <activity android:name=".activity.AdvertisActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+        <activity android:name=".activity.TestActivity"></activity>
+        <activity android:name=".activity.GsonActivity" />
+        <activity android:name=".activity.AdvertisActivity"></activity>
         <activity android:name=".activity.RuleActivity" />
-        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.DialogRuleActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".fragment.MySettingFragment" />
         <activity android:name=".fragment.FindFragment" />
         <activity android:name=".fragment.HomeFragment" />

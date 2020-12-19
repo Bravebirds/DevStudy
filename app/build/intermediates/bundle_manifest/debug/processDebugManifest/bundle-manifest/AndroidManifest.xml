@@ -136,15 +136,18 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize" >
-        <activity android:name="com.mryu.devstudy.activity.AdvertisActivity" >
+        <activity android:name="com.mryu.devstudy.activity.TestActivity" />
+        <activity android:name="com.mryu.devstudy.activity.GsonActivity" />
+        <activity android:name="com.mryu.devstudy.activity.AdvertisActivity" />
+        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
+        <activity android:name="com.mryu.devstudy.activity.DialogRuleActivity" />
+        <activity android:name="com.mryu.devstudy.activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
-        <activity android:name="com.mryu.devstudy.activity.LoginActivity" />
         <activity android:name="com.mryu.devstudy.fragment.MySettingFragment" />
         <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
         <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />

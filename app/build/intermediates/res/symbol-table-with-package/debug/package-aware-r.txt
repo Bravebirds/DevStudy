@@ -2427,6 +2427,7 @@ id tv_puzzle
 id tv_sample
 id tv_selector
 id tv_template
+id tv_test
 id tv_text
 id tv_text_sticker
 id tv_title
@@ -2519,6 +2520,7 @@ layout activity_banner
 layout activity_easy_photos
 layout activity_find_fragment
 layout activity_game_fragment
+layout activity_gson
 layout activity_home_fragment
 layout activity_login
 layout activity_main
@@ -2529,6 +2531,7 @@ layout activity_relues
 layout activity_selection_list
 layout activity_setting_fragment
 layout activity_splash
+layout activity_test
 layout activity_toast_style
 layout activity_video_fragment
 layout banner
@@ -2777,6 +2780,7 @@ string regist_password
 string regist_phone
 string regist_verifi
 string request
+string rule
 string search_menu_title
 string select_puzzle_photos
 string selector_action_done_easy_photos
