@@ -1,5 +1,6 @@
 package com.mryu.devstudy.activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -166,6 +167,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 mCheckAgreement.setChecked(true);
             }
         });
+        alertDialog.setCancelable(false); // 禁用掉返回按钮
         final SpannableStringBuilder style = new SpannableStringBuilder();
         //设置文字
         String str = mText.getText().toString();

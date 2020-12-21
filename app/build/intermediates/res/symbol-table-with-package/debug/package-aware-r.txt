@@ -1811,7 +1811,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable dialog_autologin_bg
 drawable findpage_btn_bg
 drawable gray_radius
 drawable homepage_btn_bg

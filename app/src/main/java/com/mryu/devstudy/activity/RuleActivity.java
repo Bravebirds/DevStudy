@@ -57,7 +57,7 @@ public class RuleActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-        webSettings.setUseWideViewPort(true);
+        webSettings.setUseWideViewPort(false);
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         webSettings.setDatabaseEnabled(true);
@@ -68,6 +68,7 @@ public class RuleActivity extends AppCompatActivity {
         webSettings.setDisplayZoomControls(false);
         webSettings.setSavePassword(false);
         webSettings.setSaveFormData(false);
+
         if (Build.VERSION.SDK_INT >= 19) {
             webSettings.setLoadsImagesAutomatically(true);
         } else {

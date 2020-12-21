@@ -131,7 +131,6 @@
         <activity android:name=".activity.GsonActivity" />
         <activity android:name=".activity.AdvertisActivity"></activity>
         <activity android:name=".activity.RuleActivity" />
-        <activity android:name=".activity.DialogRuleActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
