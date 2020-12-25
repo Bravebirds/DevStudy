@@ -169,6 +169,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                         SetImage(url);
             } else if (msg.what < 2 && msg.what != 0) {
                 mSkipTimeText.setEnabled(false);
+                mAuthourText.setEnabled(false);
             } else {
                 mTimeHandler.removeCallbacksAndMessages(null);
                 mSkipTimeText.setText("即将进入• • • ");
