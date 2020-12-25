@@ -27,7 +27,7 @@ android {
 
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
     implementation 'com.android.support:appcompat-v7:30.+'
     implementation 'com.android.support:design:30.+'
     implementation 'com.android.support:support-v4:30.+'
@@ -37,7 +37,6 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.1'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
-    // 隐私弹窗
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
@@ -54,12 +53,14 @@ dependencies {
     // gson解析+volley
     implementation files('libs\\volley.jar')
     implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     // 图片处理
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     implementation 'com.github.HuanTanSheng:EasyPhotos:3.0.6'
-
     //Banner
-    implementation 'com.youth.banner:banner:1.4.10' //banner依赖
-    implementation 'com.github.bumptech.glide:glide:3.7.0' //glide加载图片依赖
+    implementation 'com.youth.banner:banner:2.1.0'
+    //OverlayCardViewPager 是层叠卡片效果的 ViewPage。
+    implementation 'com.github.oneAcorn:OverlayCardViewPager:v1.0'
 
 }

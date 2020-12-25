@@ -3,6 +3,7 @@ package com.mryu.devstudy;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -13,8 +14,12 @@ import com.mryu.devstudy.fragment.HomeFragment;
 import com.mryu.devstudy.fragment.FindFragment;
 import com.mryu.devstudy.fragment.MySettingFragment;
 import com.mryu.devstudy.fragment.VideoFragment;
+import com.mryu.devstudy.qqlogin.QQLoginManager;
 import com.mryu.devstudy.utils.RulesDialog;
 import com.mryu.devstudy.utils.ToastUtils;
+
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -162,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if (System.currentTimeMillis() - mExitTime > 2000) {
+            if (System.currentTimeMillis() - mExitTime > 3000) {
                 showToast("再按一次退出程序",R.drawable.icon_waring_yellow);
                 mExitTime = System.currentTimeMillis();
             } else {
@@ -177,5 +182,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private void showToast(String message, int resId) {
         ToastUtils.showKevinToast(this, message, resId);
     }
+
+
 
 }

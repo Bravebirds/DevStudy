@@ -12,6 +12,9 @@ import com.mryu.devstudy.R;
 
 import org.json.JSONObject;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+
 public class GsonUtils {
     private static  String TAG ="GsonUtils";
     static RequestQueue queue;
@@ -26,6 +29,4 @@ public class GsonUtils {
             }
         }));
     }
-
-
 }
