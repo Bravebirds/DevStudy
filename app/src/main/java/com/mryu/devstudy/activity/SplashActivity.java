@@ -1,5 +1,4 @@
 package com.mryu.devstudy.activity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -11,35 +10,29 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.qqlogin.QQLoginManager;
 import com.mryu.devstudy.utils.NetworkUtils;
+import com.mryu.devstudy.utils.RepeatClickUtils;
 import com.mryu.devstudy.utils.ToastUtils;
-
 import org.json.JSONObject;
-
 import java.io.IOException;
-
 import androidx.appcompat.app.AppCompatActivity;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
+import pl.droidsonroids.gif.GifImageView;
 import static java.lang.Thread.sleep;
-
-
 public class SplashActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "SplashActivity";
     protected static final int CHANGE_UI = 1;
     protected static final int ERROR = 2;
     private boolean timeFlag = false;
-    private ImageView mSplashImage;
+    private GifImageView mSplashImage;
     private TextView mSkipTimeText;
     final String url = "https://acg.xydwz.cn/gqapi/gqapi.php";
     private TextView mAuthourText;
@@ -61,6 +54,8 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         OkHttpClient okHttpClient = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
         Call call = okHttpClient.newCall(request);
+
+
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -94,7 +89,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
 
 
     private void initView() {
-        mSplashImage = (ImageView) findViewById(R.id.splash_image);
+        mSplashImage = (GifImageView) findViewById(R.id.splash_image);
         mSkipTimeText = (TextView) findViewById(R.id.skip_time_text);
         mAuthourText = (TextView) findViewById(R.id.authour_text);
         QQLoginManager.init(this, "1110529440");
@@ -110,21 +105,25 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+        if (RepeatClickUtils.isFastClick()) {
+            switch (v.getId()) {
             default:
                 break;
             case R.id.splash_image:
-                mSplashImage.setEnabled(false);
                 break;
             case R.id.skip_time_text:
-                checkQQLoginStatus();
                 timeFlag = true;
+                Log.d(TAG, "timeFlag is " + timeFlag);
+                checkQQLoginStatus();
                 break;
             case R.id.authour_text:
+                timeFlag = true;
                 startActivity(new Intent(SplashActivity.this,WebActivity.class));
                 finish();
-                timeFlag = true;
                 break;
+            }
+        }else{
+            showToast(getString(R.string.repeat_click),R.drawable.icon_waring_yellow,0.03);
         }
     }
 
@@ -156,7 +155,6 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         thread.start();
     }
 
-
     // 倒计时
     Handler mTimeHandler = new Handler() {
         @Override
@@ -166,12 +164,8 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
             if (msg.what > 0) {
                 mSkipTimeText.setVisibility(View.VISIBLE);
                 mSkipTimeText.setText("跳过广告 ( " + msg.what + " )");
-                        SetImage(url);
-            } else if (msg.what < 2 && msg.what != 0) {
-                mSkipTimeText.setEnabled(false);
-                mAuthourText.setEnabled(false);
-            } else {
-                mTimeHandler.removeCallbacksAndMessages(null);
+                SetImage(url);
+            } else if (msg.what == 0 && timeFlag==false) {   //挖个坑必须的加上timeFlag状态不然与点击时重复进入
                 mSkipTimeText.setText("即将进入• • • ");
                 checkQQLoginStatus();
             }
@@ -183,10 +177,9 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
      */
     private void checkQQLoginStatus() {
         boolean isConnected = NetworkUtils.isConnected(this);
-        mTimeHandler.removeCallbacksAndMessages(null);
-        mImageHandler.removeCallbacksAndMessages(null);
-        Log.d(TAG, "isConnected " + isConnected);
-        if (isConnected == true) {
+        boolean isWifiProxy = NetworkUtils.isWifiProxy(this);
+        Log.d(TAG,"isConnected：" + isConnected + "  isWifiProxy："+isWifiProxy);
+        if (isConnected == true && isWifiProxy == false ) {
             QQLoginManager.checkLogin(new QQLoginManager.QQCheckCallback() {
                 @Override
                 public void onCallback(boolean login, JSONObject json) {
@@ -201,9 +194,12 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
 
             });
         } else {
-            showToast(getString(R.string.network_error_login), R.drawable.icon_waring_gray);
-            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            // 网络断开进入主页 最后的兜底策略
+            Log.d(TAG, "NetWork is Eroor");
+            showToast(getString(R.string.network_error), R.drawable.icon_waring_yellow,0.03);
+            startActivity(new Intent(SplashActivity.this, MainActivity.class));
             finish();
+//            QQLoginManager.logout(this);
         }
     }
 
@@ -213,8 +209,8 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         timeFlag = true;
     }
 
-    private void showToast(String message, int resId) {
-        ToastUtils.showKevinToast(this, message, resId);
+    private void showToast(String message, int resId ,double toastHight) {
+        ToastUtils.showKevinToast(this, message, resId,toastHight);
     }
 
     /**
@@ -225,7 +221,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
-            showToast("初始化中暂时禁用返回", R.drawable.icon_waring_yellow);
+            finish();
             return true;
         } else {
             return super.dispatchKeyEvent(event);

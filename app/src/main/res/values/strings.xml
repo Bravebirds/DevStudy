@@ -33,11 +33,13 @@
     <string name="welcome_register">应国家法律实名认证要求，同时也为了保证你的账号安全，请绑定手机号码</string>
     <string name="welcome_autoregister">免密注册</string>
     <string name="global_roaming">+86</string>
-    <string name="checkNetWork">与服务器失去连接，点击重新连接或检查网络。</string>
+    <string name="checkNetWork">当前无网络，请检查网络后重试</string>
     <string name="rule">"欢迎使用DevStudy！\n"
             "• 使用过程中我们会需要访问您的存储权限、录制、相机权限、获取设备信息等权限及信息。\n"
             "• 您可以点击《用户协议》和《隐私政策》了解个人信息类型与用途的对应关系等更加详尽的个人信息处理规则。\n"
             "• 我们会采用业界领先的安全技术保护好您的个人信息，如您同意，请点击“同意”开始接受我们的服务。"</string>
-    <string name="network_error_login">网络异常，请重新登录</string>
+    <string name="network_error">网络错误或设置了WIFI代理</string>
+    <string name="repeat_click">请勿重复点击操作</string>
+    <string name="retry">重试</string>
 
 </resources>

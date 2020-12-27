@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@mipmap/bg_home">
 
-    <com.mryu.devstudy.utils.KeyboardLayout
+    <com.mryu.devstudy.layout.KeyboardLayout
         android:id="@+id/mainlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -142,5 +142,5 @@
             </LinearLayout>
         </LinearLayout>
 
-    </com.mryu.devstudy.utils.KeyboardLayout>
+    </com.mryu.devstudy.layout.KeyboardLayout>
 </ScrollView>

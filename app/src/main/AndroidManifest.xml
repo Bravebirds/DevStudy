@@ -127,23 +127,21 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize">
-        <activity android:name=".activity.SplashActivity" >
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.GsonActivity" />
-        <activity android:name=".activity.AdvertisActivity" />
         <activity android:name=".activity.RuleActivity" />
-        <activity android:name=".activity.LoginActivity"></activity>
-        <activity android:name=".activity.WebActivity"></activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.WebActivity" />
         <activity android:name=".fragment.MySettingFragment" />
         <activity android:name=".fragment.FindFragment" />
         <activity android:name=".fragment.HomeFragment" />
         <activity android:name=".fragment.VideoFragment" />
-        <activity android:name=".activity.SelectionActivity" />
         <activity android:name=".MainActivity" />
 
         <uses-library

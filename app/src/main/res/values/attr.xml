@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CountDownProgress">
+    <declare-styleable name="Banner">
+        <!--轮播间隔时间 -->
+        <attr name="loop_time" format="integer"/>
+        <!--banner圆角半径-->
+        <attr name="banner_radius" format="dimension"/>
 
-        <!-- 默认圆实心的颜色 -->
-        <attr name="default_circle_solide_color" format="color"/>
-        <!-- 默认圆边框的颜色 -->
-        <attr name="default_circle_stroke_color" format="color"/>
-        <!-- 默认圆边框的宽度 -->
-        <attr name="default_circle_stroke_width" format="dimension"/>
-        <!-- 默认圆的半径 -->
-        <attr name="default_circle_radius" format="dimension"/>
-        <!-- 进度条的颜色 -->
-        <attr name="progress_color" format="color"/>
-        <!-- 进度条的宽度 -->
-        <attr name="progress_width" format="dimension"/>
-        <!-- 小圆的实心颜色 -->
-        <attr name="small_circle_solide_color" format="color"/>
-        <!-- 小圆的边框颜色 -->
-        <attr name="small_circle_stroke_color" format="color"/>
-        <!-- 小圆的边框宽度 -->
-        <attr name="small_circle_stroke_width" format="dimension"/>
-        <!-- 小圆的半径 -->
-        <attr name="small_circle_radius" format="dimension"/>
-        <!-- 文字的颜色 -->
-        <attr name="text_color" format="color"/>
-        <!-- 文字的字体大小 -->
-        <attr name="text_size" format="dimension"/>
-    </declare-styleable>
+        <!--指示器默认的宽度，默认5dp （对RoundLinesIndicator无效）-->
+        <attr name="indicator_normal_width" format="dimension"/>
+        <!--指示器选中的宽度，默认0x88ffffff-->
+        <attr name="indicator_selected_width" format="dimension"/>
 
-    <declare-styleable name="MyCountDownTimer">
-        <attr name="millisinfuture" format="integer"/>
-        <attr name="countdowninterva" format="integer"/>
-        <attr name="normalColor" format="color"/>
-        <attr name="countDownColor" format="color"/>
+        <!--指示器默认颜色，默认0x88ffffff-->
+        <attr name="indicator_normal_color" format="color"/>
+        <!--指示器选中颜色，默认0x88000000-->
+        <attr name="indicator_selected_color" format="color"/>
+
+        <!--指示器之间的间距，默认5dp （对RoundLinesIndicator无效）-->
+        <attr name="indicator_space" format="dimension"/>
+        <!--指示器位置，默认center-->
+        <attr name="indicator_gravity" format="dimension"/>
+        <!--指示器的margin,默认5dp，不能和下面的同时使用-->
+        <attr name="indicator_margin" format="dimension"/>
+        <!--指示器右边的margin-->
+        <attr name="indicator_marginLeft" format="dimension"/>
+        <!--指示器左边的margin-->
+        <attr name="indicator_marginRight" format="dimension"/>
+        <!--指示器上边的margin-->
+        <attr name="indicator_marginTop" format="dimension"/>
+        <!--指示器下边的margin-->
+        <attr name="indicator_marginBottom" format="dimension"/>
+        <!--指示器高度（对CircleIndicator无效）-->
+        <attr name="indicator_height" format="dimension"/>
+        <attr name="indicator_width" format="dimension"/>
+        <!--指示器圆角（对CircleIndicator无效）-->
+        <attr name="indicator_radius" format="dimension"/>
     </declare-styleable>
 </resources>

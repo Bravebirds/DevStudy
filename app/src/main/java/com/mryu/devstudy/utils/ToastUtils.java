@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mryu.devstudy.R;
+import com.mryu.devstudy.fragment.HomeFragment;
 
 import static android.widget.Toast.LENGTH_LONG;
 
@@ -73,14 +74,14 @@ public class ToastUtils {
      * @param message
      * @param resId   the resource id for imageView
      */
-    public static void showKevinToast(Context context, String message, int resId) {
+    public static void showKevinToast(Context context, String message, int resId,double toastHight) {
         mKevinShortToast = new Toast(context);
         LayoutInflater inflate = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflate.inflate(R.layout.activity_toast_style, null);
         mKevinShortToast.setView(v);
         int height = context.getResources().getDisplayMetrics().heightPixels;
-        mKevinShortToast.setGravity(Gravity.TOP, 0, (int) (height * 0.06));
+        mKevinShortToast.setGravity(Gravity.TOP, 0, (int) (height * toastHight));
         TextView tv = (TextView) v.findViewById(R.id.toast_text);
         ImageView iv = (ImageView) v.findViewById(R.id.toast_image);
         tv.setText(message);

@@ -5,13 +5,23 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
+import android.os.Handler;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.mryu.devstudy.MainActivity;
+import com.mryu.devstudy.R;
+import com.mryu.devstudy.fragment.HomeFragment;
 
 /**
  * 网络工具类
  *
  */
 public class NetworkUtils {
+    private static final String TAG = "NetworkUtils";
+
     /**
      * 网络连接是否可用
      */
@@ -32,6 +42,24 @@ public class NetworkUtils {
         return false;
     }
 
+    /**
+     * 判断设备 是否使用代理上网
+     * */
+    public static boolean isWifiProxy(Context context) {
+        final boolean IS_ICS_OR_LATER = Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH;
+        String proxyAddress;
+        int proxyPort;
+        if (IS_ICS_OR_LATER) {
+            proxyAddress = System.getProperty("http.proxyHost");
+            String portStr = System.getProperty("http.proxyPort");
+            proxyPort = Integer.parseInt((portStr != null ? portStr : "-1"));
+        } else {
+            proxyAddress = android.net.Proxy.getHost(context);
+            proxyPort = android.net.Proxy.getPort(context);
+        }
+        Log.d(TAG,"proxyAddress："+proxyAddress);
+        return (!TextUtils.isEmpty(proxyAddress)) && (proxyPort != -1);
+    }
 
     /**
      * 检查网络类型
@@ -45,7 +73,6 @@ public class NetworkUtils {
         }
         NetworkInfo.State mobile = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
         NetworkInfo.State wifi = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-
         if (mobile == NetworkInfo.State.CONNECTED || mobile == NetworkInfo.State.CONNECTING) {
             System.out.println("手机网络");
             return true;

@@ -1,28 +1,17 @@
 package com.mryu.devstudy;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-
-import com.mryu.devstudy.activity.RuleActivity;
-import com.mryu.devstudy.activity.SelectionActivity;
 import com.mryu.devstudy.fragment.HomeFragment;
 import com.mryu.devstudy.fragment.FindFragment;
 import com.mryu.devstudy.fragment.MySettingFragment;
 import com.mryu.devstudy.fragment.VideoFragment;
-import com.mryu.devstudy.qqlogin.QQLoginManager;
-import com.mryu.devstudy.utils.RulesDialog;
 import com.mryu.devstudy.utils.ToastUtils;
-
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -32,7 +21,6 @@ import androidx.viewpager.widget.ViewPager;
 
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
-
     private static final String TAG =  "MainActivity";
     private ViewPager mViewpager;
     /**
@@ -72,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         mMyTab = (RadioButton) findViewById(R.id.my_tab);
         mRadioGroupVp = (RadioGroup) findViewById(R.id.radio_group_vp);
         mRadioGroupVp.check(R.id.home_tab);
-        mRadioGroupVp.setOnCheckedChangeListener(this);
         fragments = new ArrayList<>();
         fragments.add(new HomeFragment());
         fragments.add(new FindFragment());
@@ -81,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
     private void setListener() {
+        mRadioGroupVp.setOnCheckedChangeListener(this);
+        // 设置缓存数 避免重复OnCreateView
+        mViewpager.setOffscreenPageLimit(4);
         mViewpager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
             @NonNull
             @Override
@@ -168,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (System.currentTimeMillis() - mExitTime > 3000) {
-                showToast("再按一次退出程序",R.drawable.icon_waring_yellow);
+                showToast("再按一次退出程序",R.drawable.icon_waring_yellow,0.03);
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
@@ -179,10 +169,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         return super.onKeyDown(keyCode, event);
     }
 
-    private void showToast(String message, int resId) {
-        ToastUtils.showKevinToast(this, message, resId);
+    private void showToast(String message, int resId ,double toastHight) {
+        ToastUtils.showKevinToast(this, message, resId,toastHight);
     }
-
 
 
 }

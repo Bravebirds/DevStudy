@@ -2,17 +2,22 @@ package com.mryu.devstudy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.qqlogin.QQLoginManager;
 import com.mryu.devstudy.utils.NetworkUtils;
+import com.mryu.devstudy.utils.RepeatClickUtils;
 import com.mryu.devstudy.utils.ToastUtils;
 
 import org.json.JSONObject;
@@ -22,13 +27,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WebActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "SplashActivity";
-    private static final String url = "http://tv.hzwdd.cn/";
+    private static final String url = "https://blog.csdn.net/qq_38795430";
     private WebView mWebpage;
+    private Button mRetryButton;
+    private LinearLayout mRetryLinear;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webpage);
+        mHandlerWifi.sendEmptyMessageDelayed(0, 1000);
         initView();
         setListener(url);
     }
@@ -38,8 +46,9 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
      */
     private void checkQQLoginStatus() {
         boolean isConnected = NetworkUtils.isConnected(this);
-        Log.d(TAG, "isConnected " + isConnected);
-        if (isConnected == true) {
+        boolean isWifiProxy = NetworkUtils.isWifiProxy(this);
+        Log.d(TAG, "isConnected：" + isConnected + "  isWifiProxy：" + isWifiProxy);
+        if (isConnected == true && isWifiProxy == false) {
             QQLoginManager.checkLogin(new QQLoginManager.QQCheckCallback() {
                 @Override
                 public void onCallback(boolean login, JSONObject json) {
@@ -54,24 +63,54 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
 
             });
         } else {
+            // 网络断开进入主页 最后的兜底策略
             Log.d(TAG, "NetWork is Eroor");
-            showToast(getString(R.string.network_error_login), R.drawable.icon_waring_gray);
-            startActivity(new Intent(WebActivity.this, LoginActivity.class));
+            showToast(getString(R.string.network_error), R.drawable.icon_waring_yellow, 0.03);
+            startActivity(new Intent(WebActivity.this, MainActivity.class));
             finish();
+//            QQLoginManager.logout(this);
         }
     }
 
-    private void showToast(String message, int resId) {
-        ToastUtils.showKevinToast(this, message, resId);
+
+    private void showToast(String message, int resId, double toastHight) {
+        ToastUtils.showKevinToast(this, message, resId, toastHight);
     }
+
 
     private void initView() {
         mWebpage = (WebView) findViewById(R.id.webpage);
-        mWebpage.setOnClickListener(this);
+        mRetryButton = (Button) findViewById(R.id.retry_button);
+        mRetryLinear = (LinearLayout) findViewById(R.id.retry_linear);
     }
 
+    //Wifi网络监测线程  然后在onCreate方法里面开启
+    private Handler mHandlerWifi = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            boolean isConnected = NetworkUtils.isConnected(getApplicationContext());
+            boolean isWifiProxy = NetworkUtils.isWifiProxy(getApplicationContext());
+            super.handleMessage(msg);
+            Log.d(TAG, "isConnected：" + isConnected + "  isWifiProxy：" + isWifiProxy);
+            if (msg.what == 0) {
+                if (isConnected == false || isWifiProxy == true) {
+                    mWebpage.setVisibility(View.GONE);
+                    mRetryLinear.setVisibility(View.VISIBLE);
+                } else {
+                    mWebpage.setVisibility(View.VISIBLE);
+                    mRetryLinear.setVisibility(View.GONE);
+                }
+                sendEmptyMessageDelayed(0, 1000);
+            }
+        }
+    };
+
     private void setListener(String url) {
-        mWebpage.setWebViewClient(new WebViewClient(){
+        mWebpage.setOnClickListener(this);
+        mRetryButton.setOnClickListener(this);
+        mRetryLinear.setOnClickListener(this);
+        mRetryButton.getBackground().setAlpha(80);
+        mWebpage.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 return false;// 返回false
@@ -116,25 +155,29 @@ public class WebActivity extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.webpage:
                 break;
+            case R.id.retry_button:
+                break;
+            case R.id.retry_linear:
+                break;
         }
     }
-
 
     /**
      * 重写返回键功能
      */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if ((keyCode == KeyEvent.KEYCODE_BACK) ) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK) && RepeatClickUtils.isFastClick()) {
             if (mWebpage.canGoBack()) {
                 mWebpage.goBack(); //goBack()表示返回WebView的上一页面
                 return true;
-            }else {
+            } else {
                 checkQQLoginStatus();
                 return true;
             }
+        } else {
+            showToast("请勿重复点击操作", R.drawable.icon_waring_yellow, 0.03);
         }
         return false;
     }
-
 }

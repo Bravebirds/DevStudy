@@ -38,10 +38,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.qqlogin.QQLoginManager;
-import com.mryu.devstudy.utils.KeyboardLayout;
+import com.mryu.devstudy.layout.KeyboardLayout;
 import com.mryu.devstudy.utils.ModelUtils;
 import com.mryu.devstudy.utils.NetworkUtils;
-import com.mryu.devstudy.utils.SoftKeyInputHidWidget;
+import com.mryu.devstudy.layout.SoftKeyInputHidWidget;
+import com.mryu.devstudy.utils.RepeatClickUtils;
 import com.mryu.devstudy.utils.ToastUtils;
 import com.tencent.tauth.UiError;
 
@@ -146,7 +147,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onQQLoginSuccess(JSONObject jsonObject) {
-        showToast("用户登录成功",R.drawable.icon_security_green);
+        showToast("用户登录成功",R.drawable.icon_security_green,0.03);
         Log.d(TAG,"QQLogin："+jsonObject.toString());
         startActivity(new Intent(this,MainActivity.class));
         finish();
@@ -154,13 +155,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onQQLoginCancel() {
-        showToast("用户取消登录",R.drawable.icon_warning_blue);
+        showToast("用户取消登录",R.drawable.icon_warning_blue,0.03);
         Log.d(TAG,"QQLogin：登录取消");
     }
 
     @Override
     public void onQQLoginError(UiError uiError) {
-        showToast("登录出错：" + uiError.toString(),R.drawable.icon_security_green);
+        showToast("登录出错：" + uiError.toString(),R.drawable.icon_security_green,0.03);
         Log.d(TAG,"登录出错：" + uiError.toString());
     }
 
@@ -229,47 +230,53 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         boolean isConnected = NetworkUtils.isConnected(this);
-        if (isConnected == true) {
-            switch (v.getId()) {
-                default:
-                    break;
-                case R.id.account_login:
-                    VerfiyLogin();
-                    break;
-                case R.id.qq_login:
-                    if (mCheckAgreement.isChecked() == false) {
-                        addDiaolog();
-                    } else {
-                        QQLoginManager.login(this);
-                    }
-                    break;
-                case R.id.wx_login:
-                    if (mCheckAgreement.isChecked() == false) {
-                        addDiaolog();
-                    } else {
-                        showToast("微信注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
-                    }
-                    break;
-                case R.id.wb_login:
-                    if (mCheckAgreement.isChecked() == false) {
-                        addDiaolog();
-                    } else {
-                        showToast("微博注册/登录暂未实现！！！", R.drawable.icon_waring_yellow);
-                    }
-                    break;
-                case R.id.check_agreement:
-                    break;
-                case R.id.user_ment:
-                    userClick();
-                    break;
-                case R.id.all_linear:
-                    break;
-                case R.id.user_privacy:
-                    privacyClick();
-                    break;
+        boolean isWifiProxy = NetworkUtils.isWifiProxy(this);
+        Log.d(TAG,"isConnected：" + isConnected + "  isWifiProxy："+isWifiProxy);
+        if (RepeatClickUtils.isFastClick()){
+            if (isConnected == true && isWifiProxy == false) {
+                switch (v.getId()) {
+                    default:
+                        break;
+                    case R.id.account_login:
+                        VerfiyLogin();
+                        break;
+                    case R.id.qq_login:
+                        if (mCheckAgreement.isChecked() == false) {
+                            addDiaolog();
+                        } else {
+                            QQLoginManager.login(this);
+                        }
+                        break;
+                    case R.id.wx_login:
+                        if (mCheckAgreement.isChecked() == false) {
+                            addDiaolog();
+                        } else {
+                            showToast("微信注册/登录暂未实现！！！", R.drawable.icon_waring_yellow,0.03);
+                        }
+                        break;
+                    case R.id.wb_login:
+                        if (mCheckAgreement.isChecked() == false) {
+                            addDiaolog();
+                        } else {
+                            showToast("微博注册/登录暂未实现！！！", R.drawable.icon_waring_yellow,0.03);
+                        }
+                        break;
+                    case R.id.check_agreement:
+                        break;
+                    case R.id.user_ment:
+                        userClick();
+                        break;
+                    case R.id.all_linear:
+                        break;
+                    case R.id.user_privacy:
+                        privacyClick();
+                        break;
+                }
+            } else {
+                showToast(getString(R.string.checkNetWork), R.drawable.icon_waring_yellow,0.03);
             }
-        } else {
-            showToast(getString(R.string.checkNetWork), R.drawable.icon_waring_yellow);
+        }else{
+            showToast(getString(R.string.repeat_click),R.drawable.icon_waring_yellow,0.03);
         }
     }
     /**
@@ -299,24 +306,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (isConnected == true) {
             if (mCheckAgreement.isChecked() == true) {
                 if (account_context.equals("") == true && password_context.equals("") == false) {
-                    showToast("账号不允许为空！！！", R.drawable.icon_waring_yellow);
+                    showToast("账号不允许为空！！！", R.drawable.icon_waring_yellow,0.03);
                 } else if (account_context.equals("") == false && password_context.equals("") == true) {
-                    showToast("密码不允许为空！！！", R.drawable.icon_waring_yellow);
+                    showToast("密码不允许为空！！！", R.drawable.icon_waring_yellow,0.03);
                 } else if (account_context.equals("") == true && password_context.equals("") == true) {
-                    showToast("账号密码不允许为空！！！", R.drawable.icon_waring_yellow);
+                    showToast("账号密码不允许为空！！！", R.drawable.icon_waring_yellow,0.03);
                 } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
                     Log.v(TAG, "登录成功,正在初始化进入首页！！！");
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else if (account_context.equals(account) == false || password_context.equals(password) == false) {
-                    showToast("请输入正确的账号及密码！！！", R.drawable.icon_waring_yellow);
+                    showToast("请输入正确的账号及密码！！！", R.drawable.icon_waring_yellow,0.03);
                 }
             } else if (mCheckAgreement.isChecked()==false){
                     addDiaolog();
                 }
             else{
-                showToast(getString(R.string.checkNetWork), R.drawable.icon_waring_yellow);
+                showToast(getString(R.string.checkNetWork), R.drawable.icon_waring_yellow,0.03);
             }
         }
     }
@@ -351,7 +358,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            showToast("用户名仅支持" + maxUserNameLength + "位输入", R.drawable.icon_waring_yellow);
+            showToast("用户名仅支持" + maxUserNameLength + "位输入", R.drawable.icon_waring_yellow,0.03);
         }
 
         // 密码长度限制
@@ -365,7 +372,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            showToast("密码仅支持" + maxPwdLength + "位输入", R.drawable.icon_waring_yellow);
+            showToast("密码仅支持" + maxPwdLength + "位输入", R.drawable.icon_waring_yellow,0.03);
         }
 
         if (accountText.equals("") == true || passwordText.equals("") == true) {
@@ -374,7 +381,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (mCheckAgreement.isChecked() == true) {
             if (accountText.equals("") == true && passwordText.equals("") == false) {
                 mPassword.setText("");  //清空 掉上个账号遗留的密码！！！
-                showToast("请先输入账号", R.drawable.icon_waring_yellow);
+                showToast("请先输入账号", R.drawable.icon_waring_yellow,0.03);
             } else if (accountText.equals("") == false && passwordText.equals("") == false) {
                 Log.d(TAG, "账号密码均检测有内容，登录按钮高亮状态！！！");
                 mAccountLogin.setBackgroundResource(R.drawable.shape_nextstep_selected);
@@ -435,8 +442,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * @param message
      * @param resId
      */
-    private void showToast(String message, int resId) {
-        ToastUtils.showKevinToast(this, message, resId);
+    private void showToast(String message, int resId,double toastHight) {
+        ToastUtils.showKevinToast(this, message, resId,toastHight);
     }
 
 
@@ -569,7 +576,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (System.currentTimeMillis() - mExitTime > 2000) {
-                showToast("再按一次退出程序", R.drawable.icon_waring_yellow);
+                showToast("再按一次退出程序", R.drawable.icon_waring_yellow,0.03);
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();

@@ -24,6 +24,11 @@
     <color name="colorLightsalmon">#FFA07A</color><!--亮肉色 -->
     <color name="colorPulms">#EAA794</color>
     <color name="colorDarkorange">#FF8C00</color><!--暗桔黄色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#8EE5EE</color>
+    <color name="colorGreen">#00FA9A</color>
     <color name="colorCoral">#FF7F50</color><!--珊瑚色 -->
     <color name="colorHotpink">#FF69B4</color><!--热粉红色 -->
     <color name="colorError">#FDE4E6</color>
@@ -32,7 +37,7 @@
     <color name="colorDeeppink">#FF1493</color><!--深粉红色 -->
     <color name="colorFuchsia">#FF4081</color><!--紫红色 -->
     <color name="colorMagenta">#FF00FF</color><!--红紫色 -->
-    <color name="colorRed">#FF0000</color><!--红色 -->
+    <color name="colorRed">#EE4000</color><!--红色 -->
     <color name="colorOldlace">#FDF5E6</color><!--老花色 -->
     <color name="colorLightgoldenrodyellow">#FAFAD2</color><!--亮金黄色 -->
     <color name="colorLinen">#FAF0E6</color><!--亚麻色 -->
@@ -142,9 +147,7 @@
     <color name="colorDeepskyblue">#00BFFF</color><!--深天蓝色 -->
     <color name="colorDarkcyan">#008B8B</color><!--暗青色 -->
     <color name="coloRteal">#008080</color><!--水鸭色 -->
-    <color name="colorGreen">#008000</color><!--绿色 -->
     <color name="colorDarkgreen">#006400</color><!--暗绿色 -->
-    <color name="colorBlue">#0000FF</color><!--蓝色 -->
     <color name="colorMediumblue">#0000CD</color><!--中兰色 -->
     <color name="colorDarkblue">#00008B</color><!--暗蓝色 -->
     <color name="colorNavy">#000080</color><!--海军色 -->
