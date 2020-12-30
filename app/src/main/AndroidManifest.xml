@@ -101,7 +101,6 @@
     <uses-permission android:name="android.permission.WRITE_CALL_LOG" /> <!-- 允许应用程序向系统中添加语音邮件 -->
     <uses-permission android:name="android.permission.ADD_VOICEMAIL" /> <!-- Allows an application to use SIP service. 会话发起协议 -->
     <uses-permission android:name="android.permission.USE_SIP" /> <!-- 允许应用程序查看在拨出呼叫期间拨打的号码，以及将呼叫重定向到其他号码或完全中止该呼叫的选项。 -->
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> <!-- 用于与访问摄像头或从设备捕获图像/视频相关联的权限。 -->
     <permission-group android:name="android.permission-group.SENSORS" /> <!-- 允许应用程序访问来自传感器的数据，用户使用这些传感器来测量他/她身体内部发生的情况，例如心率。 -->
     <uses-permission android:name="android.permission.BODY_SENSORS" /> <!-- 用于与用户的SMS消息相关的运行时权限 -->
     <permission-group android:name="android.permission-group.SMS" /> <!-- Allows an application to send SMS messages. -->
@@ -127,6 +126,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize">
+        <activity android:name=".activity.ForgetActivity"></activity>
+        <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -138,16 +139,14 @@
         <activity android:name=".activity.RuleActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.WebActivity" />
-        <activity android:name=".fragment.MySettingFragment" />
+        <activity android:name=".fragment.SettingFragment" />
         <activity android:name=".fragment.FindFragment" />
         <activity android:name=".fragment.HomeFragment" />
         <activity android:name=".fragment.VideoFragment" />
         <activity android:name=".MainActivity" />
-
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities=".activity.RegistActivity"

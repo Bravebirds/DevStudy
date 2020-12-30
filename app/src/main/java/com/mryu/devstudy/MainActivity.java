@@ -1,18 +1,30 @@
 package com.mryu.devstudy;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.mryu.devstudy.fragment.HomeFragment;
 import com.mryu.devstudy.fragment.FindFragment;
-import com.mryu.devstudy.fragment.MySettingFragment;
+import com.mryu.devstudy.fragment.SettingFragment;
 import com.mryu.devstudy.fragment.VideoFragment;
+import com.mryu.devstudy.qqlogin.QQLoginManager;
 import com.mryu.devstudy.utils.ToastUtils;
+import com.tencent.connect.UserInfo;
+import com.tencent.connect.auth.QQToken;
+import com.tencent.tauth.IUiListener;
+import com.tencent.tauth.UiError;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -20,7 +32,7 @@ import androidx.viewpager.widget.ViewPager;
 
 
 
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
     private static final String TAG =  "MainActivity";
     private ViewPager mViewpager;
     /**
@@ -41,7 +53,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private RadioButton mMyTab;
     private RadioGroup mRadioGroupVp;
     private List<Fragment> fragments;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         fragments.add(new HomeFragment());
         fragments.add(new FindFragment());
         fragments.add(new VideoFragment());
-        fragments.add(new MySettingFragment());
+        fragments.add(new SettingFragment());
     }
 
     private void setListener() {
@@ -157,8 +168,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if (System.currentTimeMillis() - mExitTime > 3000) {
-                showToast("再按一次退出程序",R.drawable.icon_waring_yellow,0.03);
+            if (System.currentTimeMillis() - mExitTime > 2000) {
+                showToast("再按一次退出"+getString(R.string.app_name),R.drawable.icon_waring_yellow,0.03);
                 mExitTime = System.currentTimeMillis();
             } else {
                 finish();
@@ -172,6 +183,5 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private void showToast(String message, int resId ,double toastHight) {
         ToastUtils.showKevinToast(this, message, resId,toastHight);
     }
-
 
 }

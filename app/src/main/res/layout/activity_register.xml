@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhitesmoke">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/register_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="64dp"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/shape_bottom_input">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_account"
+                android:contentDescription="@null" />
+            <EditText
+                android:id="@+id/username_edit"
+                style="@style/EditTheme"
+                android:hint="@string/account_tint"
+                android:layout_marginLeft="6dp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/shape_bottom_input">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_password"
+                android:contentDescription="@null" />
+            <EditText
+                android:id="@+id/password_edit"
+                style="@style/EditTheme"
+                android:hint="@string/password_tint"
+                android:layout_marginLeft="6dp"
+                android:layout_width="0dp"
+                android:layout_weight="7.8"
+                android:inputType="textPassword" />
+            <ImageView
+                android:id="@+id/show_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="26dp"
+                android:background="@mipmap/icon_invisible_password"
+                android:visibility="invisible"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/register_btn"
+            style="@style/ButtonTheme"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ic_register_btn"
+            android:text="@string/regist_text"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,15 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <pl.droidsonroids.gif.GifImageView
+    android:layout_height="match_parent">
+    <ImageView
         android:id="@+id/splash_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/gif_header_repast"
-        app:layout_srlSpinnerStyle="Scale"
-        app:layout_srlBackgroundColor="@android:color/transparent"/>
+        android:src="@mipmap/gif_header_repast"/>
 
     <TextView
         android:layout_width="wrap_content"

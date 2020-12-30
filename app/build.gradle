@@ -59,11 +59,4 @@ dependencies {
     implementation 'com.youth.banner:banner:1.4.10'
     //OverlayCardViewPager 是层叠卡片效果的 ViewPage。
     implementation 'com.github.oneAcorn:OverlayCardViewPager:v1.0'
-
-
-    //1.0.5 为 1.0.5 与 1.1.0 的过度版，其中API改动过大，老用户升级需谨慎
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
-    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'//没有使用特殊Header，可以不加这行
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'//一个开源gif控件
-
 }

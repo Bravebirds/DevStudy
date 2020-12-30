@@ -1,45 +1,52 @@
 <resources>
     <string name="app_name">DevStudy</string>
-    <string name="regist_phone">输入手机号</string>
-    <string name="regist_verifi">输入验证码</string>
-    <string name="regist_password">设置登录密码</string>
-    <string name="regist_agree">我已阅读并同意</string>
-    <string name="regist_getverifi">获取验证码</string>
-    <string name="userRule">《用户协议》</string>
-    <string name="privateRule">《隐私政策》</string>
-    <string name="title_activity_loading">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="upload_dicm">更新头像</string>
-    <string name="make_friends">交友</string>
-    <string name="recom_top">热门</string>
-    <string name="setting_page">设置页</string>
-    <string name="game_page">游戏</string>
-    <string name="book_page">书籍</string>
+    // 注册、登录、绑定手机号
+    <string name="account_tint">请输入用户名</string>
+    <string name="password_tint">请输入密码</string>
+    <string name="global_roaming">+86</string>
+    <string name="verifi_tint">请输入验证码</string>
+    <string name="set_password_tint">设置登录密码</string>
+    <string name="regist_text">注册</string>
+    <string name="login_text">登录</string>
+    <string name="phone_pwd_login">账号密码登录</string>
+    <string name="agree_tint">我已阅读并同意</string>
+    <string name="get_verifi_tint">获取验证码</string>
+    <string name="user_rule_tint">《用户协议》</string>
+    <string name="private_rule_tint">《隐私政策》</string>
+    <string name="all_rule_tint">"欢迎使用DevStudy！\n"
+            "• 使用过程中我们会需要访问您的存储权限、录制、相机权限、获取设备信息等权限及信息。\n"
+            "• 您可以点击《用户协议》和《隐私政策》了解个人信息类型与用途的对应关系等更加详尽的个人信息处理规则。\n"
+            "• 我们会采用业界领先的安全技术保护好您的个人信息，如您同意，请点击“同意”开始接受我们的服务。"</string>
+    <string name="register_phone_tip">应国家法律实名认证要求，同时也为了保证你的账号安全，请绑定手机号码</string>
+    <string name="please_cheack">请选择同意规则或选暂不使用</string>
+    <string name="agree_rule">您已同意并授权协议</string>
+
+
+    //权限
+    <string name="get_permission">获取权限</string>
+
+    //网络
+    <string name="checkNetWork">当前无网络，请检查网络后重试</string>
+    <string name="network_error">网络错误或设置了WIFI代理</string>
+
+    //其它
+
+    <string name="repeat_click">请勿重复点击操作</string>
+    <string name="retry">重试</string>
+    <string name="permissions_check_warn">警告！</string>
+    <string name="permissions_check_ok">确定</string>
+    <string name="deselect">取消选择</string>
+    <string name="disregister">取消注册</string>
+
+    //tab
     <string name="home_page">首页</string>
     <string name="find_page">发现</string>
     <string name="video_page">视频</string>
     <string name="my_page">我</string>
-    <string name="request">请求</string>
-    <string name="get_permission">获取权限</string>
-    <string name="phone_pwd_login">账号密码登录</string>
-    <string name="phone_auto_login">免密登录/注册</string>
-    <string name="welcome_register">应国家法律实名认证要求，同时也为了保证你的账号安全，请绑定手机号码</string>
-    <string name="welcome_autoregister">免密注册</string>
-    <string name="global_roaming">+86</string>
-    <string name="checkNetWork">当前无网络，请检查网络后重试</string>
-    <string name="rule">"欢迎使用DevStudy！\n"
-            "• 使用过程中我们会需要访问您的存储权限、录制、相机权限、获取设备信息等权限及信息。\n"
-            "• 您可以点击《用户协议》和《隐私政策》了解个人信息类型与用途的对应关系等更加详尽的个人信息处理规则。\n"
-            "• 我们会采用业界领先的安全技术保护好您的个人信息，如您同意，请点击“同意”开始接受我们的服务。"</string>
-    <string name="network_error">网络错误或设置了WIFI代理</string>
-    <string name="repeat_click">请勿重复点击操作</string>
-    <string name="retry">重试</string>
+
+    // 资料
+    <string name="upload_dicm">更新头像</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="go_register">去注册</string>
 
 </resources>

@@ -15,26 +15,24 @@
         android:layout_gravity="bottom"
         android:background="@drawable/shape_bottom_write">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingBottom="60dp">
+            android:paddingBottom="50dp"
+            android:layout_gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
                 android:text="请登录"
                 android:textStyle="normal"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"/>
+                android:textSize="35dp"/>
             <EditText
-                android:id="@+id/account"
+                android:id="@+id/username_edit"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
                 android:background="@drawable/shape_bottom_input"
                 android:gravity="center"
@@ -44,9 +42,10 @@
                 android:lineHeight="25dp"
                 android:maxLines="1" />
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/password_edit"
                 android:layout_width="250dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:imeOptions="actionNext"
@@ -59,24 +58,48 @@
 
             <Button
                 android:id="@+id/account_login"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/ButtonTheme"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:paddingBottom="7dp"
                 android:background="@drawable/shape_nextstep_unselect"
-                android:text="→"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"
-                android:textSize="30dp" />
+                android:text="@string/login_text"/>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/forget_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/forget_password"
+                    android:gravity="center"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="15dp"
+                    android:background="@color/colorGray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <TextView
+                    android:id="@+id/start_regist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/go_register"
+                    android:gravity="center"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp"
-                android:layout_gravity="center">
-
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
                 <ImageView
                     android:id="@+id/qq_login"
                     android:layout_width="match_parent"
@@ -102,21 +125,21 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="18dp">
                 <CheckBox
                     android:theme="@style/AppTheme"
                     android:id="@+id/check_agreement"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
-                    android:hint="@string/regist_agree"
+                    android:hint="@string/agree_tint"
                     android:textSize = "15dp"
                     android:inputType="text"
                     android:maxLength="20"
                     android:maxLines="1" />
                 <TextView
                     android:id="@+id/user_ment"
-                    android:text="@string/userRule"
+                    android:text="@string/user_rule_tint"
                     android:textSize = "15dp"
                     android:textStyle="bold"
                     android:layout_gravity="center"
@@ -133,7 +156,7 @@
                     android:id="@+id/user_privacy"
                     android:textSize = "15dp"
                     android:textStyle="bold"
-                    android:text="@string/privateRule"
+                    android:text="@string/private_rule_tint"
                     android:layout_gravity="center"
                     android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
