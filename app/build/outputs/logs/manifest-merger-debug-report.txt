@@ -4,7 +4,6 @@ ADDED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-183:12
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-183:12
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-183:12
-MERGED from [baselibrary.aar] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f9443ec5ddd1ad1f4d6da8001cd5ffd9\jetified-baselibrary\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.oneAcorn:OverlayCardViewPager:v1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\642022ea621c25bd770a8f17fa0c9534\jetified-OverlayCardViewPager-v1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d34a49854543868353d60c64729ebef5\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -57,6 +56,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MrYu\.gradle\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\e5783b6c535f3172ca510f82325e2088\okhttputils-2.6.2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:2:1-183:12
@@ -500,8 +500,6 @@ uses-sdk
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
 INJECTED from D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml
-MERGED from [baselibrary.aar] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f9443ec5ddd1ad1f4d6da8001cd5ffd9\jetified-baselibrary\AndroidManifest.xml:7:5-9:41
-MERGED from [baselibrary.aar] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\f9443ec5ddd1ad1f4d6da8001cd5ffd9\jetified-baselibrary\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\fc1f7f0b785345c74f2f05aad21ff31b\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.oneAcorn:OverlayCardViewPager:v1.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\642022ea621c25bd770a8f17fa0c9534\jetified-OverlayCardViewPager-v1.0\AndroidManifest.xml:7:5-9:41
@@ -606,6 +604,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\e5783b6c535f3172ca510f82325e2088\okhttputils-2.6.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\e5783b6c535f3172ca510f82325e2088\okhttputils-2.6.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:7:5-9:41
 MERGED from [com.youth.banner:banner:1.4.10] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\810c84dc9e2ee3038040d2adaccbc4a0\jetified-banner-1.4.10\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\5e50ab5578b972fcfb4b2c061e3acb13\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41

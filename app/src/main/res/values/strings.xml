@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">DevStudy</string>
     // 注册、登录、绑定手机号
+    <string name="please_login">欢迎使用-请登录</string>
     <string name="account_tint">请输入用户名</string>
     <string name="password_tint">请输入密码</string>
+    <string name="user_edit_hint">QQ号/手机号/邮箱</string>
+    <string name="password_edit_hint">密码</string>
     <string name="global_roaming">+86</string>
     <string name="verifi_tint">请输入验证码</string>
     <string name="set_password_tint">设置登录密码</string>
@@ -48,5 +51,6 @@
     <string name="upload_dicm">更新头像</string>
     <string name="forget_password">忘记密码</string>
     <string name="go_register">去注册</string>
+    <string name="username_toast">用户名不能为空</string>
 
 </resources>

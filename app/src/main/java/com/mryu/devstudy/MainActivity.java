@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.mryu.devstudy.activity.LoginActivity;
 import com.mryu.devstudy.fragment.HomeFragment;
 import com.mryu.devstudy.fragment.FindFragment;
 import com.mryu.devstudy.fragment.SettingFragment;
@@ -17,6 +19,8 @@ import com.tencent.connect.UserInfo;
 import com.tencent.connect.auth.QQToken;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.UiError;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,7 +33,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
+import okhttp3.Call;
 
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener{
@@ -168,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if (System.currentTimeMillis() - mExitTime > 2000) {
+            if (System.currentTimeMillis() - mExitTime > 1000) {
                 showToast("再按一次退出"+getString(R.string.app_name),R.drawable.icon_waring_yellow,0.03);
                 mExitTime = System.currentTimeMillis();
             } else {

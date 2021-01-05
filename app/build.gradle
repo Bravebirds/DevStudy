@@ -49,14 +49,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    // gson解析+volley+OKhttp
+    // Volley
     implementation files('libs\\volley.jar')
+
+    //  Gson解析
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    // OkHttp3
+    implementation "com.squareup.okhttp3:okhttp-bom:4.9.0"
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation "com.squareup.okhttp3:okhttp"
+
     // 图片处理
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     //Banner
     implementation 'com.youth.banner:banner:1.4.10'
     //OverlayCardViewPager 是层叠卡片效果的 ViewPage。
     implementation 'com.github.oneAcorn:OverlayCardViewPager:v1.0'
+}
+repositories {
+    mavenCentral()
 }

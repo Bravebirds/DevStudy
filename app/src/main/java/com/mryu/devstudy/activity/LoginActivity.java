@@ -1,5 +1,4 @@
 package com.mryu.devstudy.activity;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,6 +15,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.LinkMovementMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.text.style.ClickableSpan;
@@ -33,6 +33,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.layout.KeyboardLayout;
@@ -45,10 +46,16 @@ import com.mryu.devstudy.utils.NetworkUtils;
 import com.mryu.devstudy.utils.RepeatClickUtils;
 import com.mryu.devstudy.utils.ToastUtils;
 import com.tencent.tauth.UiError;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import okhttp3.Call;
+
 import static java.lang.Thread.sleep;
 /**
  * FileName： LoginActivity.java
@@ -58,8 +65,7 @@ import static java.lang.Thread.sleep;
  */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener, QQLoginManager.QQLoginListener, DialogInterface.OnKeyListener {
     private static final String TAG = "LoginActivity";
-    private String account = "501893067";
-    private String password = "123567";
+    private static final String loginUrl = "https://www.wanandroid.com/user/login";
     private SharedPreferences sharedPreferences;
     private ImageView mQqLogin;
     private ImageView mWxLogin;
@@ -98,6 +104,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * 去注册
      */
     private TextView mStartRegist;
+    private ToggleButton mShowPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,9 +113,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initView();
         setListener();
+        initConfig();
+    }
+
+    /**
+     * 初始化权限获取、协议授权弹窗
+     */
+    private void initConfig() {
         sharedPreferences = getSharedPreferences("initAppInfoMation", Context.MODE_PRIVATE);
         SharedPreferences.Editor writeFile = sharedPreferences.edit();
         int dialogStatus = sharedPreferences.getInt("ruleStatus", 0);
+        int PermissionStatus = sharedPreferences.getInt("initAppPermission", 0);
         Log.d(TAG, "CheckBoxStatus：" + mCheckAgreement.isChecked() + "  isDialogStatus：" + sharedPreferences.getInt("ruleStatus", 0));
         if (dialogStatus == 0) {
             addDiaolog();
@@ -117,7 +132,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             writeFile.putInt("ruleStatus", 1);
             writeFile.commit();
         }
-        initAppPermission();
+
+        if (PermissionStatus == 0) {
+            initAppPermission();
+        }
     }
 
     private void initView() {
@@ -135,6 +153,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mUserPrivacy = (TextView) findViewById(R.id.user_privacy);
         mForgetPwd = (TextView) findViewById(R.id.forget_pwd);
         mStartRegist = (TextView) findViewById(R.id.start_regist);
+        mShowPassword = (ToggleButton) findViewById(R.id.show_password);
     }
 
     private void setListener() {
@@ -158,6 +177,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mStartRegist.setOnClickListener(this);
         // QQ互联登录监听
         QQLoginManager.setQQLoginListener(this);
+        mShowPassword.setOnClickListener(this);
+        mShowPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Log.d(TAG,"Toggle Button isChecked ："+isChecked);
+                if (isChecked) {
+                    //如果选中，显示密码
+                    mPasswordEdit.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    // 光标位置
+                    mPasswordEdit.setSelection(mPasswordEdit.getText().length());
+                    mShowPassword.setBackgroundResource(R.mipmap.icon_show_password);
+                    mShowPassword.setTextOff("");
+                } else {
+                    //否则隐藏密码
+                    mPasswordEdit.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    // 光标位置
+                    mPasswordEdit.setSelection(mPasswordEdit.getText().length());
+                    mShowPassword.setBackgroundResource(R.mipmap.icon_close_password);
+                    mShowPassword.setTextOn("");
+                }
+            }
+        });
     }
 
     private void initAppPermission() {
@@ -201,6 +242,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             writeFile.putInt(forceDeniedPermission, 0);
                             writeFile.commit();
                         }
+                        writeFile.putInt("initAppPermission", 1);
+                        writeFile.commit();
                         Log.d(TAG, "Permission：" + result);
                     }
                 })
@@ -341,8 +384,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             privacyClick();
                             break;
                         case R.id.forget_pwd:
-                            startActivity(new Intent(this,ForgetActivity.class));
-                            finish();
+                            showToast("测试用的api没有忘记密码功能",R.drawable.icon_waring_yellow,0.03);
+//                            startActivity(new Intent(this,ForgetActivity.class));
+//                            finish();
                             break;
                         case R.id.start_regist:
                             if (mCheckAgreement.isChecked() == false) {
@@ -383,25 +427,57 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void VerfiyLogin() {
-        String account_context = mUserNameEdit.getText().toString();
-        String password_context = mPasswordEdit.getText().toString();
+        String username = mUserNameEdit.getText().toString();
+        String password = mPasswordEdit.getText().toString();
         boolean isConnected = NetworkUtils.isConnected(this);
         if (isConnected == true) {
             if (mCheckAgreement.isChecked() == true) {
-                if (account_context.equals("") == true && password_context.equals("") == false) {
+                if (username.equals("") == true && password.equals("") == false) {
                     showToast("账号不允许为空！！！", R.drawable.icon_waring_yellow, 0.03);
-                } else if (account_context.equals("") == false && password_context.equals("") == true) {
+                } else if (username.equals("") == false && password.equals("") == true) {
                     showToast("密码不允许为空！！！", R.drawable.icon_waring_yellow, 0.03);
-                } else if (account_context.equals("") == true && password_context.equals("") == true) {
+                } else if (username.equals("") == true && password.equals("") == true) {
                     showToast("账号密码不允许为空！！！", R.drawable.icon_waring_yellow, 0.03);
-                } else if (account_context.equals(account) == true && password_context.equals(password) == true) {
-                    Log.v(TAG, "登录成功,正在初始化进入首页！！！");
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                } else if (account_context.equals(account) == false || password_context.equals(password) == false) {
-                    showToast("请输入正确的账号及密码！！！", R.drawable.icon_waring_yellow, 0.03);
-                }
+                } else {
+                    OkHttpUtils
+                            .post()
+                            .url(loginUrl)
+                            .addParams("username", username)
+                            .addParams("password", password)
+                            .build()
+                            .execute(new StringCallback() {
+                                @Override
+                                public void onError(Call call, Exception e, int id) {
+                                    showToast("服务器请求失败",R.drawable.icon_security_green,0.03);
+                                }
+
+                                @Override
+                                public void onResponse(String response, int id) {
+                                    try {
+                                        JSONObject jsonObject = new JSONObject(response);
+                                        Log.d(TAG,"JSON"+jsonObject.toString());
+                                        /**
+                                         * {"data":null,"errorCode":-1,"errorMsg":"用户名已经被注册！"}
+                                         * {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+                                         */
+                                        int errorCode = jsonObject.getInt("errorCode");
+                                        String errorMsg = jsonObject.getString("errorMsg");
+                                        if (errorCode==0) {
+                                            Log.v(TAG, "登录成功,正在初始化进入首页！！！");
+                                            showToast("登录成功",R.drawable.icon_security_green,0.03);
+                                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                            startActivity(intent);
+                                            finish();
+                                        } else {
+                                            showToast(""+errorMsg,R.drawable.icon_waring_yellow,0.03);
+                                        }
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                        showToast("登录失败",R.drawable.icon_waring_yellow,0.03);
+                                    }
+                                }
+                            });
+                } 
             } else if (mCheckAgreement.isChecked() == false) {
                 addDiaolog();
             } else {
@@ -424,17 +500,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         /**
          * 判断UserName及Pwd字段是否均已输入对应改变登录入口可点击状态
          */
-        String accountText = mUserNameEdit.getText().toString();
+        String usernameText = mUserNameEdit.getText().toString();
         String passwordText = mPasswordEdit.getText().toString();
-        Log.d(TAG, "UserName：" + accountText.isEmpty() + ",PassWord：" + passwordText.isEmpty());
         int maxUserNameLength = 16;
         int maxPwdLength = 20;
         // 用户名长度限制
-        if (accountText.length() > maxUserNameLength) {
-            String newStr = accountText.substring(0, maxUserNameLength);
+        if (usernameText.length() > maxUserNameLength) {
+            String newStr = usernameText.substring(0, maxUserNameLength);
             mUserNameEdit.setText(newStr);
             mUserNameEdit.setSelection(mUserNameEdit.getText().length());
-            HideKeyInput();
             try {
                 sleep(1);
             } catch (InterruptedException e) {
@@ -457,17 +531,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             showToast("密码仅支持" + maxPwdLength + "位输入", R.drawable.icon_waring_yellow, 0.03);
         }
 
-        if (accountText.equals("") == true || passwordText.equals("") == true) {
+        if (usernameText.equals("") == true || passwordText.equals("") == true) {
             mAccountLoginBtn.setBackgroundResource(R.drawable.shape_nextstep_unselect);
+        }else{
+            mAccountLoginBtn.setBackgroundResource(R.drawable.shape_nextstep_selected);
         }
         if (mCheckAgreement.isChecked() == true) {
-            if (accountText.equals("") == true && passwordText.equals("") == false) {
-                mPasswordEdit.setText("");  //清空 掉上个账号遗留的密码！！！
-                showToast("请先输入账号", R.drawable.icon_waring_yellow, 0.03);
-            } else if (accountText.equals("") == false && passwordText.equals("") == false) {
-                Log.d(TAG, "账号密码均检测有内容，登录按钮高亮状态！！！");
-                mAccountLoginBtn.setBackgroundResource(R.drawable.shape_nextstep_selected);
-            }
+//            if (usernameText.equals("") == true && passwordText.equals("") == false) {
+//                mPasswordEdit.setText("");  //清空 掉上个账号遗留的密码！！！
+//                showToast("请先输入账号", R.drawable.icon_waring_yellow, 0.03);
+//            } else
+        }
+        if ((passwordText.equals("")==false)) {
+            mShowPassword.setVisibility(View.VISIBLE);
+        }else{
+            mShowPassword.setVisibility(View.GONE);
         }
     }
 
@@ -477,20 +555,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             default:
             case R.id.username_edit:
                 if (hasFocus) {
-                    Log.d(TAG, "以获取UserName输入框的焦点！！！");
                     mUserNameEdit.setHint("");
                 } else {
-                    mUserNameEdit.setHint("QQ号/手机号/邮箱");
+                    mUserNameEdit.setHint(""+getString(R.string.user_edit_hint));
                     Log.d(TAG, "焦点事件已从UserName输入框中移除！！！");
                 }
                 break;
             case R.id.password_edit:
                 if (hasFocus) {
-                    Log.d(TAG, "以获取Password输入框的焦点！！！");
                     mPasswordEdit.setHint("");
                 } else {
-                    Log.d(TAG, "焦点事件已从Password输入框中移除！！！");
-                    mPasswordEdit.setHint("密码");
+                    mPasswordEdit.setHint(""+getString(R.string.password_edit_hint));
                 }
                 break;
         }
@@ -538,7 +613,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onKeyboardStateChanged(boolean isActive, int keyboardHeight) {
                 Log.e("onKeyboardStateChanged", "isActive:" + isActive + " keyboardHeight:" + keyboardHeight);
                 if (isActive) {
-                    mMainlayout.setTop(170);
+                    mMainlayout.setTop(10);
                     scrollToBottom();
                 }
             }
@@ -657,7 +732,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if (System.currentTimeMillis() - mExitTime > 2000) {
+            if (System.currentTimeMillis() - mExitTime > 1000) {
                 showToast("再按一次退出" + getString(R.string.app_name), R.drawable.icon_waring_yellow, 0.03);
                 mExitTime = System.currentTimeMillis();
             } else {

@@ -20,14 +20,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
+            android:padding="15dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:background="@drawable/shape_bottom_input">
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_account"
+                android:src="@mipmap/icon_username"
                 android:contentDescription="@null" />
             <EditText
                 android:id="@+id/username_edit"
@@ -41,14 +41,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:padding="12dp"
+            android:padding="15dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:background="@drawable/shape_bottom_input">
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_password"
+                android:src="@mipmap/icon_password"
                 android:contentDescription="@null" />
             <EditText
                 android:id="@+id/password_edit"
@@ -58,19 +58,54 @@
                 android:layout_width="0dp"
                 android:layout_weight="7.8"
                 android:inputType="textPassword" />
-            <ImageView
+            <ToggleButton
                 android:id="@+id/show_password"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="26dp"
-                android:background="@mipmap/icon_invisible_password"
+                android:layout_height="24dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@mipmap/icon_close_password"
                 android:visibility="invisible"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/shape_bottom_input">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/icon_verifi_deek"
+                android:contentDescription="@null" />
+            <EditText
+                android:id="@+id/verifi_edit"
+                style="@style/EditTheme"
+                android:hint="@string/verifi_tint"
+                android:layout_marginLeft="6dp"
+                android:layout_width="0dp"
+                android:layout_weight="6.8"
+                android:inputType="text"
+                android:maxLength="6"
+                android:maxLines="1"/>
+            <Button
+                android:id="@+id/get_verifi"
+                android:layout_width="0dp"
+                android:layout_weight="3.6"
+                android:text="@string/get_verifi_tint"
+                android:layout_height="29dp"
+                android:textSize="13dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/shape_send_btn_selected"/>
         </LinearLayout>
         <Button
             android:id="@+id/register_btn"
             style="@style/ButtonTheme"
             android:layout_marginTop="64dp"
-            android:background="@drawable/ic_register_btn"
+            android:background="@drawable/shape_nextstep_selected"
             android:text="@string/regist_text"/>
     </LinearLayout>
 

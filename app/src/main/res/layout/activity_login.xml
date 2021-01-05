@@ -18,43 +18,77 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingBottom="50dp"
+            android:paddingBottom="30dp"
             android:layout_gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:padding="5dp"
                 android:layout_gravity="center"
-                android:text="请登录"
+                android:text="@string/please_login"
                 android:textStyle="normal"
                 android:textColor="@color/colorBlack"
-                android:textSize="35dp"/>
-            <EditText
-                android:id="@+id/username_edit"
-                android:layout_width="250dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:background="@drawable/shape_bottom_input"
-                android:gravity="center"
-                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
-                android:hint="QQ号/手机号/邮箱"
-                android:inputType="text"
-                android:lineHeight="25dp"
-                android:maxLines="1" />
-            <EditText
-                android:id="@+id/password_edit"
-                android:layout_width="250dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="textPassword"
-                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                android:hint="密码"
-                android:background="@drawable/shape_bottom_input"
-                android:maxLines="1"
-                android:lineHeight="25dp" />
+                android:textSize="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/shape_bottom_input">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@mipmap/icon_username"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/username_edit"
+                        style="@style/EditTheme"
+                        android:hint="@string/user_edit_hint"
+                        android:layout_marginLeft="6dp"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+                        android:inputType="text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/shape_bottom_input">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@mipmap/icon_password"
+                        android:contentDescription="@null" />
+                    <EditText
+                        android:id="@+id/password_edit"
+                        style="@style/EditTheme"
+                        android:hint="@string/password_edit_hint"
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="7.8"
+                        android:inputType="textPassword" />
+                    <ToggleButton
+                        style="@style/EditTheme"
+                        android:id="@+id/show_password"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="24dp"
+                        android:textOn=""
+                        android:textOff=""
+                        android:background="@mipmap/icon_close_password"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
 
             <Button
                 android:id="@+id/account_login"
@@ -99,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp">
+                android:layout_marginTop="8dp">
                 <ImageView
                     android:id="@+id/qq_login"
                     android:layout_width="match_parent"
