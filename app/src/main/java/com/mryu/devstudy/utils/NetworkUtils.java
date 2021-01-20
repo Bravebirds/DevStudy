@@ -15,6 +15,10 @@ import com.mryu.devstudy.MainActivity;
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.fragment.HomeFragment;
 
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Collections;
+
 /**
  * 网络工具类
  *
@@ -212,4 +216,40 @@ public class NetworkUtils {
         return stateCode;
     }
 
+    /**
+     * 获取IP地址
+     * @param useIPv4 是否使用IPv4地址
+     * @return 字符串形式的IP地址
+     */
+    public static String getIPAddress(boolean useIPv4) {
+        try {
+            //Dereferencing a pointer that might be "null" "getNetworkInterfaces()" when calling "list"
+            if(NetworkInterface.getNetworkInterfaces() != null){
+                for (NetworkInterface intf : Collections.list(NetworkInterface.getNetworkInterfaces())) {
+                    for (InetAddress addr : Collections.list(intf.getInetAddresses())) {
+                        if (!addr.isLoopbackAddress()) {
+                            boolean isIPv4;
+                            String sAddr = addr.getHostAddress();
+                            if (sAddr.indexOf(58) < 0) {
+                                isIPv4 = true;
+                            } else {
+                                isIPv4 = false;
+                            }
+                            if (useIPv4) {
+                                if (isIPv4) {
+                                    return sAddr;
+                                }
+                            } else if (!isIPv4) {
+                                int delim = sAddr.indexOf(37);
+                                return delim < 0 ? sAddr.toUpperCase() : sAddr.substring(0, delim).toUpperCase();
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
 }

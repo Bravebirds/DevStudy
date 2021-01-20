@@ -48,7 +48,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
     // Volley
     implementation files('libs\\volley.jar')
 
@@ -66,6 +65,7 @@ dependencies {
     implementation 'com.youth.banner:banner:1.4.10'
     //OverlayCardViewPager 是层叠卡片效果的 ViewPage。
     implementation 'com.github.oneAcorn:OverlayCardViewPager:v1.0'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '6.0.5'
 }
 repositories {
     mavenCentral()

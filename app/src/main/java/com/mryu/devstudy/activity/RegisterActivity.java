@@ -1,5 +1,4 @@
 package com.mryu.devstudy.activity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,22 +17,17 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ToggleButton;
-
 import com.mryu.devstudy.R;
 import com.mryu.devstudy.utils.RepeatClickUtils;
 import com.mryu.devstudy.utils.ToastUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import okhttp3.Call;
-
 import static java.lang.Thread.sleep;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, View.OnFocusChangeListener {
@@ -188,7 +182,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     }
                 });
     }
-
 
     private void downTimer() {
         /**
