@@ -3,9 +3,13 @@
 - 🔭 I’m currently working on [AutoFramework](https://github.com/Bravebirds/AutoFramework).
 - 🌱 I’m currently learning redux.
 - 👯 I’m looking to collaborate on flutter related open source project.
-
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about yyq501893067
+- 📫 How to reach me: mryu168@163.com
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
 <!--
-**trevorwang/trevorwang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Bravebirds/Bravebirds** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
