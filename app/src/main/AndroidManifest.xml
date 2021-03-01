@@ -125,15 +125,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
+        android:finishOnTaskLaunch="true"
+        android:clearTaskOnLaunch="true"
         android:windowSoftInputMode="adjustResize">
-        <activity android:name=".activity.ForgetActivity"></activity>
+        <activity android:name=".activity.SanAllActivity"/>
+        <activity android:name=".activity.ForgetActivity" />
         <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".activity.GsonActivity" />
         <activity android:name=".activity.RuleActivity" />
@@ -143,7 +141,12 @@
         <activity android:name=".fragment.FindFragment" />
         <activity android:name=".fragment.HomeFragment" />
         <activity android:name=".fragment.VideoFragment" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

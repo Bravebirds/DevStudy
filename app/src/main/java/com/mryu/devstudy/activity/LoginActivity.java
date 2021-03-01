@@ -6,9 +6,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.PowerManager;
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.Spannable;
@@ -52,6 +55,7 @@ import com.zhy.http.okhttp.callback.StringCallback;
 import org.json.JSONException;
 import org.json.JSONObject;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import okhttp3.Call;
@@ -213,6 +217,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 .addPermissions(Manifest.permission.ACCESS_WIFI_STATE)
                 .addPermissions(Manifest.permission.READ_PHONE_STATE)
                 .addPermissions(Manifest.permission.RECORD_AUDIO)
+                .addPermissions(Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
                 .setPermissionsCheckListener(new PermissionListener() {
                     @Override
                     public void permissionRequestSuccess() {

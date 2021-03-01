@@ -253,156 +253,164 @@
 119-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:116:19-63
 120
 121    <application
-121-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:5-181:19
+121-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:118:5-184:19
 122        android:allowBackup="true"
 122-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:119:9-35
 123        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 123-->[androidx.core:core:1.3.1] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
-124        android:clickable="true"
-124-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:9-33
-125        android:debuggable="true"
-126        android:focusableInTouchMode="true"
-126-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-44
-127        android:icon="@mipmap/ic_launcher"
-127-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-43
-128        android:label="@string/app_name"
-128-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-41
-129        android:roundIcon="@mipmap/ic_launcher_round"
-129-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-54
-130        android:supportsRtl="true"
-130-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-35
-131        android:theme="@style/AppTheme"
-131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-40
-132        android:usesCleartextTraffic="true"
-132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-44
-133        android:windowSoftInputMode="adjustResize" >
-133-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-51
-134        <activity android:name="com.mryu.devstudy.activity.ForgetActivity" />
-134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-70
-134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:19-58
-135        <activity android:name="com.mryu.devstudy.activity.RegisterActivity" />
-135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-63
-135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:19-60
-136        <activity android:name="com.mryu.devstudy.activity.SplashActivity" >
-136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-137:20
+124        android:clearTaskOnLaunch="true"
+124-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:129:9-41
+125        android:clickable="true"
+125-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:120:9-33
+126        android:debuggable="true"
+127        android:finishOnTaskLaunch="true"
+127-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:128:9-42
+128        android:focusableInTouchMode="true"
+128-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:121:9-44
+129        android:icon="@mipmap/ic_launcher"
+129-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:122:9-43
+130        android:label="@string/app_name"
+130-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:123:9-41
+131        android:roundIcon="@mipmap/ic_launcher_round"
+131-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:124:9-54
+132        android:supportsRtl="true"
+132-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:125:9-35
+133        android:theme="@style/AppTheme"
+133-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:126:9-40
+134        android:usesCleartextTraffic="true"
+134-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:127:9-44
+135        android:windowSoftInputMode="adjustResize" >
+135-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:130:9-51
+136        <activity android:name="com.mryu.devstudy.activity.SanAllActivity" />
+136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:9-60
 136-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:131:19-58
-137            <intent-filter>
-137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:13-136:29
-138                <action android:name="android.intent.action.MAIN" />
-138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:17-69
-138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:25-66
-139
-140                <category android:name="android.intent.category.LAUNCHER" />
-140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:17-77
-140-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:135:27-74
-141            </intent-filter>
-142        </activity>
-143        <activity android:name="com.mryu.devstudy.activity.GsonActivity" />
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-59
-143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-56
-144        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
-144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-59
-144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-56
-145        <activity android:name="com.mryu.devstudy.activity.LoginActivity" />
-145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-60
-145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-57
-146        <activity android:name="com.mryu.devstudy.activity.WebActivity" />
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-58
-146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-55
-147        <activity android:name="com.mryu.devstudy.fragment.SettingFragment" />
-147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-62
-147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-59
-148        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-59
-148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-56
-149        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
-149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-59
-149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-56
-150        <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
-150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:9-60
-150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:19-57
-151        <activity android:name="com.mryu.devstudy.MainActivity" />
-151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:9-50
-151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:19-47
+137        <activity android:name="com.mryu.devstudy.activity.ForgetActivity" />
+137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:9-61
+137-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:132:19-58
+138        <activity android:name="com.mryu.devstudy.activity.RegisterActivity" />
+138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:9-63
+138-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:133:19-60
+139        <activity android:name="com.mryu.devstudy.MainActivity" >
+139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:9-135:20
+139-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:134:19-47
+140        </activity>
+141        <activity android:name="com.mryu.devstudy.activity.GsonActivity" />
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:9-59
+141-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:136:19-56
+142        <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
+142-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:9-59
+142-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:137:19-56
+143        <activity android:name="com.mryu.devstudy.activity.LoginActivity" />
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:9-60
+143-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:138:19-57
+144        <activity android:name="com.mryu.devstudy.activity.WebActivity" />
+144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:9-58
+144-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:139:19-55
+145        <activity android:name="com.mryu.devstudy.fragment.SettingFragment" />
+145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:9-62
+145-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:140:19-59
+146        <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:9-59
+146-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:141:19-56
+147        <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
+147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:9-59
+147-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:142:19-56
+148        <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:9-60
+148-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:143:19-57
+149        <activity android:name="com.mryu.devstudy.activity.SplashActivity" >
+149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:9-149:20
+149-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:144:19-58
+150            <intent-filter>
+150-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:145:13-148:29
+151                <action android:name="android.intent.action.MAIN" />
+151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:17-69
+151-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:146:25-66
 152
-153        <uses-library
-153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-149:40
-154            android:name="org.apache.http.legacy"
-154-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:13-50
-155            android:required="false" />
-155-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:13-37
+153                <category android:name="android.intent.category.LAUNCHER" />
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:17-77
+153-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:27-74
+154            </intent-filter>
+155        </activity>
 156
-157        <provider
-157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-158:20
-158            android:name="androidx.core.content.FileProvider"
-158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:13-62
-159            android:authorities=".activity.RegistActivity"
-159-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-59
-160            android:exported="false"
-160-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:13-37
-161            android:grantUriPermissions="true" >
-161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-47
-162            <meta-data
-162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:13-157:61
-163                android:name="android.support.FILE_PROVIDER_PATHS"
-163-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:17-67
-164                android:resource="@xml/file_paths_public" />
-164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:17-58
-165        </provider> <!-- 接入QQ互联登录 -->
-166        <activity
-166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:9-171:20
-167            android:name="com.tencent.tauth.AuthActivity"
-167-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:13-58
-168            android:launchMode="singleTask"
-168-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:161:13-44
-169            android:noHistory="true" >
-169-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:13-37
-170            <intent-filter>
-170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:163:13-170:29
-171                <action android:name="android.intent.action.VIEW" />
-171-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:17-69
-171-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:25-66
-172
-173                <category android:name="android.intent.category.DEFAULT" />
-173-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:166:17-76
-173-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:166:27-73
-174                <category android:name="android.intent.category.BROWSABLE" />
-174-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:17-78
-174-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:27-75
-175
-176                <data android:scheme="tencent1110529440" />
-176-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:17-60
-176-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:23-57
-177            </intent-filter>
-178        </activity>
-179        <activity
-179-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:9-176:75
-180            android:name="com.tencent.connect.common.AssistActivity"
-180-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:173:13-69
-181            android:configChanges="orientation|keyboardHidden"
-181-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:174:13-63
-182            android:screenOrientation="behind"
-182-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:13-47
-183            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-183-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:13-72
-184
-185        <uses-library
-185-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:147:9-149:40
-186            android:name="org.apache.http.legacy"
-186-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:148:13-50
-187            android:required="false" />
-187-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:149:13-37
+157        <uses-library
+157-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-152:40
+158            android:name="org.apache.http.legacy"
+158-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:13-50
+159            android:required="false" />
+159-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-37
+160
+161        <provider
+161-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:153:9-161:20
+162            android:name="androidx.core.content.FileProvider"
+162-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:154:13-62
+163            android:authorities=".activity.RegistActivity"
+163-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:155:13-59
+164            android:exported="false"
+164-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:156:13-37
+165            android:grantUriPermissions="true" >
+165-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:157:13-47
+166            <meta-data
+166-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:158:13-160:61
+167                android:name="android.support.FILE_PROVIDER_PATHS"
+167-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:159:17-67
+168                android:resource="@xml/file_paths_public" />
+168-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:160:17-58
+169        </provider> <!-- 接入QQ互联登录 -->
+170        <activity
+170-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:162:9-174:20
+171            android:name="com.tencent.tauth.AuthActivity"
+171-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:163:13-58
+172            android:launchMode="singleTask"
+172-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:164:13-44
+173            android:noHistory="true" >
+173-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:165:13-37
+174            <intent-filter>
+174-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:166:13-173:29
+175                <action android:name="android.intent.action.VIEW" />
+175-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:17-69
+175-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:167:25-66
+176
+177                <category android:name="android.intent.category.DEFAULT" />
+177-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:17-76
+177-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:169:27-73
+178                <category android:name="android.intent.category.BROWSABLE" />
+178-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:17-78
+178-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:170:27-75
+179
+180                <data android:scheme="tencent1110529440" />
+180-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:17-60
+180-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:172:23-57
+181            </intent-filter>
+182        </activity>
+183        <activity
+183-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:175:9-179:75
+184            android:name="com.tencent.connect.common.AssistActivity"
+184-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:176:13-69
+185            android:configChanges="orientation|keyboardHidden"
+185-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:177:13-63
+186            android:screenOrientation="behind"
+186-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:178:13-47
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+187-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:179:13-72
 188
-189        <provider
-189-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-190            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-190-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-191            android:authorities="com.mryu.devstudy.lifecycle-process"
-191-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-192            android:exported="false"
-192-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-193            android:multiprocess="true" />
-193-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-194    </application>
-195
-196</manifest>
+189        <uses-library
+189-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:150:9-152:40
+190            android:name="org.apache.http.legacy"
+190-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:151:13-50
+191            android:required="false" />
+191-->D:\Work_Spaces\Flutter_Project\DevStudy\app\src\main\AndroidManifest.xml:152:13-37
+192
+193        <provider
+193-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+194            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+194-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+195            android:authorities="com.mryu.devstudy.lifecycle-process"
+195-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+196            android:exported="false"
+196-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+197            android:multiprocess="true" />
+197-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\MrYu\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+198    </application>
+199
+200</manifest>

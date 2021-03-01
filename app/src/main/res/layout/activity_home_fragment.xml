@@ -1,6 +1,45 @@
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-</androidx.drawerlayout.widget.DrawerLayout>
+    android:orientation="vertical"
+    android:background="@color/colorWhitesmoke">
+    <LinearLayout
+        android:id="@+id/add_package"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_add_package">
+        <ImageView
+            android:id="@+id/set_app_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_add_package"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/set_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_runapp_text"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/ic_enter"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <!--参数设置-->
+
+</LinearLayout>

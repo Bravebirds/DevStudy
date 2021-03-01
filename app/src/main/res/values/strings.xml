@@ -52,5 +52,12 @@
     <string name="forget_password">忘记密码</string>
     <string name="go_register">去注册</string>
     <string name="username_toast">用户名不能为空</string>
+    <string name="set_runapp_text">请选择需要运行的APP</string>
+    <string name="monkey_params_text">设置Monkey运行参数</string>
+    <string name="touch_event">触摸事件</string>
+    <string name="trackball_event">轨迹球事件</string>
+    <string name="nav_event">导航事件</string>
+    <string name="sys_event">系统事件</string>
+    <string name="loading_text">正在加载、请稍后</string>
 
 </resources>

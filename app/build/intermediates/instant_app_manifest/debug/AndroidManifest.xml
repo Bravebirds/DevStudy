@@ -122,8 +122,10 @@
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:clearTaskOnLaunch="true"
         android:clickable="true"
         android:debuggable="true"
+        android:finishOnTaskLaunch="true"
         android:focusableInTouchMode="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -132,14 +134,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustResize" >
+        <activity android:name="com.mryu.devstudy.activity.SanAllActivity" />
         <activity android:name="com.mryu.devstudy.activity.ForgetActivity" />
         <activity android:name="com.mryu.devstudy.activity.RegisterActivity" />
-        <activity android:name="com.mryu.devstudy.activity.SplashActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name="com.mryu.devstudy.MainActivity" >
         </activity>
         <activity android:name="com.mryu.devstudy.activity.GsonActivity" />
         <activity android:name="com.mryu.devstudy.activity.RuleActivity" />
@@ -149,7 +147,13 @@
         <activity android:name="com.mryu.devstudy.fragment.FindFragment" />
         <activity android:name="com.mryu.devstudy.fragment.HomeFragment" />
         <activity android:name="com.mryu.devstudy.fragment.VideoFragment" />
-        <activity android:name="com.mryu.devstudy.MainActivity" />
+        <activity android:name="com.mryu.devstudy.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <uses-library
             android:name="org.apache.http.legacy"
